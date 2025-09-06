@@ -24,15 +24,7 @@ sudo airmon-ng check kill
 sudo airmon-ng start [INTERFACE]
 ```
 
-## CARA
-
-Jalankan Bettercap sebagi root:
-
-```
-sudo bettercap
-```
-
-## 1. Mode Shell
+## 1. Mode Interaktif (Shell Mode)
 
 ### 1. Capture 4-Way Handshake
 
