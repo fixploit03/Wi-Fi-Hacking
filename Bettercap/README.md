@@ -79,3 +79,17 @@ wifi.assoc [BSSID]
 6. Lakukan pemindaian (scanning) Wi-Fi dengan mengklik ikon seperti yang ditunjukkan pada gambar ini:
 
    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%205.png)
+
+7. Di gambar ini terdapat beberapa bagian, antara lain:
+   - `RSSI`: Menunjukkan kekuatan sinyal dari Access Point (AP) dalam satuan dBm. Semakin tinggi nilainya (mendekati 0), semakin kuat sinyalnya.
+   - `ESSID`: Nama jaringan Wi-Fi yang dapat dikenali oleh pengguna.
+   - `BSSID`: Alamat MAC unik dari Access Point yang mengidentifikasi perangkat jaringan.
+   - `Vendor`: Produsen perangkat Access Point berdasarkan BSSID.
+   - `Encryption`: Jenis enkripsi yang digunakan oleh jaringan Wi-Fi, misalnya WEP, WPA, atau WPA2.
+   - `Ch`: Kanal (channel) yang digunakan oleh Access Point untuk komunikasi.
+   - `Clients`: Jumlah perangkat klien yang saat ini terhubung ke AP tersebut.
+   - `Sent`: Jumlah paket data yang dikirim dari perangkat ke AP.
+   - `Recvd`: Jumlah paket data yang diterima dari AP oleh perangkat.
+   - `Seent`: Menunjukkan jumlah paket yang terdeteksi (seen) dari klien atau AP yang dipantau.
+     
+   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%206.png)
