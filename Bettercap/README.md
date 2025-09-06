@@ -81,6 +81,9 @@ wifi.assoc [BSSID]
    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%205.png)
 
 7. Di gambar ini terdapat beberapa bagian, antara lain:
+
+   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%206.png)
+   
    - `RSSI`: Menunjukkan kekuatan sinyal dari Access Point (AP) dalam satuan dBm. Semakin tinggi nilainya (mendekati 0), semakin kuat sinyalnya.
    - `ESSID`: Nama jaringan Wi-Fi yang dapat dikenali oleh pengguna.
    - `BSSID`: Alamat MAC unik dari Access Point yang mengidentifikasi perangkat jaringan.
@@ -92,4 +95,4 @@ wifi.assoc [BSSID]
    - `Recvd`: Jumlah paket data yang diterima dari AP oleh perangkat.
    - `Seent`: Menunjukkan jumlah paket yang terdeteksi (seen) dari klien atau AP yang dipantau.
      
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%206.png)
+
