@@ -2,7 +2,7 @@
 
 ## Cara Instal
 
-### 1. Kali Linux/Parrot OS
+### Kali Linux/Parrot OS
 
 ```
 sudo apt-get udpate
@@ -24,9 +24,10 @@ sudo airmon-ng check kill
 sudo airmon-ng start [INTERFACE]
 ```
 
-## 1. Mode Interaktif (Shell Mode)
+## Mode Interaktif (Shell Mode)
 
-### 1. Capture 4-Way Handshake
+
+### 1. Capture Handshake
 
 ```
 set wifi.interface [INTERFACE]
@@ -48,4 +49,3 @@ wifi.recon on
 wifi.show
 wifi.assoc [BSSID]
 ```
-
