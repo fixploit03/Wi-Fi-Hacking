@@ -205,7 +205,7 @@ Bagi pemula, mode `Interaktif (Shell Mode)` atau `UI Mode (Graphical User Interf
 - Shell Mode memberikan kontrol penuh atas perintah Bettercap, cocok untuk belajar memahami tiap modul dan langkah-langkah pengujian jaringan.
 - UI Mode lebih visual dan intuitif, sehingga memudahkan pemula memantau Access Point, klien, dan status serangan tanpa harus menghafal semua perintah.
 
-Sementara Mode Scripting lebih cocok bagi pengguna yang sudah berpengalaman atau ingin melakukan otomatisasi skala besar. Oleh karena itu, pemula sebaiknya memulai dari Shell Mode untuk memahami konsep dasar, dan dapat beralih ke UI Mode agar proses belajar lebih cepat dan mudah dipahami.
+Sementara Mode `Scripting` lebih cocok bagi pengguna yang sudah berpengalaman atau ingin melakukan otomatisasi skala besar. Oleh karena itu, pemula sebaiknya memulai dari `Shell Mode` untuk memahami konsep dasar, dan dapat beralih ke `UI Mode` agar proses belajar lebih cepat dan mudah dipahami.
 
 **Semoga bermanfaat.**
 
