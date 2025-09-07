@@ -17,6 +17,8 @@ Cek versi:
 bettercap -version
 ```
 
+> Untuk sistem operasi lainnya, silakan merujuk ke dokumentasi resmi Bettercap di: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+
 ## Persiapan
 
 Sebelum menggunakan Bettercap, kita harus mengaktifkan mode monitor pada interface dengan menjalankan perintah berikut:
