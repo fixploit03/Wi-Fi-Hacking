@@ -117,18 +117,18 @@ wifi.assoc [BSSID]
 
 10. Klik ikon `Events`, seperti yang ditunjukkan pada gambar di bawah ini:
     
-    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%209.png)
+   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%209.png)
 
 11. Klik salah satu dari ketiga item di bagian pesan, seperti yang ditunjukkan pada gambar di bawah ini:
-    
+
    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2010.png)
 
-12. Dari gambar di bawah ini terlihat bahwa file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
+13. Dari gambar di bawah ini terlihat bahwa file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
     
    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2011.png)
 
 13. Sekarang, setelah handshake berhasil diperoleh, kita akan mencoba crack password menggunakan tool `aircrack-ng`:
-    
+   
    ```
    aircrack-ng -a 2 /root/bettercap-wifi-handshakes.pcap -w /usr/share/wordlists/rockyou.txt
    ```
