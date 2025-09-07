@@ -198,7 +198,16 @@ Mode Web UI di Bettercap adalah fitur yang memungkinkan pengguna mengontrol Bett
 
     Dari hasil pada gambar di atas, terlihat bahwa password Wi-Fi berhasil ditemukan pada bagian `Key Found`. Passwordnya adalah: `qwerty12345`.
 
-    **Semoga bermanfaat.**
+## Kesimpulan untuk Pemula
 
-    Salam hormat,
-    **Rofi (Fixploit03)**
+Bagi pemula, mode `Interaktif (Shell Mode)` atau `UI Mode (Graphical User Interface)` adalah pilihan terbaik.
+
+- Shell Mode memberikan kontrol penuh atas perintah Bettercap, cocok untuk belajar memahami tiap modul dan langkah-langkah pengujian jaringan.
+- UI Mode lebih visual dan intuitif, sehingga memudahkan pemula memantau Access Point, klien, dan status serangan tanpa harus menghafal semua perintah.
+
+Sementara Mode Scripting lebih cocok bagi pengguna yang sudah berpengalaman atau ingin melakukan otomatisasi skala besar. Oleh karena itu, pemula sebaiknya memulai dari Shell Mode untuk memahami konsep dasar, dan dapat beralih ke UI Mode agar proses belajar lebih cepat dan mudah dipahami.
+
+**Semoga bermanfaat.**
+
+Salam hormat,
+**Rofi (Fixploit03)**
