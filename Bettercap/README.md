@@ -54,97 +54,99 @@ wifi.assoc [BSSID]
 
 1. Jalankan Bettercap dengan web UI aktif:
 
-   ```
-   sudo bettercap -caplet http-ui
-   ```
-
-2. Arahkan kursor ke alamat URL yang terdapat pada bagian `starting on`, yaitu `http://127.0.0.1:80`, lalu klik kanan dan pilih `Open Link`.
+    ```
+    sudo bettercap -caplet http-ui
+    ```
    
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%201.png)
+3. Arahkan kursor ke alamat URL yang terdapat pada bagian `starting on`, yaitu `http://127.0.0.1:80`, lalu klik kanan dan pilih `Open Link`.
+   
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%201.png)
 
-3. Masukkan:
-   - **Username**: `user`
-   - **Password**: `pass`
+4. Masukkan:
+
+    - **Username**: `user`
+    - **Password**: `pass`
   
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%202.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%202.png)
 
-4. Klik ikon Wi-Fi seperti yang ditunjukkan pada gambar di bawah ini:
+5. Klik ikon Wi-Fi seperti yang ditunjukkan pada gambar di bawah ini:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui3.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui3.png)
 
-5. PIlih interface yang ingin digunakan dengan mengklik menu dropdown sepertin yang ada di gambar ini:
+6. PIlih interface yang ingin digunakan dengan mengklik menu dropdown sepertin yang ada di gambar ini:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/%20ui%204.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/%20ui%204.png)
 
-6. Lakukan pemindaian (scanning) Wi-Fi dengan mengklik ikon seperti yang ditunjukkan pada gambar ini:
+7. Lakukan pemindaian (scanning) Wi-Fi dengan mengklik ikon seperti yang ditunjukkan pada gambar ini:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%205.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%205.png)
 
-7. Di gambar ini terdapat beberapa bagian, antara lain:
+8. Di gambar ini terdapat beberapa bagian, antara lain:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%206.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%206.png)
    
-   - `RSSI`: Menunjukkan kekuatan sinyal dari Access Point (AP) dalam satuan dBm. Semakin tinggi nilainya (mendekati 0), semakin kuat sinyalnya.
-   - `ESSID`: Nama jaringan Wi-Fi yang dapat dikenali oleh pengguna.
-   - `BSSID`: Alamat MAC unik dari Access Point yang mengidentifikasi perangkat jaringan.
-   - `Vendor`: Produsen perangkat Access Point berdasarkan BSSID.
-   - `Encryption`: Jenis enkripsi yang digunakan oleh jaringan Wi-Fi, misalnya WEP, WPA, atau WPA2.
-   - `Ch`: Kanal (channel) yang digunakan oleh Access Point untuk komunikasi.
-   - `Clients`: Jumlah perangkat klien yang saat ini terhubung ke AP tersebut.
-   - `Sent`: Jumlah paket data yang dikirim dari perangkat ke AP.
-   - `Recvd`: Jumlah paket data yang diterima dari AP oleh perangkat.
-   - `Seent`: Menunjukkan jumlah paket yang terdeteksi (seen) dari klien atau AP yang dipantau.
+    - `RSSI`: Menunjukkan kekuatan sinyal dari Access Point (AP) dalam satuan dBm. Semakin tinggi nilainya (mendekati 0), semakin kuat sinyalnya.
+    - `ESSID`: Nama jaringan Wi-Fi yang dapat dikenali oleh pengguna.
+    - `BSSID`: Alamat MAC unik dari Access Point yang mengidentifikasi perangkat jaringan.
+    - `Vendor`: Produsen perangkat Access Point berdasarkan BSSID.
+    - `Encryption`: Jenis enkripsi yang digunakan oleh jaringan Wi-Fi, misalnya WEP, WPA, atau WPA2.
+    - `Ch`: Kanal (channel) yang digunakan oleh Access Point untuk komunikasi.
+    - `Clients`: Jumlah perangkat klien yang saat ini terhubung ke AP tersebut.
+    - `Sent`: Jumlah paket data yang dikirim dari perangkat ke AP.
+    - `Recvd`: Jumlah paket data yang diterima dari AP oleh perangkat.
+    - `Seent`: Menunjukkan jumlah paket yang terdeteksi (seen) dari klien atau AP yang dipantau.
      
-8. Di sini, kita harus memilih BSSID yang ingin diserang, lalu mengklik menu dropdownnya:
-   
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%207.png)
+9. Di sini, kita harus memilih BSSID yang ingin diserang, lalu mengklik menu dropdownnya:
 
-   Di sini, kita dapat melakukan dua jenis serangan:
-   - Capture Handshake
-   - Capture PMKID
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%207.png)
 
-   Untuk `Capture Handshake`, klik `Deauthenticate Client`. Untuk `Capture PMKID`, klik `Associate`.
+    Di sini, kita dapat melakukan dua jenis serangan:
 
-   > **Catatan**:
-   > - **Capture Handshake**: Memerlukan setidaknya 1 klien yang aktif.
-   > - **Capture PMKID**: Tidak semua router mendukung PMKID.
+    - Capture Handshake
+    - Capture PMKID
 
-   Dalam panduan ini, kita akan memilih `Capture Handshake`.
+    Untuk `Capture Handshake`, klik `Deauthenticate Client`. Untuk `Capture PMKID`, klik `Associate`.
 
-9. Setelah mengklik `Deauthenticate Client`, tunggu hingga handshake berhasil ditangkap. Handshake dianggap berhasil diperoleh apabila muncul ikon `kunci merah` pada bagian `Encryption` dan notifikasi `Captured handshake for station...`, seperti yang ditunjukkan pada gambar di bawah ini:
-    
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%208.png)
+    > **Catatan**:
+    > - **Capture Handshake**: Memerlukan setidaknya 1 klien yang aktif.
+    > - **Capture PMKID**: Tidak semua router mendukung PMKID.
 
-10. Klik ikon `Events`, seperti yang ditunjukkan pada gambar di bawah ini:
-    
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%209.png)
+    Dalam panduan ini, kita akan memilih `Capture Handshake`.
 
-11. Klik salah satu dari ketiga item di bagian pesan, seperti yang ditunjukkan pada gambar di bawah ini:
+10. Setelah mengklik `Deauthenticate Client`, tunggu hingga handshake berhasil ditangkap. Handshake dianggap berhasil diperoleh apabila muncul ikon `kunci merah` pada bagian `Encryption` dan notifikasi `Captured handshake for station...`, seperti yang ditunjukkan pada gambar di bawah ini:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2010.png)
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%208.png)
+
+11. Klik ikon `Events`, seperti yang ditunjukkan pada gambar di bawah ini:
+
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%209.png)
+
+12. Klik salah satu dari ketiga item di bagian pesan, seperti yang ditunjukkan pada gambar di bawah ini:
+
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2010.png)
 
 13. Dari gambar di bawah ini terlihat bahwa file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
-    
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2011.png)
 
-13. Sekarang, setelah handshake berhasil diperoleh, kita akan mencoba crack password menggunakan tool `aircrack-ng`:
-   
-   ```
-   aircrack-ng -a 2 /root/bettercap-wifi-handshakes.pcap -w /usr/share/wordlists/rockyou.txt
-   ```
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2011.png)
 
-   **Keterangan:**
-   - `aircrack-ng`: aplikasi utama untuk melakukan cracking password Wi-Fi.
-   - `-a 2`: opsi untuk menargetkan jaringan WPA/WPA2.
-   - `/root/bettercap-wifi-handshakes.pcap`: file hasil capture yang berisi handshake Wi-Fi.
-   - `-w`: opsi untuk menentukan wordlist yang akan digunakan.
-   - `/usr/share/wordlists/rockyou.txt`: lokasi file wordlist yang ingin digunakan untuk crack password.
+14. Sekarang, setelah handshake berhasil diperoleh, kita akan mencoba crack password menggunakan tool `aircrack-ng`:
 
-   ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2012.png)
+    ```
+    aircrack-ng -a 2 /root/bettercap-wifi-handshakes.pcap -w /usr/share/wordlists/rockyou.txt
+    ```
 
-   Dari hasil pada gambar di atas, terlihat bahwa password Wi-Fi berhasil ditemukan pada bagian `Key Found`. Passwordnya adalah `qwerty12345`.
+    **Keterangan:**
+    - `aircrack-ng`: aplikasi utama untuk melakukan cracking password Wi-Fi.
+    - `-a 2`: opsi untuk menargetkan jaringan WPA/WPA2.
+    - `/root/bettercap-wifi-handshakes.pcap`: file hasil capture yang berisi handshake Wi-Fi.
+    - `-w`: opsi untuk menentukan wordlist yang akan digunakan.
+    - `/usr/share/wordlists/rockyou.txt`: lokasi file wordlist yang ingin digunakan untuk crack password.
 
-   **Semoga bermanfaat.**
+    ![](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/Bettercap/img/ui%2012.png)
 
-   Salam hormat,
-   **Rofi (Fixploit03)**
+    Dari hasil pada gambar di atas, terlihat bahwa password Wi-Fi berhasil ditemukan pada bagian `Key Found`. Passwordnya adalah `qwerty12345`.
+
+    **Semoga bermanfaat.**
+
+    Salam hormat,
+    **Rofi (Fixploit03)**
