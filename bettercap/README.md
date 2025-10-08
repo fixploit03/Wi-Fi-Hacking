@@ -1,12 +1,42 @@
-## 1. Mode Interaktif
+# Bettercap
+
+[Bettercap](https://www.bettercap.org/) adalah perangkat lunak kerangka kerja keamanan yang kuat, mudah diperluas, dan portabel, ditulis menggunakan bahasa `Go`. Perangkat ini dirancang sebagai alat terpadu yang mudah digunakan bagi peneliti keamanan, tim pengujian penetrasi (red team), dan spesialis reverse engineering. Fitur-fiturnya memungkinkan pengumpulan informasi serta pengujian dan eksploitasi keamanan pada jaringan Wi-Fi, perangkat Bluetooth Low Energy (BLE), perangkat Human Interface Device (HID) nirkabel, jaringan CAN-bus, serta jaringan IPv4 dan IPv6.
+
+## Instalasi
+
+Kali Linux:
+
+1. Pake packet manager (`apt`):
 
 ```
-bettercap
+sudo apt-get update
+sudo apt-get install bettercap bettercap-dbgsym bettercap-caplets bettercap-ui
+bettercap --version
+```
+
+2. Pake Go:
+
+```
+sudo apt-get update
+sudo apt install golang git build-essential libpcap-dev libusb-1.0-0-dev libnetfilter-queue-dev
+go install github.com/bettercap/bettercap/v2@latest
+sudo mv ~/go/bin/bettercap /usr/local/bin/
+bettercap --version
+```
+
+Untuk informasi lebih lengkapnya lagi bisa lihat disini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+
+## Penggunaan
+
+### 1. Mode Interaktif
+
+```
+sudo bettercap
 ```
 
 > Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
 
-### Capture Handshake
+#### Capture Handshake
 
 Single target:
 
@@ -33,7 +63,7 @@ set wifi.assoc.skip *
 wifi.deauth *
 ```
 
-## Capture PMKID
+#### Capture PMKID
 
 Single target:
 
@@ -58,20 +88,20 @@ ticker off
 wifi.assoc *
 ```
 
-## 2. Opsi Caplet
+### 2. Opsi Caplet
 
 ```
-bettercap -caplet [file_caplet]
+sudo bettercap -caplet [file_caplet]
 ```
 
 > Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
 
 Contoh file capletnya ada disini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
 
-## 3. Mode WEB UI
+### 3. Mode WEB UI
 
 ```
-bettercap -eval "ui on"
+sudo bettercap -eval "ui on"
 ```
 
 1. Arahkan kursor ke link yang ada di bagian web ui starting on, yaitu `http://127.0.0.1:80`, terus klik kanan dan pilih `Open Link`.
