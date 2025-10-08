@@ -28,6 +28,13 @@ Untuk informasi lebih lengkapnya lagi bisa lihat di sini: [https://www.bettercap
 
 ## Penggunaan
 
+Sebelum menggunakan bettercap, kita harus mengaktifkan mode monitor dulu pake:
+
+```
+sudo airmon-ng check kill
+sudo airmon-ng start [interface]
+```
+
 ### 1. Mode Interaktif
 
 ```
