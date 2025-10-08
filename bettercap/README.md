@@ -10,21 +10,21 @@ Kali Linux:
 
 1. Pake packet manager (`apt`):
 
-```
-sudo apt-get update
-sudo apt-get install bettercap bettercap-dbgsym bettercap-caplets bettercap-ui
-bettercap -version
-```
+   ```
+   sudo apt-get update
+   sudo apt-get install bettercap bettercap-dbgsym bettercap-caplets bettercap-ui
+   bettercap -version
+   ```
 
 2. Pake Go:
 
-```
-sudo apt-get update
-sudo apt install golang git build-essential libpcap-dev libusb-1.0-0-dev libnetfilter-queue-dev
-go install github.com/bettercap/bettercap/v2@latest
-sudo mv ~/go/bin/bettercap /usr/local/bin/
-bettercap -version
-```
+   ```
+   sudo apt-get update
+   sudo apt install golang git build-essential libpcap-dev libusb-1.0-0-dev libnetfilter-queue-dev
+   go install github.com/bettercap/bettercap/v2@latest
+   sudo mv ~/go/bin/bettercap /usr/local/bin/
+   bettercap -version
+   ```
 
 Untuk informasi lebih lengkapnya lagi bisa lihat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
