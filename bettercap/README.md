@@ -11,7 +11,7 @@ bettercap
 Single target:
 
 ```
-set wifi.handshakes.file [output]
+set wifi.handshakes.file [output_file]
 wifi.recon on
 set ticker.commands "clear; wifi.show"
 ticker on
@@ -23,7 +23,7 @@ wifi.deauth [bssid]
 Semua target:
 
 ```
-set wifi.handshakes.file [output]
+set wifi.handshakes.file [output_dir]
 set wifi.handshakes.aggregate false
 wifi.recon on
 set ticker.commands "clear; wifi.show"
@@ -38,7 +38,7 @@ wifi.deauth *
 Single target:
 
 ```
-set wifi.handshakes.file [output]
+set wifi.handshakes.file [output_file]
 wifi.recon on
 set ticker.commands "clear; wifi.show"
 ticker on
@@ -49,7 +49,7 @@ wifi.assoc *
 Semua target:
 
 ```
-set wifi.handshakes.file [output]
+set wifi.handshakes.file [output_dir]
 set wifi.handshakes.aggregate false
 wifi.recon on
 set ticker.commands "clear; wifi.show"
