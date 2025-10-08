@@ -1,5 +1,7 @@
 # Bettercap
 
+![bettercap logo](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/bettercap%20logo.jpg)
+
 [Bettercap](https://www.bettercap.org/) adalah perangkat lunak kerangka kerja keamanan yang kuat, mudah diperluas, dan portabel, ditulis menggunakan bahasa `Go`. Perangkat ini dirancang sebagai alat terpadu yang mudah digunakan bagi peneliti keamanan, tim pengujian penetrasi (red team), dan spesialis reverse engineering. Fitur-fiturnya memungkinkan pengumpulan informasi serta pengujian dan eksploitasi keamanan pada jaringan Wi-Fi, perangkat Bluetooth Low Energy (BLE), perangkat Human Interface Device (HID) nirkabel, jaringan CAN-bus, serta jaringan IPv4 dan IPv6.
 
 ## Instalasi
