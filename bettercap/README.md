@@ -24,7 +24,7 @@ sudo mv ~/go/bin/bettercap /usr/local/bin/
 bettercap -version
 ```
 
-Untuk informasi lebih lengkapnya lagi bisa lihat disini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+Untuk informasi lebih lengkapnya lagi bisa lihat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
 ## Penggunaan
 
@@ -96,7 +96,7 @@ sudo bettercap -caplet [file_caplet]
 
 > Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
 
-Contoh file capletnya ada disini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
+Contoh file capletnya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
 
 ### 3. Mode WEB UI
 
@@ -161,6 +161,6 @@ sudo bettercap -eval "ui on"
 12. Klik salah satu dari ketiga item di bagian pesan:
 
     ![img 11](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%2011.png)
-13. Dari gambar di bawah ini terlihat bahwa file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
+13. Dari gambar di bawah ini kelihatan kalo file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
 
     ![img 12](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%2012.png)
