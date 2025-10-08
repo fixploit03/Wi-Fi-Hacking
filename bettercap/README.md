@@ -67,3 +67,70 @@ bettercap -caplet [file_caplet]
 > Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
 
 Contoh file capletnya ada disini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
+
+## 3. Mode WEB UI
+
+```
+bettercap -eval "ui on"
+```
+
+1. Arahkan kursor ke link yang ada di bagian web ui starting on, yaitu `http://127.0.0.1:80`, terus klik kanan dan pilih `Open Link`.
+
+   ![img 1](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%201.png)
+2. Masukkan kredensial login:
+   - Usermame: `user`
+   - Password: `pass`
+
+   ![img 2](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%202.png)
+3. Klik ikon Wi-Fi:
+
+   ![img 3](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%203.png)
+4. Pilih interface yang ingin dipake dengan klik menu dropdown:
+
+
+   ![img 4](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%204.png)
+5. Lakukan scanning Wi-Fi dengan klik ikon play:
+
+   ![img 5](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%205.png)
+6. Di gambar ini ada beberapa bagian, antara lain:
+
+   ![img 6](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%206.png)
+
+   - `RSSI`: Kekuatan sinyal dari Access Point (AP) dalam satuan dBm.
+   - `ESSID`: Nama jaringan Wi-Fi.
+   - `BSSID`: Alamat MAC unik dari Access Point.
+   - `Vendor`: Produsen perangkat Access Point berdasarkan BSSID.
+   - `Encryption`: Jenis enkripsi yang digunakan oleh jaringan Wi-Fi.
+   - `Ch`: Kanal (channel) yang digunakan oleh Access Point.
+   - `Clients`: Jumlah perangkat klien yang saat ini terhubung ke AP tersebut.
+   - `Sent`: Jumlah paket data yang dikirim dari perangkat ke AP.
+   - `Recvd`: Jumlah paket data yang diterima dari AP oleh perangkat.
+   - `Seent`: Menunjukkan jumlah paket yang terdeteksi (seen) dari klien atau AP yang dipantau.
+8. Di sini, kita harus memilih BSSID target yang ingin diserang, lalu klik menu dropdownnya:
+
+   ![img 7](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%207.png)
+9. Di sini, kita dapat melakukan dua jenis serangan, antara lain:
+   - Capture Handshake
+   - Capture PMKID
+  
+   ![img 8](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%208.png)
+
+   Untuk Capture Handshake, klik `Deauthenticate Client`. Untuk Capture PMKID, klik `Associate`. Dalam panduan ini, kita akan memilih `Capture Handshake`.
+   
+   > Catatan:
+   >
+   > - Capture Handshake: Memerlukan setidaknya 1 klien yang aktif.
+   > - Capture PMKID: Tidak semua router mendukung PMKID.
+10. Setelah klik `Deauthenticate Client`, tunggu sampe handshake berhasil capture. Handshake dianggap berhasil capture kalo muncul ikon `kunci merah` pada bagian `Encryption` dan notifikasi `Captured handshake for station...`:
+
+    ![img 9](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%209.png)
+    
+11. Klik ikon Events:
+
+    ![img 10](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%2010.png)
+12. Klik salah satu dari ketiga item di bagian pesan:
+
+    ![img 11](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%2011.png)
+13. Dari gambar di bawah ini terlihat bahwa file handshake disimpan di: `/root/bettercap-wifi-handshakes.pcap`.
+
+    ![img 12](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%2012.png)
