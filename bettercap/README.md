@@ -18,6 +18,8 @@ Kali Linux:
 
 2. Pake Go:
 
+   Pake Go versi: `go1.24.7`
+   
    ```
    sudo apt-get update
    sudo apt install golang git build-essential libpcap-dev libusb-1.0-0-dev libnetfilter-queue-dev
