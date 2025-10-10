@@ -8,7 +8,7 @@ TP-LINK TL-WN722N V2/V3 kadang suka error pas lagi **scanning Wi-Fi** (tool `air
 
 Buat atasi masalah itu lu bisa instal kernel linux versi `5.15.5` pake script Bash yang gw bikin.
 
-Link nya ada di sini: [[link](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)
+Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)
 
 ## Instal
 
