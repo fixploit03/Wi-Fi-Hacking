@@ -4,7 +4,7 @@
 
 ## Info
 
-TP-LINK TL-WN722N V2/V3 kadang suka error pas lagi **scan Wi-Fi** pake tool `airodump-ng` target Wi-Fi nya kaga nongol sama masalah pas lagi **ngebalikin mode interface dari mode Monitor ke mode Managed**. 
+TP-LINK TL-WN722N V2/V3 kadang suka error pas lagi scan Wi-Fi pake tool `airodump-ng` target Wi-Fi nya kaga nongol sama masalah pas lagi ngebalikin mode interface dari mode Monitor ke mode Managed. 
 
 Buat atasi masalah itu lu bisa instal kernel linux versi `5.15.5` pake script Bash yang gw bikin.
 
