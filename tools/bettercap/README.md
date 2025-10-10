@@ -1,6 +1,6 @@
 # Bettercap
 
-![bettercap logo](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/bettercap%20logo.jpg)
+![bettercap logo](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/bettercap%20logo.jpg)
 
 [Bettercap](https://www.bettercap.org/) adalah sebuah framework yang kuat, mudah diperluas, dan portabel yang ditulis dalam [Go](https://id.wikipedia.org/wiki/Go_(bahasa_pemrograman)) yang bertujuan untuk menawarkan kepada peneliti keamanan, red teamer, dan reverse engineer sebuah solusi all-in-one yang mudah digunakan dengan semua fitur yang mungkin mereka perlukan untuk melakukan rekognisi dan menyerang jaringan [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi), perangkat [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy), perangkat [HID nirkabel](https://en.wikipedia.org/wiki/USB_human_interface_device_class), [CAN-bus](https://en.wikipedia.org/wiki/CAN_bus), dan jaringan [IPv4](https://en.wikipedia.org/wiki/IPv4)/[IPv6](https://en.wikipedia.org/wiki/IPv6).
 
