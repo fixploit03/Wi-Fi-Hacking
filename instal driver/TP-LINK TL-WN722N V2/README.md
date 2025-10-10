@@ -10,7 +10,7 @@ Buat atasi masalah itu lu bisa instal kernel linux versi `5.15.5` pake script Ba
 
 Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)
 
-## Instal
+## Cara Instal
 
 > **Catatan:** Harus instal dulu kernel linux versi `5.15.5`, baru instal drivernya.
 
