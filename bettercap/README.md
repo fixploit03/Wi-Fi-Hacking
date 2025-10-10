@@ -30,7 +30,7 @@ Kali Linux:
 
 Buat info lebih lengkapnya lagi bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
-## Cara Make
+## Cara Pake
 
 Sebelum pake Bettercap, kita harus mengaktifkan mode monitor dulu pake:
 
