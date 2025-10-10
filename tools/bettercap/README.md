@@ -28,7 +28,7 @@ Kali Linux:
    bettercap -version
    ```
 
-Buat info lebih lengkapnya lagi bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+Buat info lebih lengkapnya lagi lu bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
 ## Cara Pake
 
