@@ -4,7 +4,7 @@
 
 [Bettercap](https://www.bettercap.org/) adalah sebuah framework yang kuat, mudah diperluas, dan portabel yang ditulis dalam [Go](https://id.wikipedia.org/wiki/Go_(bahasa_pemrograman)) yang bertujuan untuk menawarkan kepada peneliti keamanan, red teamer, dan reverse engineer sebuah solusi all-in-one yang mudah digunakan dengan semua fitur yang mungkin mereka perlukan untuk melakukan rekognisi dan menyerang jaringan [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi), perangkat [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy), perangkat [HID nirkabel](https://en.wikipedia.org/wiki/USB_human_interface_device_class), [CAN-bus](https://en.wikipedia.org/wiki/CAN_bus), dan jaringan [IPv4](https://en.wikipedia.org/wiki/IPv4)/[IPv6](https://en.wikipedia.org/wiki/IPv6).
 
-## Instal
+## Cara Instal
 
 Kali Linux:
 
@@ -30,7 +30,7 @@ Kali Linux:
 
 Buat info lebih lengkapnya lagi bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
-## Penggunaan
+## Cara Make
 
 Sebelum pake Bettercap, kita harus mengaktifkan mode monitor dulu pake:
 
@@ -117,7 +117,7 @@ sudo bettercap -caplet [file_caplet]
 
 Contoh file capletnya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
 
-### 3. Mode WEB UI
+### 3. Mode Web UI
 
 Mode Web UI adalah mode di Bettercap yang menyediakan tampilan web, tujuannya itu biar kita bisa pake Bettercap lewat browser.
 
