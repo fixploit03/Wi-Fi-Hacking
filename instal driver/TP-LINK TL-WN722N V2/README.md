@@ -34,10 +34,10 @@ Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scr
    $ echo 'blacklist r8188eu' | sudo tee /etc/modprobe.d/realtek.conf
 
    # 6. Copot modul kernel bawaan 'r8188eu' jika sedang ter-load
-   sudo modprobe -r r8188eu
+   $ sudo modprobe -r r8188eu
    
    # 7. Instal driver pake DKMS
-   sudo ./dkms-install.sh
+   $ sudo ./dkms-install.sh
 
    # 8. Update tabel modul kernel
    $ sudo depmod -a
@@ -65,10 +65,10 @@ Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scr
    $ cd rtl8188eus
 
    # 5. Blacklist modul kernel bawaan 'r8188eu'
-   echo 'blacklist r8188eu' | sudo tee /etc/modprobe.d/realtek.conf
+   $ echo 'blacklist r8188eu' | sudo tee /etc/modprobe.d/realtek.conf
 
    # 6. Copot modul kernel bawaan 'r8188eu' jika sedang ter-load
-   sudo modprobe -r r8188eu
+   $ sudo modprobe -r r8188eu
 
    # 7. Compile driver
    $ make
