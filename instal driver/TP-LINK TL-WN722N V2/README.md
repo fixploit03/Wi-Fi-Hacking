@@ -85,3 +85,13 @@ Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scr
    # 11. Restart Kali Linux
    $ sudo reboot
    ```
+
+## Screenshot
+
+### 1. Kali Linux 2025.3
+
+![Kali Linux 2025.3](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/instal%20driver/TP-LINK%20TL-WN722N%20V2/img/kali%20linux.png)
+
+### 2. Parrot OS 6.4
+
+![Parrot OS 6.4](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/instal%20driver/TP-LINK%20TL-WN722N%20V2/img/parrot%20os.png)
