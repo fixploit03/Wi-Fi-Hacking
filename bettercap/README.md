@@ -28,7 +28,7 @@ Kali Linux:
    bettercap -version
    ```
 
-Untuk info lebih lengkapnya lagi bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+Buat info lebih lengkapnya lagi bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
 ## Penggunaan
 
@@ -138,7 +138,7 @@ sudo bettercap -eval "ui on"
 3. Klik ikon Wi-Fi:
 
    ![img 3](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%203.png)
-4. Pilih interface yang ingin dipake dengan klik menu dropdown:
+4. Pilih interface yang mau dipake dengan klik menu dropdown:
 
 
    ![img 4](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%204.png)
@@ -159,7 +159,7 @@ sudo bettercap -eval "ui on"
    - `Sent`: Jumlah paket data yang dikirim dari klien ke AP.
    - `Recvd`: Jumlah paket data yang diterima dari AP oleh klien.
    - `Seent`: Jumlah paket yang terdeteksi dari klien atau AP selama proses pemantauan.
-8. Di sini, kita harus pilih BSSID target yang ingin diserang, terus klik menu dropdownnya:
+8. Di sini, kita harus pilih BSSID target yang mau diserang, terus klik menu dropdownnya:
 
    ![img 7](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/img/ui%207.png)
 9. Di sini, kita bisa lakuin dua jenis serangan, yaitu:
