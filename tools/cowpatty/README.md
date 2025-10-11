@@ -45,12 +45,12 @@ Pre-computed PMK Caching adalah teknik yang dirancang untuk mengatasi kelemahan 
 
 Caranya:
 
-1. Bikin hash pmk pake `genpmk`:
+1. Buat hash pmk pake terlebih dahulu menggunakan `genpmk`:
 
    ```
    genpmk -f [wordlist] -d [output] -s [ssid] -v
    ```
-2. Jalanin:
+2. Jalankan:
 
    ```
    cowpatty -r [hash_pmk] -r [file_capture] -s [ssid] -v
