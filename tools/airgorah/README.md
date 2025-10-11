@@ -79,3 +79,7 @@ Dari rilis yang sudah dibuat sebelumnya:
 13. Dari gambar ini, kita berhasil meng-crack handshake-nya. PSK atau password Wi-Fi-nya adalah yang ada di bagian `KEY FOUND`, yaitu `*123456*`.
 
     ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/12.png)
+
+## Video Demonstrasi
+
+Link: [https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR](https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR)
