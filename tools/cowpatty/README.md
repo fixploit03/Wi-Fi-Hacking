@@ -1,6 +1,6 @@
 # Cowpatty
 
-![cowpatty](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/cowpatty/img/cowpatty%20logo.jpg)
+![Cowpatty](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/cowpatty/img/cowpatty%20logo.jpg)
 
 ## Instalasi
 
