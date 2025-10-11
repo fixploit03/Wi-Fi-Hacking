@@ -48,7 +48,7 @@ Dari rilis yang sudah dibuat sebelumnya:
 3. Ini merupakan interface dari Airgorah. Bagian atas itu untuk informasi mengenai Access Point (AP) dan bagian bawah itu untuk informasi mengenai client (station).
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/2.png)
-4. Pilih Wi-Fi yang ingin diaudit dengan mengklik pada bagian ESSID-nya.
+4. Pilih Wi-Fi yang ingin diaudit dengan mengklik pada bagian `ESSID-nya`.
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/3.png)
 5. Klik icon Wi-Fi warna biru yang ada garis miring warna merah untuk melakukan serangan deauth.
@@ -66,7 +66,7 @@ Dari rilis yang sudah dibuat sebelumnya:
 9. Simpan handshake yang berhasil di-capture ke dalam file berekstensi `.cap`.
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/8.png)
-10. Di sini disediakan teknik dictionary attack untuk meng-crack handshake yang telah berhasil kita capture.
+10. Di sini tersedia opsi dictionary attack untuk meng-crack handshake yang sudah berhasil kita capture.
 
     ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/9.png)
 11. Di sini tersedia opsi brute-force attack untuk meng-crack handshake yang sudah berhasil kita capture.
