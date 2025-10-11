@@ -53,7 +53,7 @@ Caranya:
 2. Jalankan:
 
    ```
-   cowpatty -r [hash_pmk] -r [file_capture] -s [ssid] -v
+   cowpatty -d [hash_pmk] -r [file_capture] -s [ssid] -v
    ```
 
 ## Video Demonstrasi
