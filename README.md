@@ -1,6 +1,4 @@
-# Repositori belajar Hack Wi-Fi 
-
-![](https://github.com/fixploit03/Hack-WiFi/blob/main/20250711_180730.jpg)
+Repositori untuk belajar keamanan jaringan Wi-Fi. 
 
 > **PERINGATAN** ⚠️
 > 
