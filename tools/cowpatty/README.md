@@ -28,7 +28,7 @@ Kali Linux:
 
 ### 1. Dictionary Attack (Manual/Basic)
 
-Jalankan:
+Jalankan Cowpatty:
 
 ```
 cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
@@ -41,7 +41,7 @@ cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
    ```
    genpmk -f [wordlist] -d [output] -s [ssid] -v
    ```
-2. Jalankan:
+2. Jalankan Cowpatty:
 
    ```
    cowpatty -d [hash_pmk] -r [file_capture] -s [ssid] -v
