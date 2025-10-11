@@ -54,7 +54,7 @@ Dari rilis yang sudah dibuat sebelumnya:
 5. Klik icon Wi-Fi warna biru yang ada garis miring warna merah untuk melakukan serangan deauth.
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/4.png)
-6. Di sini kita disediakan 2 tool untuk melakukan serangan deauth, yaitu `Aireplay-ng` dan `MDK4`. Kalian bebas mau menggunakan yang mana. Di sini juga terdapat 2 pilihan: mau deauth single client atau semua client. Kalau mau cepat mendapatkan handshake, pilih yang semua client.
+6. Di sini, disediakan dua tool untuk melakukan serangan deauth, yaitu `Aireplay-ng` dan `MDK4`. Kalian bebas memilih salah satunya. Di sini juga terdapat dua pilihan: deauth single client atau semua client. Jika ingin cepat mendapatkan handshake, pilih opsi semua client.
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/5.png)
 7. Tunggu proses deauth sampai kita mendapatkan handshake. Untuk mengetahui apakah kita sudah mendapatkan handshake atau belum, lihat pada kolom handshake yang ada di pojok kanan. Di gambar ini, kita sudah berhasil mendapatkan handshake yang ditandai dengan centang. Jika sudah, stop serangan deauth dengan mengklik icon silang warna merah.
@@ -66,10 +66,10 @@ Dari rilis yang sudah dibuat sebelumnya:
 9. Simpan handshake yang berhasil di-capture ke dalam file berekstensi `.cap`.
 
    ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/8.png)
-10. Di sini tersedia opsi dictionary attack untuk meng-crack handshake yang sudah berhasil kita capture.
+10. Di sini, tersedia opsi dictionary attack untuk meng-crack handshake yang sudah berhasil kita capture.
 
     ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/9.png)
-11. Di sini tersedia opsi brute-force attack untuk meng-crack handshake yang sudah berhasil kita capture.
+11. Di sini, tersedia opsi brute-force attack untuk meng-crack handshake yang sudah berhasil kita capture.
 
     ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/10.png)
 
