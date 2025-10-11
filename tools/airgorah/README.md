@@ -29,5 +29,10 @@ Dari rilis yang sudah dibuat sebelumnya:
    sudo airmon-ng start wlan0
    ```
 7. Cek kembali menggunakan `iwconfig` apakah mode interfacenya sudah berubah menjadi mode `Monitor`.
+8. Cek packet injection menggunakan:
+
+   ```
+   sudo aireplay-ng --test wlan0
+   ```
 
 ## Penggunaan
