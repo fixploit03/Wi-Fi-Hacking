@@ -7,6 +7,8 @@
 
 ## Instalasi
 
+Kali Linux:
+
 1. Menggunakan packet manager (`apt`):
 
    ```
@@ -39,9 +41,7 @@ cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
 
 ### 2. Pre-computed PMK Caching
 
-Pre-computed PMK Caching adalah teknik yang dirancang untuk mengatasi kelemahan kecepatan tersebut. Metode ini menggunakan alat pendamping Cowpatty, yaitu genpmk, untuk menghitung semua kemungkinan PMK dari sebuah wordlist dan satu SSID target tertentu terlebih dahulu. Hasil dari seluruh perhitungan PMK yang intensif ini kemudian disimpan dalam sebuah file cache berukuran besar di disk. Ketika Cowpatty dijalankan, ia tidak perlu lagi menghitung PMK dari awal, Cowpatty hanya membaca dan membandingkan hash yang sudah disimpan dalam cache tersebut dengan handshake yang ditangkap.
-
-Akibatnya, fase cracking menjadi jauh lebih cepat karena bagian perhitungan yang paling memberatkan sudah diselesaikan sebelumnya. Meskipun membutuhkan ruang penyimpanan yang besar dan hanya berlaku untuk satu SSID, metode ini sangat diandalkan untuk pengujian berulang pada jaringan yang sama.
+Pre-computed PMK Caching adalah teknik yang dirancang untuk mengatasi kelemahan kecepatan tersebut. Metode ini menggunakan alat pendamping Cowpatty, yaitu genpmk, untuk menghitung semua kemungkinan PMK dari sebuah wordlist dan satu SSID target tertentu terlebih dahulu. Hasil dari seluruh perhitungan PMK yang intensif ini kemudian disimpan dalam sebuah file cache berukuran besar di disk. Ketika Cowpatty dijalankan, ia tidak perlu lagi menghitung PMK dari awal, Cowpatty hanya membaca dan membandingkan hash yang sudah disimpan dalam cache tersebut dengan handshake yang ditangkap. Akibatnya, fase cracking menjadi jauh lebih cepat karena bagian perhitungan yang paling memberatkan sudah diselesaikan sebelumnya. Meskipun membutuhkan ruang penyimpanan yang besar dan hanya berlaku untuk satu SSID, metode ini sangat diandalkan untuk pengujian berulang pada jaringan yang sama.
 
 Caranya:
 
