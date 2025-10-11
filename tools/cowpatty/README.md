@@ -28,6 +28,8 @@ Kali Linux:
 
 ### 1. Dictionary Attack (Manual/Basic)
 
+Jalankan:
+
 ```
 cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
 ```
