@@ -13,12 +13,32 @@ sudo apt-get update
 sudo apt-get install python3 net-tools ieee-data aircrack-ng reaver tshark macchanger bully  cowpatty hashcat hashcat-data john john-data hcxdumptool hcxtools wifite
 ```
 
+## Setup Adapter Wi-Fi
+
+1. Pasang adapter Wi-Fi ke laptop/PC.
+2. Pada aplikasi VirtualBox klik tab `Devices` -> `USB` -> `Jenis/merek`.
+3. Pastikan checkbox nya sudah tercentang.
+4. Buka terminal.
+5. Ketikkan `iwconfig`, pastikan nama interface `wlan0` muncul.
+6. Kalau sudah muncul, aktifkan mode monitor menggunakan:
+
+   ```
+   sudo airmon-ng check kill
+   sudo airmon-ng start wlan0
+   ```
+7. Cek kembali menggunakan `iwconfig` apakah mode interfacenya sudah berubah menjadi mode `Monitor`.
+8. Cek packet injection menggunakan:
+
+   ```
+   sudo aireplay-ng --test wlan0
+   ```
+   
 ## Penggunaan
 
 ### 1. WEP
 
 ```
-suido wifite --kill -i [interface] --wep --require-fakeauth --keep-ivs
+sudo wifite --kill -i [interface] --wep --require-fakeauth --keep-ivs
 ```
 
 ### 2. WPA/WPA2-PSK
