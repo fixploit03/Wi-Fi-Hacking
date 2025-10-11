@@ -42,4 +42,4 @@ sudo wifite --kill -i [interface] --wpa --no-pmkid --wps --wps-only
 
 ## Video Demonstrasi:
 
-Link: [ini]()
+Link: [https://youtu.be/j7DtOmEaOiM?si=wsgmdfxon8Z5y7-C](https://youtu.be/j7DtOmEaOiM?si=wsgmdfxon8Z5y7-C)
