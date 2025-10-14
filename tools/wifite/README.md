@@ -1,6 +1,6 @@
 # Wifite
 
-![Wifite](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/wifite/img/wifite%20logo.jpg)
+![Wifite](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/wifite/img/wifite.jpg)
 
 ## Instalasi
 
