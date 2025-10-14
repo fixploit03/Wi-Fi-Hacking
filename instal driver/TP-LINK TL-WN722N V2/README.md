@@ -2,7 +2,7 @@
 
 ![TP-LINK TL-WN722N V2/V3](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/instal%20driver/TP-LINK%20TL-WN722N%20V2/img/TP-LINK%20TL-WN722N.png)
 
-## Info
+## Informasi 
 
 TP-LINK TL-WN722N (V2/V3) kadang mengalami kegagalan saat melakukan pemindaian Wi-Fi menggunakan airodump-ng, target Wi-Fi tidak muncul. Selain itu sering terjadi masalah ketika mengembalikan mode interface dari Monitor ke Managed.
 
@@ -10,7 +10,7 @@ Untuk mengatasi masalah tersebut, Anda dapat menginstal kernel Linux versi `5.15
 
 Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)
 
-## Cara Instal
+## Instal Driver
 
 > **Catatan:** Pastikan kernel Linux versi `5.15.5` sudah terinstal terlebih dahulu sebelum menginstal driver-nya.
 
