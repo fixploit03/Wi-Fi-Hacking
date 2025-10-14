@@ -4,17 +4,17 @@
 
 ## Info
 
-TP-LINK TL-WN722N V2/V3 kadang suka error pas lagi scan Wi-Fi pake tool `airodump-ng` target Wi-Fi nya kaga nongol sama masalah pas lagi ngebalikin mode interface dari mode Monitor ke mode Managed. 
+TP-LINK TL-WN722N (V2/V3) kadang mengalami kegagalan saat melakukan pemindaian Wi-Fi menggunakan airodump-ng, target Wi-Fi tidak muncul. Selain itu sering terjadi masalah ketika mengembalikan mode interface dari Monitor ke Managed.
 
-Buat atasi masalah itu lu bisa instal kernel linux versi `5.15.5` pake script Bash yang gw bikin.
+Untuk mengatasi masalah tersebut, Anda dapat menginstal kernel Linux versi `5.15.5` menggunakan script Bash yang telah saya buat.
 
 Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scripts/instal_kernel_linux_5.15.5.sh)
 
 ## Cara Instal
 
-> **Catatan:** Harus instal dulu kernel linux versi `5.15.5`, baru instal drivernya.
+> **Catatan:** Pastikan kernel Linux versi `5.15.5` sudah terinstal terlebih dahulu sebelum menginstal driver-nya.
 
-1. Pake DKMS:
+1. Menggunakan DKMS:
 
    ```
    # 1. Update & upgrade Kali Linux
@@ -48,7 +48,7 @@ Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scr
    # 10. Restart Kali Linux
    $ sudo reboot
    ```
-2. Compile:
+2. Melalui compile dari source:
 
    ```
    # 1. Update & upgrade Kali Linux
