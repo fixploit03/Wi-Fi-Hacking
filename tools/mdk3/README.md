@@ -57,14 +57,14 @@ sudo airodump-ng [interface]
    1. Blacklist mode:
 
       ```
-      mdk3 wlan0 d -b [file_blacklist] -c [channel]
+      sudo mdk3 wlan0 d -b [file_blacklist] -c [channel]
       ```
 
       Blacklist mode itu hanya melakukan deauth terhadap client yang ada di file `[file_blacklist]`. Client lainnya akan diabaikan.
    2. Whitelist mode:
 
       ```
-      mdk3 wlan0 d -w [file_whitelist] -c [channel]
+      sudo mdk3 wlan0 d -w [file_whitelist] -c [channel]
       ```
 
       Whitelist mode itu kebalikan dari blacklist mode. Semua client akan di-deauth, kecuali yang ada di file `[file_whitelist].` (dilindungi).
