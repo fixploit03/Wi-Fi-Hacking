@@ -18,7 +18,7 @@ Kali Linux:
    ```
    sudo apt-get update
    sudo apt-get install build-essential libpcap-dev git
-   https://github.com/t6x/reaver-wps-fork-t6x
+   git clone https://github.com/t6x/reaver-wps-fork-t6x
    cd reaver-wps-fork-t6x
    make
    sudo make install
