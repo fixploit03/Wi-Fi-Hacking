@@ -6,7 +6,7 @@
 
 Kali Linux
 
-Mengguakan packet manager (`apt`):
+Mengguakan package manager (`apt`):
 
 ```
 sudo apt-get update
