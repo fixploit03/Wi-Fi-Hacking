@@ -57,7 +57,7 @@ Kali Linux:
 
 3. Jalankan Serangan
 
-   1. PIN Brute Force Attack:
+   1. Brute Force PIN Attack:
 
       ```
       sudo reaver -i [interface] -b [bssid] -c [channel] -vv
