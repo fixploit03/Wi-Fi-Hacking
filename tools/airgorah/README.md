@@ -82,4 +82,4 @@ Dari rilis yang sudah dibuat sebelumnya:
 
 ## Video Demonstrasi
 
-Link: [https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR](https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR)
+[https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR](https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR)
