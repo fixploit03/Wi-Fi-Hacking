@@ -1,7 +1,5 @@
 # Author Cowpatty
 
-### Pembuat original (versi awal)
-
 <div align="center">
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/cowpatty/img/joshua%20wright.webp" width="50%"/>
     <p><b>Joshua Wright</b></p>
