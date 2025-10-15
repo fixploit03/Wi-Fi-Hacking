@@ -1,5 +1,8 @@
 Wash
 ====
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ wash
+
 Wash v1.6.6 WiFi Protected Setup Scan Tool
 Copyright (c) 2011, Tactical Network Solutions, Craig Heffner
 
@@ -27,6 +30,9 @@ Example:
 
 Reaver
 ======
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ reaver 
+
 Reaver v1.6.6 WiFi Protected Setup Attack Tool
 Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>
 
