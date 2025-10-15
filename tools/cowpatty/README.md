@@ -26,15 +26,13 @@ Kali Linux:
 
 ## Penggunaan
 
-### 1. Dictionary Attack (Manual/Basic)
-
-Jalankan Cowpatty:
+**1. Dictionary Attack (Manual/Basic):**
 
 ```
 cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
 ```
 
-### 2. Pre-computed PMK Caching
+**2. Pre-computed PMK Caching:**
 
 1. Buat hash PMK terlebih dahulu menggunakan `genpmk`:
 
@@ -49,4 +47,4 @@ cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
 
 ## Video Demonstrasi
 
-Link: [https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8](https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8)
+[https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8](https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8)
