@@ -1,8 +1,6 @@
-# Author Aircrack-NG
-
-### Pembuat original (versi awal)
-
 <div align="center">
+    <h2>Author Aircrack-NG</h2>
+    <p><b>Pembuat original (versi awal)</b></p>
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/aircrack-ng/img/Christophe%20Devine.jpg" width="50%"/>
     <p><b>Christophe Devine</b></p>
 </div>
