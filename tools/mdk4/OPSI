@@ -1,0 +1,25 @@
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ sudo mdk4 --help d
+  Sends deauthentication and disassociation packets to stations
+  based on data traffic to disconnect all clients from an AP.
+      -w <filename>
+         Read file containing MACs not to care about (Whitelist mode)
+      -b <filename>
+         Read file containing MACs to run test on (Blacklist Mode)
+      -s <pps>
+         Set speed in packets per second (Default: unlimited)
+      -x
+         Enable full IDS stealth by matching all Sequence Numbers
+         Packets will only be sent with clients' addresses
+      -c [chan,chan,...,chan[:speed]]
+         Enable channel hopping. When -c h is given, mdk4 will hop an all
+         14 b/g channels. Channel will be changed every 3 seconds,
+         if speed is not specified. Speed value is in milliseconds!
+      -E <AP ESSID>
+         Specify an AP ESSID to attack.
+      -B <AP BSSID>
+         Specify an AP BSSID to attack.
+      -S <Station MAC address>
+         Specify a station MAC address to attack.
+      -W <Whitelist Station MAC address>
+         Specify a whitelist station MAC.
