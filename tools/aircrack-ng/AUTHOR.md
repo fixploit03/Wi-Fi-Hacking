@@ -1,3 +1,4 @@
+<h1>Author Aircrack-NG</h1>
 <div align="center">
     <h2>Pembuat original Aircrack (versi awal)</h2>
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/aircrack-ng/img/Christophe%20Devine.jpg" width="50%"/>
@@ -7,5 +8,5 @@
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/aircrack-ng/img/Thomas%20d'Otreppe%20de%20Bouvette.jpeg" width="50%"/>
     <p><b>Thomas d'Otreppe de Bouvette (muts)</b></p>
 </div>
-<p>Dan kontributor open source lainnya.</p>
+<p><a href="https://github.com/aircrack-ng/aircrack-ng/graphs/contributors">Dan kontributor open source lainnya</a></p>
 
