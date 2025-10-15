@@ -51,12 +51,12 @@ Kali Linux:
 
 **1. Scan Wi-Fi:**
 
-1. Scan Semua Jaringan (Tanpa Filter):
+1. Scan semua jaringan (tanpa filter):
 
    ```
    sudo airodump-ng [interface]
    ```
-2. Filter berdasarkan Enkripsi:
+2. Filter berdasarkan enkripsi:
    - WEP:
 
       ```
@@ -122,15 +122,6 @@ Kali Linux:
    ```
    aircrack-ng -a 2 -b [bssid] [file_capture] -w [wordlist]
    ```
-   
-## Catatan Penting
-
-1. WEP:
-   - Agar serangan ARP Replay berhasil, minimal harus ada satu klien yang sedang terhubung ke Access Point (AP).
-   - Tanpa adanya klien yang terhubung, tidak ada traffic ARP yang dapat ditangkap dan di-replay, sehingga serangan kemungkinan besar akan gagal.
-2. WPA/WPA2-PSK:
-   - Untuk melakukan serangan Deauthentication dan menangkap 4-way handshake, diperlukan minimal satu klien yang terhubung ke jaringan.
-   - Jika tidak ada klien yang terhubung, tidak ada target yang dapat di-deauth, sehingga handshake tidak akan berhasil didapatkan.
 
 ## Video Demonstrasi
 
