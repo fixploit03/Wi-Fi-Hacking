@@ -80,6 +80,12 @@ Dari rilis yang sudah dibuat sebelumnya:
 
     ![](https://github.com/fixploit03/Hack-WiFi/blob/main/tools/airgorah/img/12.png)
 
+
+## Catatan Penting
+
+- Untuk melakukan serangan Deauthentication dan menangkap 4-way handshake, diperlukan minimal satu klien yang terhubung ke jaringan.
+- Jika tidak ada klien yang terhubung, tidak ada target yang dapat di-deauth, sehingga handshake tidak akan berhasil didapatkan.
+
 ## Video Demonstrasi
 
 [https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR](https://youtu.be/xP0b_xjAfYs?si=8-bA-A_oSXqPEwbR)
