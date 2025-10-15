@@ -1,6 +1,6 @@
 # Bettercap
 
-![bettercap logo](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/bettercap%20logo.jpg)
+![bettercap logo](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/bettercap/img/bettercap.jpg)
 
 ## Instalasi
 
