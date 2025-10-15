@@ -71,4 +71,4 @@ Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur 
 
 ## Video Demonstrasi
 
-Link: [https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8](https://youtu.be/0zo-ZgZr5Hk?si=LIz2BgHSCtb4exY8)
+https://youtu.be/ftriFQwsiNU?si=Ku-meK7gUpv-RXut
