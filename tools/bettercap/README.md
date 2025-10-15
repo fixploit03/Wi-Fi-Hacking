@@ -163,7 +163,7 @@ sudo bettercap -eval "ui on"
    - `Clients`: Jumlah client yang terhubung ke AP.
    - `Sent`: Jumlah paket data yang dikirim dari client ke AP.
    - `Recvd`: Jumlah paket data yang diterima dari AP oleh client.
-   - `Seent`: Jumlah paket yang terdeteksi dari client atau AP selama proses pemantauan.
+   - `Seent`: Jumlah paket yang terdeteksi dari client atau AP selama proses scanning.
 8. Pilih BSSID target yang ingin diserang, lalu klik menu dropdown:
 
    ![img 7](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%207.png)
