@@ -1,6 +1,6 @@
 # MDK4
 
-![MDK4](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/mdk3/img/mdk3_4.jpg)
+![MDK4](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/mdk4/img/mdk3_4.jpg)
 
 ## Instalasi
 
