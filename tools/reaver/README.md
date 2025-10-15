@@ -1,17 +1,15 @@
 # Reaver
 
-![Cowpatty](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/cowpatty/img/cowpatty.jpg)
+![Reaver](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/reaver/img/reaver.jpg)
 
 ## Instalasi
 
 Kali Linux:
 
-1. Menggunakan packet manager (`apt`):
-
-   ```
-   sudo apt-get update
-   sudo apt -y install reaver aircrack-ng pixiewps
-   ```
+```
+sudo apt-get update
+sudo apt -y install reaver aircrack-ng pixiewps
+```
 
 2. Melalui compile dari source:
    
