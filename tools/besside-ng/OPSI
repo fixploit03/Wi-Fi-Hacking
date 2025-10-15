@@ -1,0 +1,17 @@
+Gimme an interface name dude
+
+  Besside-ng 1.7  - (C) 2010 Andrea Bittau
+  https://www.aircrack-ng.org
+
+  Usage: besside-ng [options] <interface>
+
+  Options:
+
+       -b <victim mac>       Victim BSSID
+       -R <victim ap regex>  Victim ESSID regex (requires PCRE)
+       -s <WPA server>       Upload wpa.cap for cracking
+       -c <chan>             chanlock
+       -p <pps>              flood rate
+       -W                    WPA only
+       -v                    verbose, -vv for more, etc.
+       -h                    This help screen
