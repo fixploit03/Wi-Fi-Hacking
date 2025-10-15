@@ -175,9 +175,9 @@ sudo bettercap -eval "ui on"
 
    Jika ingin Capture Handshake, klik `Deauthenticate Client`. Jika ingin Capture PMKID, klik `Associate`. Dalam contoh ini, kita akan pilih `Capture Handshake`.
    
-   > Catatan:
+   > **Catatan:**
    >
-   > - Capture Handshake: Harus ada 1 client yang aktif.
+   > - Capture Handshake: Harus terdapat 1 client yang aktif/terhubung.
    > - Capture PMKID: Tidak semua router mendukung PMKID.
 10. Setelah klik `Deauthenticate Client`, tunggu hingga handshake berhasil di-capture. Handshake dianggap berhasil jika muncul ikon `kunci merah` di bagian `Encryption` dan muncul notifikasi `Captured handshake for station...`:
 
