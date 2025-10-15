@@ -2,6 +2,31 @@
 
 ![Aircrack-NG](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/aircrack-ng/img/aircrack-ng.jpg)
 
+## Instalasi
+
+Kali Linux:
+
+1. Menggunakan packet manager (`apt`):
+
+   ```
+   sudo apt-get update
+   sudo apt-get install aircrack-ng
+   ```
+
+2. Melalui compile dari source:
+   
+   ```
+   sudo apt-get update
+   sudo apt-get install build-essential autoconf automake libtool pkg-config libnl-3-dev libnl-genl-3-dev libssl-dev ethtool shtool rfkill zlib1g-dev libpcap-dev libsqlite3-dev libpcre2-dev libhwloc-dev libcmocka-dev hostapd wpasupplicant tcpdump screen iw usbutils expect
+   git clone https://github.com/aircrack-ng/aircrack-ng
+   cd aircrack-ng
+   autoreconf -i
+   ./configure --with-experimental
+   make
+   sudo make install
+   sudo ldconfig
+   ```
+
 ## Setup Adapter Wi-Fi
 
 1. Pasang adapter Wi-Fi ke laptop/PC.
