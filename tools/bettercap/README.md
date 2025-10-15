@@ -2,13 +2,11 @@
 
 ![bettercap logo](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/bettercap%20logo.jpg)
 
-[Bettercap](https://www.bettercap.org/) adalah sebuah framework yang kuat, mudah diperluas, dan portabel yang ditulis dalam [Go](https://id.wikipedia.org/wiki/Go_(bahasa_pemrograman)) yang bertujuan untuk menawarkan kepada peneliti keamanan, red teamer, dan reverse engineer sebuah solusi all-in-one yang mudah digunakan dengan semua fitur yang mungkin mereka perlukan untuk melakukan rekognisi dan menyerang jaringan [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi), perangkat [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy), perangkat [HID nirkabel](https://en.wikipedia.org/wiki/USB_human_interface_device_class), [CAN-bus](https://en.wikipedia.org/wiki/CAN_bus), dan jaringan [IPv4](https://en.wikipedia.org/wiki/IPv4)/[IPv6](https://en.wikipedia.org/wiki/IPv6).
-
-## Cara Instal
+## Instalasi
 
 Kali Linux:
 
-1. Pake packet manager (`apt`):
+1. Menggunakan package manager (`apt`):
 
    ```
    sudo apt-get update
@@ -16,9 +14,9 @@ Kali Linux:
    bettercap -version
    ```
 
-2. Pake Go:
+2. Menggunakan Go:
 
-   Pake Go versi: `go1.24.7`
+   Instalasi menggunakan Go harus sudah terinstal Go versi: `go1.24.7` atau lebih baru.
    
    ```
    sudo apt-get update
@@ -28,28 +26,39 @@ Kali Linux:
    bettercap -version
    ```
 
-Buat info lebih lengkapnya lagi lu bisa liat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
+Untuk informasi lebih lengkap, bisa dilihat di sini: [https://www.bettercap.org/project/installation/](https://www.bettercap.org/project/installation/)
 
-## Cara Pake
+## Setup Adapter Wi-Fi
 
-Sebelum pake Bettercap, lu harus ngaktifin mode monitor dulu pake:
+1. Pasang adapter Wi-Fi ke laptop/PC.
+2. Pada aplikasi VirtualBox klik tab `Devices` -> `USB` -> `Jenis/merek`.
+3. Pastikan checkbox nya sudah tercentang.
+4. Buka terminal.
+5. Ketikkan `iwconfig`, pastikan nama interface `wlan0` muncul.
+6. Kalau sudah muncul, aktifkan mode monitor menggunakan:
 
-```
-sudo airmon-ng check kill
-sudo airmon-ng start [interface]
-```
+   ```
+   sudo airmon-ng check kill
+   sudo airmon-ng start wlan0
+   ```
+7. Cek kembali menggunakan `iwconfig` apakah mode interfacenya sudah berubah menjadi mode `Monitor`.
+8. Cek packet injection menggunakan:
+
+   ```
+   sudo aireplay-ng --test wlan0
+   ```
+   
+## Penggunaan
 
 ### 1. Mode Interaktif
 
-Mode interaktif adalah mode di Bettercap di mana lu pake sesi interaktif dan masukin perintahnya secara manual satu-satu (interaktif).
-
-Jalanin:
+Mode interaktif adalah mode di Bettercap di mana Anda menggunakan sesi interaktif dan memasukkan perintah secara manual satu per satu.
 
 ```
 sudo bettercap
 ```
 
-> Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
+> Jika muncul error `No active interfaces found.`, gunakan opsi `-iface [interface]`.
 
 #### Capture Handshake
 
@@ -105,9 +114,7 @@ wifi.assoc *
 
 ### 2. Opsi Caplet
 
-Caplet adalah sekumpulan perintah Bettercap yang disimpen di file yang pake ekstensi `.cap`. Fungsinya itu buat mengotomatisasi eksekusi perintah-perintah yang ada di Bettercap, biar kita kaga usah lagi ngetikin perintah satu-satu secara manual.
-
-Jalanin:
+Caplet adalah sekumpulan perintah Bettercap yang disimpan dalam file berekstensi `.cap`. Fungsinya untuk mengotomatisasi eksekusi perintah-perintah di Bettercap, sehingga tidak perlu mengetik perintah satu per satu secara manual.
 
 ```
 sudo bettercap -caplet [file_caplet]
@@ -119,15 +126,13 @@ Contoh file capletnya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/
 
 ### 3. Mode Web UI
 
-Mode Web UI adalah mode di Bettercap yang menyediakan tampilan web, tujuannya itu biar kita bisa pake Bettercap lewat browser.
-
-Jalanin:
+Mode Web UI adalah mode di Bettercap yang menyediakan antarmuka web, sehingga kita bisa menggunakan Bettercap melalui browser.
 
 ```
 sudo bettercap -eval "ui on"
 ```
 
-1. Arahin kursor ke link yang ada di bagian `web ui starting on`, yaitu `http://127.0.0.1:80`, terus lu klik kanan dan pilih `Open Link`.
+1. Arahkan kursor ke link di bagian `web ui starting on`, yaitu `http://127.0.0.1:80`, kemudian klik kanan dan pilih `Open Link`.
 
    ![img 1](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%201.png)
 2. Masukkan kredensial login:
@@ -138,11 +143,11 @@ sudo bettercap -eval "ui on"
 3. Klik ikon Wi-Fi:
 
    ![img 3](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%203.png)
-4. Pilih interface yang mau lu pake dengan klik menu dropdownnya:
+4. Pilih interface yang ingin digunakan dengan klik menu dropdown:
 
 
    ![img 4](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%204.png)
-5. Mulai scanning Wi-Fi nya dengan klik ikon play:
+5. Mulai scanning Wi-Fi dengan klik ikon play:
 
    ![img 5](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%205.png)
 6. Di gambar ini ada beberapa bagian, yaitu:
@@ -153,37 +158,37 @@ sudo bettercap -eval "ui on"
    - `ESSID`: Nama Wi-Fi.
    - `BSSID`: Alamat MAC unik dari AP.
    - `Vendor`: Produsen AP berdasarkan BSSID.
-   - `Encryption`: Jenis enkripsi yang dipake oleh Wi-Fi.
-   - `Ch`: Channel yang dipake oleh AP.
+   - `Encryption`: Jenis enkripsi yang dipakai oleh Wi-Fi.
+   - `Ch`: Channel yang dipakai oleh AP.
    - `Clients`: Jumlah klien yang terhubung ke AP.
    - `Sent`: Jumlah paket data yang dikirim dari klien ke AP.
    - `Recvd`: Jumlah paket data yang diterima dari AP oleh klien.
    - `Seent`: Jumlah paket yang terdeteksi dari klien atau AP selama proses pemantauan.
-8. Di sini, lu harus pilih BSSID target yang lu mau diserang, terus klik menu dropdownnya:
+8. Pilih BSSID target yang ingin diserang, lalu klik menu dropdown:
 
    ![img 7](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%207.png)
-9. Di sini, lu bisa lakuin dua jenis serangan, yaitu:
+9. Tersedia dua jenis serangan yang dapat dilakukan:
    - Capture Handshake
    - Capture PMKID
   
    ![img 8](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%208.png)
 
-   Kalo lu mau Capture Handshake, klik yang `Deauthenticate Client`. Kalo lu mau Capture PMKID, klik yang `Associate`. Dalam kasus ini, gw bakal pilih `Capture Handshake`.
+   Jika ingin Capture Handshake, klik `Deauthenticate Client`. Jika ingin Capture PMKID, klik `Associate`. Dalam contoh ini, kita akan pilih `Capture Handshake`.
    
    > Catatan:
    >
    > - Capture Handshake: Harus ada 1 klien yang aktif.
-   > - Capture PMKID: Kaga semua router mendukung PMKID.
-10. Abis klik `Deauthenticate Client`, lu tungguin ampe handshakenya berhasil dicapture. Handshake dianggap berhasil dicapture kalo muncul ikon `kunci merah` dibagian `Encryption` dan nongol notifikasi `Captured handshake for station...`:
+   > - Capture PMKID: Tidak semua router mendukung PMKID.
+10. Setelah klik `Deauthenticate Client`, tunggu hingga handshake berhasil di-capture. Handshake dianggap berhasil jika muncul ikon `kunci merah` di bagian `Encryption` dan muncul notifikasi `Captured handshake for station...`:
 
     ![img 9](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%209.png)
     
 11. Klik ikon Events:
 
     ![img 10](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%2010.png)
-12. Klik salah satu dari 3 `Type` yang warna merah di bagian pesennya yang `Captured handshake for...`:
+12. Klik salah satu dari 3 `Type` berwarna merah di bagian pesan `Captured handshake for...`:
 
     ![img 11](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%2011.png)
-13. Dari gambar ini, keliatan kalo file handshakenya tuh disimpan di direktori: `/root` dan nama filenya adalah: `bettercap-wifi-handshakes.pcap`.
+13. Dari gambar ini, terlihat bahwa file handshake disimpan di direktori `/root` dengan nama file `bettercap-wifi-handshakes.pcap`.
 
     ![img 12](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%2012.png)
