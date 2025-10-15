@@ -122,15 +122,15 @@ Kali Linux:
    ```
    aircrack-ng -a 2 -b [bssid] [file_capture] -w [wordlist]
    ```
-
+   
 ## Catatan Penting
 
 1. WEP:
-   - Harus ada minimal 1 client yang terhubung ke AP untuk serangan ARP Replay berhasil.
-   - Jika tidak ada client yang terhubung, serangan akan gagal karena tidak ada traffic ARP yang bisa di-capture dan di-replay.
+   - Agar serangan ARP Replay berhasil, minimal harus ada satu klien yang sedang terhubung ke Access Point (AP).
+   - Tanpa adanya klien yang terhubung, tidak ada traffic ARP yang dapat ditangkap dan di-replay, sehingga serangan kemungkinan besar akan gagal.
 2. WPA/WPA2-PSK:
-   - Harus ada minimal 1 client yang terhubung untuk melakukan Deauth Attack.
-   - Jika tidak ada client, handshake tidak bisa ditangkap karena tidak ada yang bisa di-deauth.
+   - Untuk melakukan serangan Deauthentication dan menangkap 4-way handshake, diperlukan minimal satu klien yang terhubung ke jaringan.
+   - Jika tidak ada klien yang terhubung, tidak ada target yang dapat di-deauth, sehingga handshake tidak akan berhasil didapatkan.
 
 ## Video Demonstrasi
 
