@@ -1,4 +1,4 @@
-# Author Cowpatty
+## Author Cowpatty
 
 <div align="center">
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/cowpatty/img/joshua%20wright.webp" width="50%"/>
