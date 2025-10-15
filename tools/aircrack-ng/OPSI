@@ -1,5 +1,8 @@
 Airodump-NG
 ===========
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ airodump-ng
+
   Airodump-ng 1.7  - (C) 2006-2022 Thomas d'Otreppe
   https://www.aircrack-ng.org
 
@@ -75,6 +78,9 @@ No interface specified.
 
 Aireplay-NG
 ===========
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ aireplay-ng 
+
   Aireplay-ng 1.7  - (C) 2006-2022 Thomas d'Otreppe
   https://www.aircrack-ng.org
 
@@ -157,6 +163,9 @@ No replay interface specified.
 
 Aircrack-NG
 ===========
+┌──(fixploit03㉿fixploit03)-[~]
+└─$ aircrack-ng 
+
   Aircrack-ng 1.7  - (C) 2006-2022 Thomas d'Otreppe
   https://www.aircrack-ng.org
 
