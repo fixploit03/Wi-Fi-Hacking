@@ -1,6 +1,5 @@
-## Author Cowpatty
-
 <div align="center">
+    <h2>Author Cowpatty</h2>
     <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/cowpatty/img/joshua%20wright.webp" width="50%"/>
     <p><b>Joshua Wright</b></p>
 </div>
