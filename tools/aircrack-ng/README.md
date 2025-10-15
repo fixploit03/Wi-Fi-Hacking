@@ -71,7 +71,7 @@
       ```
       sudo aireplay-ng --arpreplay -b [bssid] -h [mac_interface] [interface]
       ```
-   3. Tunggu hingga IVs terkumpul cukup banyak
+   3. Tunggu hingga IVs terkumpul cukup banyak.
       - Minimal sekitar 40.000 - 85.000 IVs untuk WEP 64-bit
       - Minimal sekitar 85.000 - 150.000 IVs untuk WEP 128-bit
 2. WPA/WPA2-PSK:
@@ -103,7 +103,7 @@
 ## Catatan Penting
 
 1. WEP:
-   - Harus ada minimal 1 client yang terhubung ke Access Point untuk serangan ARP Replay berhasil.
+   - Harus ada minimal 1 client yang terhubung ke AP untuk serangan ARP Replay berhasil.
    - Jika tidak ada client yang terhubung, serangan akan gagal karena tidak ada traffic ARP yang bisa di-capture dan di-replay.
 2. WPA/WPA2-PSK:
    - Harus ada minimal 1 client yang terhubung untuk melakukan Deauth Attack.
