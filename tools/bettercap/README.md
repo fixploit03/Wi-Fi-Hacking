@@ -120,9 +120,9 @@ Caplet adalah sekumpulan perintah Bettercap yang disimpan dalam file berekstensi
 sudo bettercap -caplet [file_caplet]
 ```
 
-> Kalo muncul output error kaya gini `No active interfaces found.`. Pake opsi `-iface [interface]`.
+> Jika muncul error `No active interfaces found.`, gunakan opsi `-iface [interface]`.
 
-Contoh file capletnya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/bettercap/caplet.cap)
+Contoh file capletnya ada di sini: [https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/bettercap/caplet.cap](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/bettercap/caplet.cap)
 
 ### 3. Mode Web UI
 
@@ -132,7 +132,7 @@ Mode Web UI adalah mode di Bettercap yang menyediakan antarmuka web, sehingga ki
 sudo bettercap -eval "ui on"
 ```
 
-1. Arahkan kursor ke link di bagian `web ui starting on`, yaitu `http://127.0.0.1:80`, kemudian klik kanan dan pilih `Open Link`.
+1. Arahkan kursor ke link di bagian `web ui starting on`, yaitu `http://127.0.0.1:80`, kemudian klik kanan dan pilih `Open Link`:
 
    ![img 1](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%201.png)
 2. Masukkan kredensial login:
@@ -160,10 +160,10 @@ sudo bettercap -eval "ui on"
    - `Vendor`: Produsen AP berdasarkan BSSID.
    - `Encryption`: Jenis enkripsi yang dipakai oleh Wi-Fi.
    - `Ch`: Channel yang dipakai oleh AP.
-   - `Clients`: Jumlah klien yang terhubung ke AP.
-   - `Sent`: Jumlah paket data yang dikirim dari klien ke AP.
-   - `Recvd`: Jumlah paket data yang diterima dari AP oleh klien.
-   - `Seent`: Jumlah paket yang terdeteksi dari klien atau AP selama proses pemantauan.
+   - `Clients`: Jumlah client yang terhubung ke AP.
+   - `Sent`: Jumlah paket data yang dikirim dari client ke AP.
+   - `Recvd`: Jumlah paket data yang diterima dari AP oleh client.
+   - `Seent`: Jumlah paket yang terdeteksi dari client atau AP selama proses pemantauan.
 8. Pilih BSSID target yang ingin diserang, lalu klik menu dropdown:
 
    ![img 7](https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/tools/bettercap/img/ui%207.png)
@@ -177,7 +177,7 @@ sudo bettercap -eval "ui on"
    
    > Catatan:
    >
-   > - Capture Handshake: Harus ada 1 klien yang aktif.
+   > - Capture Handshake: Harus ada 1 client yang aktif.
    > - Capture PMKID: Tidak semua router mendukung PMKID.
 10. Setelah klik `Deauthenticate Client`, tunggu hingga handshake berhasil di-capture. Handshake dianggap berhasil jika muncul ikon `kunci merah` di bagian `Encryption` dan muncul notifikasi `Captured handshake for station...`:
 
