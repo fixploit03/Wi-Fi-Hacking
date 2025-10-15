@@ -6,7 +6,7 @@
 
 Kali Linux:
 
-1. Menggunakan packet manager (`apt`):
+1. Menggunakan package manager (`apt`):
 
    ```
    sudo apt-get update
