@@ -111,9 +111,7 @@
 
 ## Video Demonstrasi
 
-1. WEP:
-
-   Link: [https://youtu.be/L1kuud_8Nq4?si=0s5uupcoe9l8KmgP](https://youtu.be/L1kuud_8Nq4?si=0s5uupcoe9l8KmgP)
-2. WPA/WPA2-PSK:
-
-   Link: [https://youtu.be/ts5spqeq1Ew?si=OIiFeEqNsAOT4RZ6](https://youtu.be/ts5spqeq1Ew?si=OIiFeEqNsAOT4RZ6)
+1. WEP:  
+   [https://youtu.be/L1kuud_8Nq4?si=0s5uupcoe9l8KmgP](https://youtu.be/L1kuud_8Nq4?si=0s5uupcoe9l8KmgP)
+2. WPA/WPA2-PSK:  
+   [https://youtu.be/ts5spqeq1Ew?si=OIiFeEqNsAOT4RZ6](https://youtu.be/ts5spqeq1Ew?si=OIiFeEqNsAOT4RZ6)
