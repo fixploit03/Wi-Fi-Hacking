@@ -49,7 +49,7 @@ Kali Linux:
 
 ## Penggunaan
 
-### 1. Scan Wi-Fi:
+**1. Scan Wi-Fi:**
 
 1. Scan Semua Jaringan (Tanpa Filter):
 
@@ -69,7 +69,7 @@ Kali Linux:
       sudo airodump-ng --encrypt WPA,WPA2 [interface]
       ```
 
-### 2. Capture Handshake/IVs
+**2. Capture Handshake/IVs:**
 
 1. WEP:
 
@@ -82,7 +82,7 @@ Kali Linux:
    sudo airodump-ng --bssid [bssid] --channel [channel] --encrypt WPA,WPA2 --write [output] [interface]
    ```
 
-### 3. Jalankan Serangan:
+**3. Jalankan Serangan:**
 
 1. WEP:
 
@@ -112,7 +112,7 @@ Kali Linux:
       > - Kalau ingin deauth terus-menerus tanpa henti ganti `[jumlah]` dengan `0`.
    2. Tunggu hingga handshake tertangkap.
       - Lihat notifikasi `WPA handshake: [BSSID]` di `airodump-ng`.
-### 4. Crack Handshake/IVs
+**4. Crack Handshake/IVs:**
 
 1. WEP:
 
