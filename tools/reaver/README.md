@@ -55,7 +55,7 @@ Kali Linux:
 2. Pilih Taraget
    Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur WPS sedang terkunci (tidak bisa diserang).
 
-3. Jalankan Serangan
+3. Jalankan Serangan:
 
    1. Brute Force PIN Attack:
 
