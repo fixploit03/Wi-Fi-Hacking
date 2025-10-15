@@ -45,7 +45,7 @@ cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
    cowpatty -d [hash_pmk] -r [file_capture] -s [ssid] -v
    ```
 
-## Catatan:
+## Catatan Penting
 
 1. Metode Dictionary Attack (Manual/Basic):
    - Mode ini melakukan perhitungan PMK (Pairwise Master Key) secara real-time untuk setiap password dari wordlist, sehingga prosesnya sangat lambat karena harus melalui fungsi `PBKDF2` dengan 4096 iterasi.
