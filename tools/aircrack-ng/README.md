@@ -57,7 +57,6 @@ Kali Linux:
    sudo airodump-ng [interface]
    ```
 2. Filter berdasarkan Enkripsi:
-
    - WEP:
 
       ```
@@ -85,7 +84,6 @@ Kali Linux:
 **3. Jalankan Serangan:**
 
 1. WEP:
-
    1. Buat autentikasi palsu ke AP target:
 
       ```
@@ -100,7 +98,6 @@ Kali Linux:
       - Minimal sekitar 40.000 - 85.000 IVs untuk WEP 64-bit
       - Minimal sekitar 85.000 - 150.000 IVs untuk WEP 128-bit
 2. WPA/WPA2-PSK:
-
    1. Putuskan koneksi client menggunakan Deauth Attack:
 
       ```
@@ -112,6 +109,7 @@ Kali Linux:
       > - Kalau ingin deauth terus-menerus tanpa henti ganti `[jumlah]` dengan `0`.
    2. Tunggu hingga handshake tertangkap.
       - Lihat notifikasi `WPA handshake: [BSSID]` di `airodump-ng`.
+        
 **4. Crack Handshake/IVs:**
 
 1. WEP:
