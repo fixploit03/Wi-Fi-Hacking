@@ -1,8 +1,8 @@
 # Pendahuluan
 
-Selamat datang di repositori ini, yang dirancang sebagai panduan praktis untuk mempelajari pengujian penetrasi (pentest) jaringan Wi-Fi dalam lingkungan laboratorium yang aman dan terkendali. Repositori ini berfokus pada simulasi teknik pentest Wi-Fi untuk tujuan pembelajaran. Repositori ini memberikan dasar-dasar yang diperlukan untuk memulai, termasuk persiapan lab, perangkat keras, perangkat lunak, serta pedoman etika dan hukum.
+Selamat datang di repositori ini, yang dirancang sebagai panduan praktis untuk mempelajari pengujian penetrasi (pentest) jaringan Wi-Fi dalam lingkungan laboratorium yang aman dan terkendali. Repositori ini berfokus pada simulasi teknik pentest Wi-Fi untuk tujuan pembelajaran.
 
-Pentest Wi-Fi adalah bidang yang menarik namun sensitif dalam keamanan siber. Dengan memahami cara kerja serangan terhadap jaringan nirkabel, Anda dapat belajar melindungi jaringan Anda sendiri atau membantu organisasi meningkatkan keamanan mereka. Repositori ini ditujukan untuk pemula hingga profesional yang ingin memperdalam keterampilan mereka secara bertanggung jawab.
+Pentest Wi-Fi adalah bidang yang menarik namun sensitif dalam keamanan siber. Dengan memahami cara kerja serangan terhadap jaringan Wi-Fi, Anda dapat belajar melindungi jaringan Anda sendiri atau membantu organisasi meningkatkan keamanan mereka. Repositori ini ditujukan untuk pemula hingga profesional yang ingin memperdalam keterampilan mereka secara bertanggung jawab.
 
 ## Tujuan Dari Repositori Ini
 
