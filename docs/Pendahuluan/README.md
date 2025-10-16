@@ -42,4 +42,4 @@ Pengujian penetrasi jaringan Wi-Fi harus dilakukan dengan penuh tanggung jawab d
 - **Edukasi, Bukan Kejahatan:** Tujuan utama repositori ini adalah edukasi. Gunakan pengetahuan ini untuk meningkatkan keamanan jaringan, bukan untuk merugikan orang lain.
 - **Sumber Daya Hukum:** Pelajari regulasi keamanan siber di Indonesia, seperti Peraturan Pemerintah Nomor 71 Tahun 2019 tentang Penyelenggaraan Sistem dan Transaksi Elektronik, untuk memahami batasan aktivitas pentest.
 
-Dengan mematuhi etika dan hukum, Anda dapat belajar dengan aman sekaligus berkontribusi pada komunitas keamanan siber yang positif. Jika Anda tidak yakin tentang legalitas suatu tindakan, konsultasikan dengan ahli hukum atau profesional keamanan siber.
+Dengan mematuhi etika dan hukum, Anda dapat belajar dengan aman sekaligus berkontribusi pada komunitas keamanan siber yang positif.
