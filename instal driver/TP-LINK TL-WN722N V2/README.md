@@ -85,3 +85,10 @@ Link nya ada di sini: [https://github.com/fixploit03/Wi-Fi-Hacking/blob/main/scr
    # 11. Restart Kali Linux
    $ sudo reboot
    ```
+
+## Video Demonstrasi
+
+- Instal Driver TP-LINK TL-WN722N V2/V3 di Kali Linux:
+  https://youtu.be/D_9mTjkAzM8?si=kFx-EhFpboVEUfoD
+- Memperbaiki Masalah Pada TP-LINK TL-WN722N V2/V3 di Kali Linux:
+  https://youtu.be/5qAqG-FzZiQ?si=l1YrXR0xpP_ItDnS
