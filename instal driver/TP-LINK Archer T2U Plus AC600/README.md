@@ -1,6 +1,6 @@
 # TP-LINK Archer T2U Plus AC600
 
-![TP-LINK Archer T2U Plus AC600]()
+![TP-LINK Archer T2U Plus AC600](https://github.com/fixploit03/Pentest-WiFi/blob/main/instal%20driver/TP-LINK%20Archer%20T2U%20Plus%20AC600/img/tplink-t2u-plus.jpg)
 
 ## Instal Driver
 
