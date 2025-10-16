@@ -16,6 +16,7 @@ Link Tutorial:
 
 Link Tutorial:
 - [Mr Giga](https://youtu.be/bJcPo-j_3oI?si=Di_MgdKCNSjjavqb)
+- [Ketutrate](https://youtu.be/WTvlcHpC778?si=E8ULlxooHZuNS4wa)
 
 ## Instal Kali Linux di VirtualBox
 
@@ -55,13 +56,16 @@ Link Tutorial:
 
   Link Tutorial:
   - [Wahyu Pambudi](https://youtu.be/QDGJGUQni5g?si=q1sUP6HAFzYqG94r)
+  - [Studioungu](https://youtu.be/ebuEuvkRCOM?si=8KXW6P-i6v-d7hqX)
 
 - Buat shared folder antara host dan guest (opsional):
 
   Link Tutorial:
   - [IT House Media](https://youtu.be/KK7Gp36ZVHQ?si=nxck1ZK1ETvk6Xr8)
+  - [Ilmu Komputer dan Pendidikan](https://youtu.be/lStBH7BJUe4?si=fsjUgIQM1Tuge_JZ)
 
 - Update repositori Kali Linux:
   
   Link Tutorial:
+  - [Meta4sec](https://youtu.be/RhvAC61zlHI?si=ON_E8pwCzY4ayKNn)
   - [Fixploit03](https://youtu.be/VyK5ywA1CEY?si=08y2Rp0lqz7-9AWN)
