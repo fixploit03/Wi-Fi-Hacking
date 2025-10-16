@@ -2,28 +2,6 @@
 
 ![MDK4](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/mdk4/img/mdk3_4.jpg)
 
-## Instalasi
-
-Kali Linux:
-
-1. Menggunakan package manager (`apt`):
-
-   ```
-   sudo apt-get update
-   sudo apt-get install mdk4 aircrack-ng
-   ```
-
-2. Melalui compile dari source:
-   
-   ```
-   sudo apt-get update
-   sudo apt-get install pkg-config libnl-3-dev libnl-genl-3-dev libpcap-dev git
-   git clone https://github.com/aircrack-ng/mdk4
-   cd mdk4
-   make
-   sudo make install
-   ```
-
 ## Setup Adapter Wi-Fi
 
 1. Pasang adapter Wi-Fi ke laptop/PC.
