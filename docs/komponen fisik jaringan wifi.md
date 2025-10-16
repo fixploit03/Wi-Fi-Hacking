@@ -24,7 +24,7 @@ Router adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaring
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/ap.jpg" width="50%" />
 </div>
 
-Access Point (AP) adalah perangkat jaringan yang memungkinkan perangkat nirkabel, seperti laptop, ponsel, atau tablet, untuk terhubung ke jaringan komputer, biasanya melalui Wi-Fi. Access Point berfungsi sebagai titik akses yang menghubungkan perangkat nirkabel ke jaringan kabel (seperti jaringan lokal/LAN) atau ke router untuk akses internet.
+Access Point (AP) adalah perangkat yang memungkinkan perangkat nirkabel, seperti laptop, ponsel, atau tablet, untuk terhubung ke jaringan komputer, biasanya melalui Wi-Fi. Access Point berfungsi sebagai titik akses yang menghubungkan perangkat nirkabel ke jaringan kabel (seperti jaringan lokal/LAN) atau ke router untuk akses internet.
 
 ## 4. Client/Station (STA)
 
