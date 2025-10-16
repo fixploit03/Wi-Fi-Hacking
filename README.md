@@ -8,7 +8,7 @@
   - [Distro Linux](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#distro-linux)
   - [File ISO](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#file-iso)
 - [Setup Lab]()
-  - [Aktifkan fitur virtualisasi di BIOS/UEFI]()
+  - [Aktifkan Fitur virtualisasi di BIOS/UEFI]()
   - [Instal VirtualBox di Windows]()
   - [Instal VirtualBox Extension Pack]()
   - [Instal Kali Linux di VirtualBox]()
