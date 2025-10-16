@@ -23,13 +23,7 @@
    # 5. Instal driver pake DKMS
    $ sudo ./dkms-install.sh
 
-   # 6. Update tabel modul kernel
-   $ sudo depmod -a
-
-   # 7. Muat modul driver baru ke kernel
-   $ sudo modprobe 8188eu
-
-   # 8. Restart Kali Linux
+   # 6. Restart Kali Linux
    $ sudo reboot
    ```
 2. Melalui compile dari source:
@@ -54,17 +48,11 @@
    # 6. Instal modul hasil compile ke sistem
    $ sudo make install
 
-   # 7. Update tabel modul kernel
-   $ sudo depmod -a
-
-   # 8. Muat modul driver baru ke kernel
-   $ sudo modprobe 8188eu
-
-   # 99. Restart Kali Linux
+   # 7. Restart Kali Linux
    $ sudo reboot
    ```
 
 ## Video Demonstrasi
 
-Instal Driver TP-LINK Archer T2U Plus AC600 di Kali Linux:
- 
+- Instal Driver TP-LINK Archer T2U Plus AC600 di Kali Linux:  
+  [https://youtu.be/YQ8M65tNIBw?si=9XenNki0VbwfHgw_](https://youtu.be/YQ8M65tNIBw?si=9XenNki0VbwfHgw_)
