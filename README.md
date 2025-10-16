@@ -6,7 +6,7 @@
   - [Cowpatty]()
   - [MDK3]()
   - [MDK4]()
-  - [Pixiewps]()
+  - [PixieWPS]()
   - [Reaver]()
   - [Wifite]()
 - [Instal Driver]()
