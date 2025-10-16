@@ -3,11 +3,11 @@
 ![Pentest Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/WiFi_Logo.svg.png)
 
 ## Daftar Isi:
-- [Pendahuluan](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#pendahuluan)
-  - [Tujuan Dari Repositori Ini](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#tujuan-dari-repositori-ini)
-  - [Disclaimer & Tanggung Jawab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#disclaimer--tanggung-jawab)
-  - [Larangan Keras](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#larangan-keras)
-  - [Etika & Hukum](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#etika--hukum)
+- [Pendahuluan](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#pendahuluan)
+  - [Tujuan Dari Repositori Ini](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#tujuan-dari-repositori-ini)
+  - [Disclaimer & Tanggung Jawab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#disclaimer--tanggung-jawab)
+  - [Larangan Keras](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#larangan-keras)
+  - [Etika & Hukum](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#etika--hukum)
 - [Komponen Fisik Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#komponen-fisik-jaringan-wi-fi)
   - [Modem](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#1-modem)
   - [Router](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#2-router)
