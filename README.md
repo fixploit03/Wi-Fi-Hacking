@@ -1,7 +1,9 @@
 ## Daftar Isi:
-- [Persiapan Lab & Alat]()
-  - [Hardware yang Dibutuhkan]()
-  - [Software & Distro]()
+- [Persiapan Lab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#persiapan-lab)
+  - [Hardware](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#hardware)
+  - [Software](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#software)
+  - [Distro Linux](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#distro-linux)
+  - [File ISO](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#file-iso)
 - [Pengenalan Tools](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#pengenalan-tools)
   - [Aircrack-NG suite](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#aircrack-ng-suite)
   - [Airgorah](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#airgorah)
