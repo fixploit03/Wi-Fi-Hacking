@@ -14,6 +14,25 @@ Repositori ini bertujuan untuk:
 - **Memberikan Rekomendasi Alat:** Menyediakan daftar perangkat keras (hardware) dan perangkat lunak (software) yang diperlukan, termasuk file ISO (seperti `Kali Linux`) sebagai media instalasi sistem operasi pentest.
 - **Membangun Komunitas Bertanggung Jawab:** Mengajak pengguna untuk berbagi pengetahuan dan berkontribusi pada repositori ini dengan tetap mematuhi etika dan hukum keamanan siber.
 
+## Disclaimer & Tanggung Jawab
+
+Repositori ini dibuat HANYA untuk **tujuan edukasi dan penelitian keamanan siber.** Semua **teknik**, **tools**, dan **metode yang dijelaskan di sini dimaksudkan untuk**:
+- Meningkatkan pemahaman tentang keamanan jaringan Wi-Fi.
+- Melakukan penetration testing pada infrastruktur yang ANDA MILIKI.
+- Membantu profesional keamanan siber dalam mengamankan jaringan.
+- Mendukung pembelajaran ethical hacking dan cybersecurity.
+
+## Larangan Keras
+
+DILARANG melakukan aktivitas berikut:
+- Mengakses jaringan Wi-Fi tanpa izin eksplisit dari pemilik jaringan.
+- Melakukan serangan terhadap Wi-Fi publik (cafe, hotel, bandara, dll).
+- Mencuri data atau informasi pribadi orang lain.
+- Mengganggu layanan jaringan yang bukan milik Anda.
+- Menggunakan teknik ini untuk tujuan ilegal atau merugikan pihak lain.
+- Menjual akses Wi-Fi hasil cracking kepada orang lain.
+- Menyebarluaskan informasi kredensial yang diperoleh tanpa izin.
+
 ## Etika & Hukum
 
 Pengujian penetrasi jaringan Wi-Fi harus dilakukan dengan penuh tanggung jawab dan mematuhi hukum yang berlaku, terutama di Indonesia. Berikut adalah pedoman etika dan hukum yang wajib dipahami:
