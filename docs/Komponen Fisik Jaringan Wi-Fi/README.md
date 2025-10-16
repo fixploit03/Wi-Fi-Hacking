@@ -13,7 +13,7 @@ Modem adalah perangkat yang digunakan untuk menghubungkan jaringan lokal (LAN) k
 ## 2. Router
 
 <div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/router.jpg width="50%" />
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/router.jpg" width="50%" />
 </div>
 
 Router adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
@@ -37,7 +37,7 @@ Client atau Station adalah perangkat yang terhubung ke jaringan nirkabel melalui
 ## 5. Antena
 
 <div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/client.jpeg" width="50%">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/antena.jpg" width="50%">
 </div>
 
 Antena adalah perangkat yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi.
