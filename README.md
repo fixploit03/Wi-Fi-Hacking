@@ -1,4 +1,7 @@
 ## Daftar Isi:
+- [Pendahuluan]()
+  - [Tujuan Dari Repositori Ini]()
+  - [Etika & Hukum]()
 - [Persiapan Lab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#persiapan-lab)
   - [Hardware](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#hardware)
   - [Software](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#software)
