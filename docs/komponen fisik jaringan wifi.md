@@ -2,6 +2,10 @@
 
 ## Access Point (AP)
 
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/ap.jpg" width="50%" />
+</div>
+
 Ini adalah komponen utama yang bertindak sebagai **gerbang** dan memancarkan sinyal nirkabel. Dalam pentest, AP adalah target serangan paling umum untuk mendapatkan akses ke jaringan.
 
 Peran dalam Jaringan:
@@ -11,6 +15,10 @@ Peran dalam Jaringan:
 
 ## Client/Station (STA)
 
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/client.jpeg" width="50%" />
+</div>
+
 Client atau Station adalah perangkat pengguna akhir yang terhubung ke AP, seperti **laptop**, **smartphone**, atau **printer nirkabel**.
 
 Peran dalam Jaringan:
@@ -19,6 +27,10 @@ Peran dalam Jaringan:
 
 ## Wireless Adapter/NIC (Network Interface Card)
 
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/nic.png" width="50%" />
+</div>
+
 Ini adalah kartu yang memungkinkan perangkat (baik AP maupun clinet) berkomunikasi secara nirkabel. Dalam konteks client dan router modern, NIC sering kali tertanam di dalam perangkat.
 
 Peran dalam Jaringan:
@@ -26,6 +38,10 @@ Peran dalam Jaringan:
 - **Identifikasi:** Memiliki alamat MAC Address yang unik.
 
 ## Router
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/router.jpg" width="50%" />
+</div>
 
 Dalam konteks Wi-Fi, router sering kali berfungsi ganda sebagai Access Point dan juga mengelola fungsi jaringan yang lebih luas, seperti pemberian alamat IP (DHCP) dan pemisahan jaringan (Firewall).
 
