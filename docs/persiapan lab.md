@@ -3,7 +3,7 @@
 ## Hardware
 
 - Laptop/PC
-- Adapter Wi-Fi yang support mode monitor dan packet ijention.
+- Adapter Wi-Fi yang support mode monitor dan packet injection.
 - Router untuk LAB Wi-Fi
 
 ## Software
