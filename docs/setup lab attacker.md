@@ -56,7 +56,7 @@ Link Tutorial:
 
   Link Tutorial:
   - [Wahyu Pambudi](https://youtu.be/QDGJGUQni5g?si=q1sUP6HAFzYqG94r)
-  - [Studioungu](https://youtu.be/ebuEuvkRCOM?si=8KXW6P-i6v-d7hqX)
+  - [Studioungus](https://youtu.be/ebuEuvkRCOM?si=8KXW6P-i6v-d7hqX)
 
 - Buat shared folder antara host dan guest (opsional):
 
