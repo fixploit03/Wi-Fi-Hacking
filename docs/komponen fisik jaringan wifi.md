@@ -56,7 +56,7 @@ Peran dalam Jaringan:
 ## Antena
 
 <div align="center">
-  <img src="" width="50%">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/antena.jpg" width="50%">
 </div>
 
 Antena adalah komponen fisik yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi. Dalam pentest, antena dapat menjadi faktor penting karena memengaruhi kekuatan dan jangkauan sinyal, yang dapat dieksploitasi untuk analisis atau serangan jarak jauh.
@@ -69,7 +69,7 @@ Peran dalam Jaringan:
 ## Repeater/Extender
 
 <div align="center">
-  <img src="" width="50%">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/repeater.jpeg" width="50%">
 </div>
 
 Repeater atau Extender adalah perangkat yang digunakan untuk memperluas jangkauan sinyal Wi-Fi dengan menerima dan memancarkan ulang sinyal dari Access Point (AP) atau router. Dalam pentest, repeater dapat menjadi titik lemah karena sering kali memiliki konfigurasi keamanan yang kurang ketat.
@@ -83,7 +83,7 @@ Peran dalam Jaringan:
 ## Switch/Hub
 
 <div align="center">
-  <img src="" width="50%">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/switch.jpg" width="50%">
 </div>
 
 Switch atau Hub adalah perangkat yang digunakan untuk menghubungkan beberapa perangkat dalam jaringan kabel, seperti komputer, Access Point (AP), atau router. Dalam pentest, switch atau hub dapat menjadi target untuk analisis lalu lintas jaringan atau eksploitasi konfigurasi yang lemah.
