@@ -75,7 +75,7 @@ sudo airodump-ng [interface]
 
       - Whitelist mode melakukan deauth terhadap semua MAC address, kecuali yang ada di file `[file_whitelist]`.
       - File `[file_whitelist]` berisi MAC address AP (BSSID) atau client yang akan dilindungi dari deauth.
-   4. Speed Control:
+   4. Speed control:
 
       ```
       sudo mdk4 [interface] d -s [speed] -c [channel]
