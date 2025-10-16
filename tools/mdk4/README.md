@@ -1,26 +1,6 @@
 # MDK4
 
 ![MDK4](https://github.com/fixploit03/Pentest-WiFi/blob/main/tools/mdk4/img/mdk3_4.jpg)
-
-## Setup Adapter Wi-Fi
-
-1. Pasang adapter Wi-Fi ke laptop/PC.
-2. Pada aplikasi VirtualBox klik tab `Devices` -> `USB` -> `Jenis/merek`.
-3. Pastikan checkbox nya sudah tercentang.
-4. Buka terminal.
-5. Ketikkan `iwconfig`, pastikan nama interface `wlan0` muncul.
-6. Kalau sudah muncul, aktifkan mode monitor menggunakan:
-
-   ```
-   sudo airmon-ng check kill
-   sudo airmon-ng start wlan0
-   ```
-7. Cek kembali menggunakan `iwconfig` apakah mode interfacenya sudah berubah menjadi mode `Monitor`.
-8. Cek packet injection menggunakan:
-
-   ```
-   sudo aireplay-ng --test wlan0
-   ```
    
 ## Penggunaan
 
