@@ -14,7 +14,7 @@
   - [Instal Kali Linux di VirtualBox]()
   - [Instal Parrot OS Security Edition di VirtualBox]()
   - [Konfigurasi Jaringan VM]()
-  - [Koneksi & Driver Wi-Fi]()
+  - [Menyambungkan Adapter Wi-Fi ke VirtualBox]()
   - [Optimasi & Kenyamanan]()
 - [Pengenalan Tools](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#pengenalan-tools)
   - [Aircrack-NG suite](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#aircrack-ng-suite)
