@@ -1,6 +1,6 @@
 # Komponen Fisik Jaringan Wi-Fi
 
-## Access Point (AP)
+## 1. Access Point (AP)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/ap.jpg" width="50%" />
@@ -13,7 +13,7 @@ Peran dalam Jaringan:
 - **Manajemen Sinyal:** Mengelola SSID, channel frekuensi, dan daya pancar.
 - **Enkripsi:** Bertanggung jawab menerapkan protokol keamanan (`WEP`, `WPA`, `WPA2`, `WPA3`) dan manajemen kunci.
 
-## Client/Station (STA)
+## 2. Client/Station (STA)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/client.jpeg" width="50%" />
@@ -25,7 +25,7 @@ Peran dalam Jaringan:
 - **Penerima Sinyal:** Berinteraksi dan bertukar data dengan Access Point.
 - **Otentikasi:** Menyediakan kredensial (kata sandi) untuk proses otentikasi jaringan.
 
-## Wireless Adapter/NIC (Network Interface Card)
+## 3. Wireless Adapter/NIC (Network Interface Card)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/nic.png" width="50%" />
@@ -37,7 +37,7 @@ Peran dalam Jaringan:
 - **Media Transmisi:** Mengubah data digital menjadi sinyal radio (radio wave) dan sebaliknya, sesuai standar `IEEE 802.11`.
 - **Identifikasi:** Memiliki alamat MAC Address yang unik.
 
-## Router
+## 4. Router
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/router.jpg" width="50%" />
