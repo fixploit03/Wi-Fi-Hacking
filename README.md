@@ -7,7 +7,7 @@
   - [Software](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#software)
   - [Distro Linux](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#distro-linux)
   - [File ISO](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#file-iso)
-- [Setup Lab]()
+- [Setup Lab Attacker]()
   - [Aktifkan Fitur Virtualisasi (Intel VT-x / AMD-V) di BIOS/UEFI]()
   - [Instal VirtualBox di Windows]()
   - [Instal VirtualBox Extension Pack]()
