@@ -44,7 +44,7 @@ Tanpa enkripsi, jaringan menjadi terbuka (Open) dan sangat rentan.
 
 Cipher adalah algoritma matematis spesifik yang digunakan di dalam skema enkripsi untuk melakukan proses pengacakan data. Dua cipher umum dalam Wi-Fi adalah `TKIP` (yang lebih tua dan kurang aman) dan `AES` (Advanced Encryption Standard), yang merupakan standar kuat dan direkomendasikan untuk keamanan optimal.
 
-## Authentication
+## Authentication Method
 
 Authentication Method adalah protokol yang memverifikasi identitas perangkat sebelum diizinkan bergabung dengan jaringan yang dilindungi. 
 
