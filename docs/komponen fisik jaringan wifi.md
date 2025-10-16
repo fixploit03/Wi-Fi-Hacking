@@ -8,7 +8,7 @@ Komponen fisik jaringan Wi-Fi adalah perangkat keras (hardware) yang digunakan u
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/modem.webp" width="50%" />
 </div>
 
-Modem adalah perangkat yang menghubungkan jaringan lokal (LAN) ke penyedia layanan internet (ISP) dengan mengubah sinyal digital menjadi sinyal analog atau sebaliknya.
+Modem adalah perangkat yang digunakan untuk menghubungkan jaringan lokal (LAN) ke penyedia layanan internet (ISP) dengan mengubah sinyal digital menjadi sinyal analog atau sebaliknya.
 
 ## 2. Router
 
@@ -16,7 +16,7 @@ Modem adalah perangkat yang menghubungkan jaringan lokal (LAN) ke penyedia layan
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/router.jpg" width="50%" />
 </div>
 
-Router adalah perangkat jaringan yang berfungsi untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
+Router adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
 
 ## 3. Access Point (AP)
 
@@ -40,7 +40,7 @@ Client atau Station adalah perangkat yang terhubung ke jaringan nirkabel melalui
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/antena.jpg" width="50%">
 </div>
 
-Antena adalah komponen fisik yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi.
+Antena adalah perangkat yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi.
 
 ## 6. Repeater/Extender
 
