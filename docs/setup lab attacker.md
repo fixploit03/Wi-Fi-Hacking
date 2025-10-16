@@ -35,8 +35,20 @@ Link Tutorial:
 - [Case Tec](https://youtu.be/E3i6bkrgC8c?si=nwHqqQrJ8patosaL)
 - [Kuman Labs](https://youtu.be/R6prlDcQSAc?si=t1jtZG8OehPc2-8R)
 
-## Koneksi & Driver Wi-Fi
+## Menyambungkan Adapter Wi-Fi ke VirtualBox
 
+1. Pasang adapter Wi-Fi ke laptop/PC.
+2. Pada aplikasi VirtualBox klik tab `Devices` -> `USB` -> `Jenis/merek`.
+3. Pastikan checkbox nya sudah tercentang.
+4. Buka terminal Kali Linux
+5. Jalankan:
+
+   ```
+   iwconfig
+   ```
+
+   Pastikan nama interface muncul, misalnya `wlan0`, `wlan1`, atau `wlx…`. Jika belum muncul, kemungkinan drivernya belum terinstal.
+  
 ## Optimasi & Kenyamanan
 
 - Instal Guest Additions (jika perlu copy file dari host):  
