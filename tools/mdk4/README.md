@@ -116,7 +116,7 @@ sudo airodump-ng [interface]
       ```
       sudo mdk4 [interface] d -W [mac_client] -c [channel]
       ```
-
+      
       Whitelist station spesifik akan melakukan deauth terhadap semua client, kecuali client `[mac_client]`.
 
 ## Video Demonstrasi
