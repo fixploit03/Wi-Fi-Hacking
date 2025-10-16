@@ -6,12 +6,12 @@
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/ap.jpg" width="50%" />
 </div>
 
-Ini adalah komponen utama yang bertindak sebagai **gerbang** dan memancarkan sinyal nirkabel. Dalam pentest, AP adalah target serangan paling umum untuk mendapatkan akses ke jaringan.
+Access Point (AP) adalah komponen utama yang bertindak sebagai gerbang dan memancarkan sinyal nirkabel. Dalam pentest, AP adalah target serangan paling umum untuk mendapatkan akses ke jaringan.
 
 Peran dalam Jaringan:
 - **Titik Akses:** Menghubungkan perangkat nirkabel (Client/STA) ke jaringan berkabel (wired network).
 - **Manajemen Sinyal:** Mengelola SSID, channel frekuensi, dan daya pancar.
-- **Enkripsi:** Bertanggung jawab menerapkan protokol keamanan (`WEP`, `WPA`, `WPA2`, `WPA3`) dan manajemen kunci.
+- **Enkripsi:** Bertanggung jawab menerapkan protokol keamanan (Open, WEP, WPA, WPA2, WPA3) dan manajemen kunci.
 
 ## 2. Client/Station (STA)
 
@@ -19,7 +19,7 @@ Peran dalam Jaringan:
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/client.jpeg" width="50%" />
 </div>
 
-Client atau Station adalah perangkat pengguna akhir yang terhubung ke AP, seperti **laptop**, **smartphone**, atau **printer nirkabel**.
+Client atau Station adalah perangkat pengguna akhir yang terhubung ke AP, seperti laptop, smartphone, atau printer nirkabel.
 
 Peran dalam Jaringan:
 - **Penerima Sinyal:** Berinteraksi dan bertukar data dengan Access Point.
