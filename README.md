@@ -11,7 +11,6 @@
   - [Aktifkan Fitur Virtualisasi (Intel VT-x / AMD-V) di BIOS/UEFI]()
   - [Instal VirtualBox di Windows]()
   - [Instal VirtualBox Extension Pack]()
-  - [Download File ISO Kali Linux dan Parrot OS Security Edition]()
   - [Instal Kali Linux di VirtualBox]()
   - [Instal Parrot OS Security Edition di VirtualBox]()
   - [Konfigurasi Jaringan VM]()
