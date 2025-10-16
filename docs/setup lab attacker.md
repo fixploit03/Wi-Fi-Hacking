@@ -3,8 +3,8 @@
 ## Aktifkan Fitur Virtualisasi (Intel VT-x / AMD-V) di BIOS/UEFI
 
 Link Tutorial:
-- [https://youtu.be/iockSahm_8w?si=HIkcTDZ5ZF3JgfE3](https://youtu.be/iockSahm_8w?si=HIkcTDZ5ZF3JgfE3)
-- [https://youtu.be/IKyGdroNVaU?si=AyGqMIKyzsjSEViJ](https://youtu.be/IKyGdroNVaU?si=AyGqMIKyzsjSEViJ)
+- [Studioungus](https://youtu.be/iockSahm_8w?si=HIkcTDZ5ZF3JgfE3)
+- [Hendra K](https://youtu.be/IKyGdroNVaU?si=AyGqMIKyzsjSEViJ)
 
 ## Instal VirtualBox di Windows
 
@@ -38,3 +38,13 @@ Link Tutorial:
 ## Koneksi & Driver Wi-Fi
 
 ## Optimasi & Kenyamanan
+
+- Instal Guest Additions (jika perlu copy file dari host):  
+  Link Tutorial:  
+  - [Wahyu Pambudi](https://youtu.be/QDGJGUQni5g?si=q1sUP6HAFzYqG94r)
+- Buat shared folder antara host dan guest (opsional):
+  Link Tutorial:  
+  - [IT House Media](https://youtu.be/KK7Gp36ZVHQ?si=nxck1ZK1ETvk6Xr8)
+- Update repositori Kali Linux:
+  Link Tutorial:  
+  - [Fixploit03](https://youtu.be/VyK5ywA1CEY?si=08y2Rp0lqz7-9AWN)
