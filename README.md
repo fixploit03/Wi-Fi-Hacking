@@ -1,7 +1,7 @@
 ## Daftar Isi:
 - [Pendahuluan](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#pendahuluan)
   - [Tujuan Dari Repositori Ini](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#tujuan-dari-repositori-ini)
-  - [Disclaimer & Tanggung Jawab](https://github.com/fixploit03/Pentest-WiFi/edit/main/docs/pendahuluan.md#disclaimer--tanggung-jawab)
+  - [Disclaimer & Tanggung Jawab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#disclaimer--tanggung-jawab)
   - [Larangan Keras](https://github.com/fixploit03/Pentest-WiFi/edit/main/docs/pendahuluan.md#larangan-keras)
   - [Etika & Hukum](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pendahuluan.md#etika--hukum)
 - [Persiapan Lab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/persiapan%20lab.md#persiapan-lab)
