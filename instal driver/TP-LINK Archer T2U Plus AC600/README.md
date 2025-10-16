@@ -21,7 +21,7 @@
    $ cd 8821au-20210708
    
    # 5. Instal driver pake DKMS
-   $ sudo ./dkms-install.sh
+   $ sudo ./install-driver.sh
 
    # 6. Restart Kali Linux
    $ sudo reboot
