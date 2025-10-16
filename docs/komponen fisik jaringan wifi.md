@@ -16,44 +16,44 @@ Peran dalam Jaringan:
 - Mengelola komunikasi data antara jaringan lokal dan ISP, memastikan koneksi internet stabil.
 
 
-## 3. Router
+## 2. Router
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/router.jpg" width="50%" />
 </div>
 
-Dalam konteks Wi-Fi, router sering kali berfungsi ganda sebagai Access Point dan juga mengelola fungsi jaringan yang lebih luas, seperti pemberian alamat IP (DHCP) dan pemisahan jaringan (Firewall).
+Router adalah perangkat jaringan yang berfungsi untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
 
 Peran dalam Jaringan:
 - **Penghubung:** Menghubungkan jaringan lokal (LAN) ke internet (WAN).
 - **Keamanan Jaringan:** Menerapkan aturan firewall, NAT (Network Address Translation), dan kebijakan akses.
 
-## 4. Access Point (AP)
+## 3. Access Point (AP)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/ap.jpg" width="50%" />
 </div>
 
-Access Point (AP) adalah komponen utama yang bertindak sebagai gerbang dan memancarkan sinyal nirkabel. Dalam pentest, AP adalah target serangan paling umum untuk mendapatkan akses ke jaringan.
+Access Point (AP) adalah perangkat jaringan yang memungkinkan perangkat nirkabel, seperti laptop, ponsel, atau tablet, untuk terhubung ke jaringan komputer, biasanya melalui Wi-Fi. Access Point berfungsi sebagai titik akses yang menghubungkan perangkat nirkabel ke jaringan kabel (seperti jaringan lokal/LAN) atau ke router untuk akses internet.
 
 Peran dalam Jaringan:
 - **Titik Akses:** Menghubungkan perangkat nirkabel (Client/STA) ke jaringan berkabel (wired network).
 - **Manajemen Sinyal:** Mengelola SSID, channel frekuensi, dan daya pancar.
 - **Enkripsi:** Bertanggung jawab menerapkan protokol keamanan (Open, WEP, WPA, WPA2, WPA3) dan manajemen kunci.
 
-## 5. Client/Station (STA)
+## 4. Client/Station (STA)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/client.jpeg" width="50%" />
 </div>
 
-Client atau Station adalah perangkat pengguna akhir yang terhubung ke AP, seperti laptop, smartphone, atau printer nirkabel.
+Client atau Station adalah perangkat yang terhubung ke jaringan nirkabel melalui Access Point (AP) untuk mengakses layanan jaringan, seperti internet atau sumber daya lokal. STA biasanya adalah perangkat pengguna akhir seperti ponsel, laptop, tablet, atau perangkat IoT yang mendukung Wi-Fi.
 
 Peran dalam Jaringan:
 - **Penerima Sinyal:** Berinteraksi dan bertukar data dengan Access Point.
 - **Otentikasi:** Menyediakan kredensial (kata sandi) untuk proses otentikasi jaringan.
 
-## 6. Antena
+## 5. Antena
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/antena.jpg" width="50%">
@@ -66,7 +66,7 @@ Peran dalam Jaringan:
 - Menerima sinyal dari perangkat client untuk menjaga konektivitas nirkabel.
 - Mempengaruhi kualitas dan stabilitas koneksi Wi-Fi, terutama di area dengan hambatan fisik.
 
-## 7. Repeater/Extender
+## 6. Repeater/Extender
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/repeater.jpeg" width="50%">
@@ -80,7 +80,7 @@ Peran dalam Jaringan:
 - Meningkatkan kekuatan sinyal untuk perangkat client yang berada jauh dari AP.
 - Menjaga konektivitas jaringan dengan mengulang sinyal tanpa memerlukan kabel tambahan.
 
-## 8. Switch/Hub
+## 7. Switch/Hub
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/switch.jpg" width="50%">
