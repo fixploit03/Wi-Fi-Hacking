@@ -15,7 +15,7 @@
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/img/airgorah.png" width="50%" />
 </div>
 
-[Airgorah](https://github.com/martin-olivier/airgorah) adalah alat **untuk pengujian keamanan Wi-Fi berbasis `Aircrack-ng suite`**, yang mendukung **penangkapan lalu lintas Wi-Fi terdekat**, **penemuan client yang terhubung ke Access Point**, **serangan deauth**, **penangkapan handshake**, serta **pemecahan kata sandi Access Point**. Ditulis dalam `Rust` dengan antarmuka grafis `GTK4`, alat ini hanya berfungsi di `Linux` dengan hak akses `root` dan adapter Wi-Fi yang mendukung mode monitor serta packet injection. `Airgorah` sering digunakan dalam pengujian penetrasi untuk mengevaluasi kerentanan jaringan nirkabel.
+[Airgorah](https://github.com/martin-olivier/airgorah) adalah alat **untuk pengujian keamanan Wi-Fi berbasis `Aircrack-NG suite`**, yang mendukung **penangkapan lalu lintas Wi-Fi terdekat**, **penemuan client yang terhubung ke Access Point**, **serangan deauth**, **penangkapan handshake**, serta **pemecahan kata sandi Access Point**. Ditulis dalam `Rust` dengan antarmuka grafis `GTK4`, alat ini hanya berfungsi di `Linux` dengan hak akses `root` dan adapter Wi-Fi yang mendukung mode monitor serta packet injection. `Airgorah` sering digunakan dalam pengujian penetrasi untuk mengevaluasi kerentanan jaringan nirkabel.
 
 ## Bettercap
 
