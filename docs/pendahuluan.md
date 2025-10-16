@@ -26,7 +26,3 @@ Pengujian penetrasi jaringan Wi-Fi harus dilakukan dengan penuh tanggung jawab d
 - **Sumber Daya Hukum:** Pelajari regulasi keamanan siber di Indonesia, seperti Peraturan Pemerintah Nomor 71 Tahun 2019 tentang Penyelenggaraan Sistem dan Transaksi Elektronik, untuk memahami batasan aktivitas pentest.
 
 Dengan mematuhi etika dan hukum, Anda dapat belajar dengan aman sekaligus berkontribusi pada komunitas keamanan siber yang positif. Jika Anda tidak yakin tentang legalitas suatu tindakan, konsultasikan dengan ahli hukum atau profesional keamanan siber.
-
-<div align="right">
-  <p><a href="#">Materi Selanjutnya: </a></p>
-</div>
