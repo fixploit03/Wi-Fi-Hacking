@@ -1,4 +1,7 @@
 ## Daftar Isi:
+- [Persiapan Lab & Alat]()
+  - [Hardware yang Dibutuhkan]()
+  - [Software & Distro]()
 - [Pengenalan Tools](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#pengenalan-tools)
   - [Aircrack-NG suite](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#aircrack-ng-suite)
   - [Airgorah](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/pengenalan%20tools.md#airgorah)
