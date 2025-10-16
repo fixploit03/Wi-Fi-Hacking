@@ -16,15 +16,15 @@ Repositori ini bertujuan untuk:
 
 ## Disclaimer & Tanggung Jawab
 
-Repositori ini dibuat HANYA untuk **tujuan edukasi dan penelitian keamanan siber.** Semua **teknik**, **tools**, dan **metode yang dijelaskan di sini dimaksudkan untuk**:
+Repositori ini dibuat **HANYA** untuk **tujuan edukasi dan penelitian keamanan siber.** Semua **teknik**, **tools**, dan **metode yang dijelaskan di sini dimaksudkan untuk**:
 - Meningkatkan pemahaman tentang keamanan jaringan Wi-Fi.
-- Melakukan penetration testing pada infrastruktur yang ANDA MILIKI.
+- Melakukan penetration testing pada infrastruktur yang **ANDA MILIKI**.
 - Membantu profesional keamanan siber dalam mengamankan jaringan.
 - Mendukung pembelajaran ethical hacking dan cybersecurity.
 
 ## Larangan Keras
 
-DILARANG melakukan aktivitas berikut:
+**DILARANG** melakukan aktivitas berikut:
 - Mengakses jaringan Wi-Fi tanpa izin eksplisit dari pemilik jaringan.
 - Melakukan serangan terhadap Wi-Fi publik (cafe, hotel, bandara, dll).
 - Mencuri data atau informasi pribadi orang lain.
