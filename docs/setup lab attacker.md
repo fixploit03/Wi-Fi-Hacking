@@ -51,12 +51,17 @@ Link Tutorial:
   
 ## Optimasi & Kenyamanan
 
-- Instal Guest Additions (jika perlu copy file dari host):  
-  Link Tutorial:  
+- Instal Guest Additions (jika perlu copy file dari host):
+
+  Link Tutorial:
   - [Wahyu Pambudi](https://youtu.be/QDGJGUQni5g?si=q1sUP6HAFzYqG94r)
-- Buat shared folder antara host dan guest (opsional):  
-  Link Tutorial:  
+
+- Buat shared folder antara host dan guest (opsional):
+
+  Link Tutorial:
   - [IT House Media](https://youtu.be/KK7Gp36ZVHQ?si=nxck1ZK1ETvk6Xr8)
+
 - Update repositori Kali Linux:
-  Link Tutorial:   
+  
+  Link Tutorial:
   - [Fixploit03](https://youtu.be/VyK5ywA1CEY?si=08y2Rp0lqz7-9AWN)
