@@ -1,38 +1,38 @@
 # Jenis-Jenis Serangan pada Jaringan Wi-Fi
 
-## Serangan Pada Protokol WEP
+## Protokol Keamanan WEP (DONE)
 
 - **FMS Attack:** Serangan yang mengeksploitasi kelemahan algoritma RC4 dalam protokol WEP dengan mengumpulkan Initialization Vector (IV) lemah dari paket data yang dikirim melalui jaringan. Serangan ini, dinamakan berdasarkan Fluhrer, Mantin, dan Shamir, membutuhkan ratusan ribu hingga jutaan IV untuk memecahkan kunci WEP.
 - **KoreK Attack:** Pengembangan dari FMS Attack yang lebih cepat dan efisien. Serangan ini memanfaatkan analisis statistik yang lebih canggih pada IV untuk memecahkan kunci WEP dengan jumlah IV yang jauh lebih sedikit dibandingkan FMS Attack.
 - **PTW Attack:** Serangan yang sangat efisien dan menargetkan kelemahan spesifik dalam algoritma WEP. Hanya membutuhkan 20.000–50.000 IV untuk memecahkan kunci WEP, menjadikannya metode tercepat dan default di tool Aircrack-NG suite.
-- **Fragmentation Attack:** Serangan yang memanipulasi fragmen paket data untuk mendapatkan informasi yang cukup guna merekonstruksi kunci WEP. Biasanya digunakan bersama serangan lain seperti Chop-Chop atau ARP Replay untuk mempercepat proses cracking.
+- **Fragmentation Attack:** Serangan yang memanipulasi fragmen paket data untuk mendapatkan informasi yang cukup guna merekonstruksi kunci WEP. Biasanya digunakan bersama serangan lain seperti Chop-Chop Attack atau ARP Request Replay Attack untuk mempercepat proses cracking.
 - **Chop-Chop Attack:** Serangan yang mendekripsi satu paket WEP tanpa memerlukan kunci langsung, dengan memotong (chop) bagian dari paket dan merekonstruksi data melalui interaksi dengan Access Point (AP). Hasilnya dapat digunakan untuk serangan lanjutan atau untuk membangun kunci WEP.
-- **ARP Request Replay Attack:** Serangan yang menangkap dan mengirim ulang paket ARP (Address Resolution Protocol) untuk memaksa Access Point menghasilkan lebih banyak IV. Hal ini mempercepat pengumpulan data untuk serangan seperti PTW atau KoreK.
-- **Fake Authentication Attack:** Serangan yang mengelabui Access Point agar menerima penyerang sebagai client sah, memungkinkan injeksi paket ke jaringan meskipun penyerang tidak terhubung secara resmi. Digunakan untuk mendukung serangan seperti ARP Replay atau Fragmentation Attack.
-- **Caffe Latte Attack:** Serangan yang menargetkan client yang pernah terhubung ke jaringan WEP dengan membuat Access Point palsu (Evil Twin) menggunakan SSID yang sama. Penyerang menangkap data dari client untuk menghasilkan IV yang cukup untuk memecahkan kunci WEP.
-- **Hirte Attack:** Varian yang lebih canggih dari Caffe Latte Attack, yang memanipulasi data dari client untuk menghasilkan IV tanpa memerlukan akses langsung ke Access Point asli. Serangan ini memungkinkan pemecahan kunci WEP dengan lebih efisien.
+- **ARP Request Replay Attack:** Serangan yang menangkap dan mengirim ulang paket ARP (Address Resolution Protocol) untuk memaksa AP menghasilkan lebih banyak IV. Hal ini mempercepat pengumpulan data untuk serangan seperti PTW Attack atau KoreK Attack.
+- **Fake Authentication Attack:** Serangan yang mengelabui AP agar menerima penyerang sebagai client sah, memungkinkan injeksi paket ke jaringan meskipun penyerang tidak terhubung secara resmi. Digunakan untuk mendukung serangan seperti ARP Request Replay Attack atau Fragmentation Attack.
+- **Caffe Latte Attack:** Serangan yang menargetkan client yang pernah terhubung ke jaringan WEP dengan membuat AP palsu (Evil Twin) menggunakan SSID yang sama. Penyerang menangkap data dari client untuk menghasilkan IV yang cukup untuk memecahkan kunci WEP.
+- **Hirte Attack:** Varian yang lebih canggih dari Caffe Latte Attack, yang memanipulasi data dari client untuk menghasilkan IV tanpa memerlukan akses langsung ke AP asli. Serangan ini memungkinkan pemecahan kunci WEP dengan lebih efisien.
 
-## Serangan Pada Protokol WPA/WPA2-PSK
+## Protokol Keamanan WPA/WPA2-PSK (DONE)
 
-- **Capture Handshake:** Proses menangkap paket data 4-way handshake yang terjadi selama autentikasi antara client dan Access Point (AP) pada jaringan Wi-Fi WPA/WPA2-PSK. Handshake ini berisi informasi hash kata sandi yang diperlukan untuk serangan lanjutan seperti Dictionary Attack, Brute Force Attack, atau Rainbow Table Attack.
-- **Deauthentication Attack:** Serangan yang bertujuan memutuskan koneksi client dari Access Point (AP) dengan mengirimkan paket deautentikasi palsu. Tujuannya adalah memaksa client untuk memulai ulang proses autentikasi, sehingga menghasilkan 4-way handshake baru yang dapat ditangkap oleh penyerang.
-- **PMKID Attack:** Serangan yang mengeksploitasi Pairwise Master Key Identifier (PMKID) yang dikirim oleh beberapa Access Point dalam frame Robust Security Network (RSN) tanpa memerlukan 4-way handshake lengkap. PMKID berisi informasi hash yang dapat digunakan untuk memecahkan kata sandi WPA/WPA2-PSK.
+- **Capture Handshake:** Proses menangkap paket data 4-way handshake yang terjadi selama autentikasi antara client dan AP pada jaringan Wi-Fi WPA/WPA2-PSK. Handshake ini berisi informasi hash kata sandi yang diperlukan untuk serangan lanjutan seperti Dictionary Attack, Brute Force Attack, atau Rainbow Table Attack.
+- **Deauthentication Attack:** Serangan yang bertujuan memutuskan koneksi client dari AP dengan mengirimkan paket deautentikasi palsu. Tujuannya adalah memaksa client untuk memulai ulang proses autentikasi, sehingga menghasilkan 4-way handshake baru yang dapat ditangkap oleh penyerang.
+- **PMKID Attack:** Serangan yang mengeksploitasi Pairwise Master Key Identifier (PMKID) yang dikirim oleh beberapa AP dalam frame Robust Security Network (RSN) tanpa memerlukan 4-way handshake lengkap. PMKID berisi informasi hash yang dapat digunakan untuk memecahkan kata sandi WPA/WPA2-PSK.
 - **Dictionary Attack:** Serangan yang mencoba memecahkan kata sandi WPA/WPA2-PSK dengan mencocokkan hash kata sandi dari handshake menggunakan daftar kata (wordlist) yang berisi kemungkinan kata sandi.
 - **Brute Force Attack:** Serangan yang mencoba semua kombinasi karakter yang mungkin secara sistematis untuk memecahkan kata sandi WPA/WPA2-PSK.
 - **Rainbow Table Attack:** Serangan yang memanfaatkan tabel hash yang telah dihitung sebelumnya (pre-computed) untuk mempercepat proses pemecahan kata sandi WPA/WPA2-PSK. Tabel ini berisi pasangan hash dan kata sandi yang dihasilkan berdasarkan SSID tertentu, memungkinkan penyerang untuk mencocokkan hash yang ditangkap dari jaringan Wi-Fi dengan cepat tanpa perlu melakukan perhitungan ulang secara real-time.
-- **Evil Twin Attack:** Serangan yang melibatkan pembuatan Access Point (AP) palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
+- **Evil Twin Attack:** Serangan yang melibatkan pembuatan AP palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
 
-## WPA/WPA2-Enterprise (802.1X)
+## Protokol WPA/WPA2-Enterprise (802.1X)
 
 - **EAP Handshake Capture:** Proses menangkap paket data dari proses autentikasi Extensible Authentication Protocol (EAP) antara client dan server autentikasi (biasanya RADIUS) dalam jaringan WPA/WPA2-Enterprise. Paket ini dapat berisi informasi seperti hash kata sandi atau kredensial yang digunakan untuk serangan lanjutan, tergantung pada metode EAP yang digunakan (misalnya, EAP-TLS, PEAP, atau EAP-TTLS).
-- **MITM Attack:** Serangan yang melibatkan penyerang menyamar sebagai Access Point (AP) atau server autentikasi untuk mencegat komunikasi antara client dan server RADIUS. Penyerang dapat menangkap kredensial atau memanipulasi data autentikasi, terutama pada metode EAP yang rentan seperti PEAP tanpa validasi sertifikat.
-- **Evil Twin Attack:** Serangan yang menciptakan Access Point palsu dengan SSID yang sama seperti jaringan asli untuk menipu client agar terhubung. Penyerang dapat merekam kredensial autentikasi (misalnya, username dan kata sandi) jika client tidak memvalidasi sertifikat server dengan benar atau menggunakan metode EAP yang lemah.
+- **MITM Attack:** Serangan yang melibatkan penyerang menyamar sebagai AP atau server autentikasi untuk mencegat komunikasi antara client dan server RADIUS. Penyerang dapat menangkap kredensial atau memanipulasi data autentikasi, terutama pada metode EAP yang rentan seperti PEAP tanpa validasi sertifikat.
+- **Evil Twin Attack:** Serangan yang menciptakan AP palsu dengan SSID yang sama seperti jaringan asli untuk menipu client agar terhubung. Penyerang dapat merekam kredensial autentikasi (misalnya, username dan kata sandi) jika client tidak memvalidasi sertifikat server dengan benar atau menggunakan metode EAP yang lemah.
 - **Downgrade Attack:** Serangan yang memaksa client untuk menggunakan metode autentikasi EAP yang kurang aman (misalnya, dari EAP-TLS ke MS-CHAPv2) dengan memanipulasi negosiasi protokol. Ini memungkinkan penyerang untuk menangkap kredensial dalam format yang lebih mudah di-crack.
 - **RADIUS Impersonation Attack:** Serangan di mana penyerang menyamar sebagai server RADIUS untuk menerima kredensial autentikasi dari client. Ini sering dilakukan bersamaan dengan Evil Twin Attack untuk menipu client agar mengirimkan username dan kata sandi.
 - **Dictionary Attack:** Serangan yang menargetkan metode EAP seperti MS-CHAPv2 atau GTC, di mana hash kata sandi yang ditangkap dari proses autentikasi dicocokkan dengan daftar kata sandi (wordlist) untuk memecahkan kredensial pengguna.
 - **Brute Force Attack:** Serangan yang mencoba semua kombinasi karakter secara sistematis untuk memecahkan kata sandi pengguna, terutama pada metode EAP yang menghasilkan hash rentan seperti MS-CHAPv2. Serangan ini lebih efektif jika kata sandi pengguna lemah.
 
-## Serangan Pada Protokol WPS (Wi-Fi Protected Setup)
+## Protokol Keamanan WPS 
 
 - **PIN Brute Force Attack:** Serangan ini mencoba semua kemungkinan kombinasi PIN WPS (8 digit, tetapi dibagi menjadi dua bagian 4 digit) untuk mendapatkan kunci WPA/WPA2-PSK. Karena checksum pada digit terakhir, hanya sekitar 11.000 kombinasi yang diperlukan. Alat seperti Reaver atau Bully digunakan untuk mencoba PIN secara sistematis hingga menemukan yang benar.
 - **Pixie Dust Attack:** Serangan yang mengeksploitasi kelemahan pada implementasi WPS tertentu (terutama pada chipset seperti Broadcom atau Ralink) untuk mendapatkan PIN WPS langsung dari data yang dihasilkan oleh access point. Menggunakan alat seperti Reaver dan PixieWPS dengan mode Pixie Dust, serangan ini jauh lebih cepat daripada brute force, sering kali selesai dalam hitungan detik.
@@ -40,7 +40,7 @@
 - **Null PIN Attack:** Serangan yang mengeksploitasi kerentanan pada beberapa Access Point (AP) yang menerima PIN kosong (null PIN) atau PIN default (seperti 00000000) sebagai valid. Penyerang mencoba PIN kosong atau default untuk mendapatkan akses tanpa perlu brute force, efektif pada perangkat dengan konfigurasi WPS yang buruk.
 - **Known PIN Attack:** Serangan yang menggunakan PIN WPS yang sudah diketahui, baik dari dokumentasi default perangkat, stiker pada router, atau kebocoran sebelumnya. Penyerang memasukkan PIN yang diketahui untuk langsung mendapatkan kunci WPA/WPA2-PSK tanpa perlu proses cracking tambahan.
 
-## Serangan Pada Protokol WPA3
+## Protokol WPA3
 
 - **Dragonblood Attack:** Serangan ini mengeksploitasi kelemahan dalam implementasi protokol Simultaneous Authentication of Equals (SAE), atau Dragonfly Key Exchange, yang digunakan WPA3. Kelemahan ini mencakup kerentanan terhadap serangan timing, cache-based side-channel, dan kebocoran kata sandi melalui analisis respons protokol. Memungkinkan penyerang untuk memecahkan kata sandi jika implementasi SAE tidak diperbarui atau dikonfigurasi dengan buruk.
 - **Downgrade Attack:** Serangan yang memanfaatkan mode transisi WPA3 (yang mendukung WPA2 untuk kompatibilitas). Penyerang memaksa perangkat WPA3 untuk beralih ke protokol WPA2-PSK yang lebih lemah dengan mengelabui client atau Access Point (AP), sehingga memungkinkan serangan seperti Dictionary Attack atau Brute Force Attack pada WPA2.
