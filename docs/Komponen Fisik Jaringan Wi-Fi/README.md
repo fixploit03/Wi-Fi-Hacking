@@ -57,3 +57,19 @@ Repeater atau Extender adalah perangkat yang digunakan untuk memperluas jangkaua
 </div>
 
 Switch atau Hub adalah perangkat yang digunakan untuk menghubungkan beberapa perangkat dalam jaringan kabel, seperti komputer, Access Point (AP), atau router.
+
+## 8. Network Interface Card (NIC)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/nic.jpg" width="50%">
+</div>
+
+Network Interface Card (NIC) atau Wireless Adapter adalah perangkat keras yang memungkinkan komputer atau perangkat lain untuk terhubung ke jaringan, baik melalui kabel (Ethernet) maupun nirkabel (Wi-Fi). NIC berfungsi sebagai antarmuka antara perangkat dengan jaringan untuk mengirim dan menerima data.
+
+## 9. Kabel Jaringan
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/kabel.jpeg" width="50%">
+</div>
+
+Kabel Jaringan adalah media transmisi fisik yang digunakan untuk menghubungkan perangkat jaringan seperti modem, router, switch, dan Access Point. Jenis kabel yang umum digunakan adalah kabel UTP (Unshielded Twisted Pair) kategori Cat5e, Cat6, atau Cat6a untuk koneksi Ethernet, serta kabel fiber optic untuk koneksi berkecepatan tinggi.
