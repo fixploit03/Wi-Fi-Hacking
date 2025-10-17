@@ -1,6 +1,6 @@
 # Jenis-Jenis Serangan pada Jaringan Wi-Fi
 
-## Protokol Keamanan WEP (DONE)
+## Serangan Pada Protokol WEP
 
 - **FMS Attack:** Serangan yang mengeksploitasi kelemahan algoritma RC4 dalam protokol WEP dengan mengumpulkan Initialization Vector (IV) lemah dari paket data yang dikirim melalui jaringan. Serangan ini, dinamakan berdasarkan Fluhrer, Mantin, dan Shamir, membutuhkan ratusan ribu hingga jutaan IV untuk memecahkan kunci WEP.
 - **KoreK Attack:** Pengembangan dari FMS Attack yang lebih cepat dan efisien. Serangan ini memanfaatkan analisis statistik yang lebih canggih pada IV untuk memecahkan kunci WEP dengan jumlah IV yang jauh lebih sedikit dibandingkan FMS Attack.
@@ -12,7 +12,7 @@
 - **Caffe Latte Attack:** Serangan yang menargetkan client yang pernah terhubung ke jaringan WEP dengan membuat AP palsu (Evil Twin) menggunakan SSID yang sama. Penyerang menangkap data dari client untuk menghasilkan IV yang cukup untuk memecahkan kunci WEP.
 - **Hirte Attack:** Varian yang lebih canggih dari Caffe Latte Attack, yang memanipulasi data dari client untuk menghasilkan IV tanpa memerlukan akses langsung ke AP asli. Serangan ini memungkinkan pemecahan kunci WEP dengan lebih efisien.
 
-## Protokol Keamanan WPA/WPA2-PSK (DONE)
+## Serangan Pada Protokol WPA/WPA2-Personal (PSK)
 
 - **Capture Handshake:** Proses menangkap paket data 4-way handshake yang terjadi selama autentikasi antara client dan AP pada jaringan Wi-Fi WPA/WPA2-PSK. Handshake ini berisi informasi hash kata sandi yang diperlukan untuk serangan lanjutan seperti Dictionary Attack, Brute Force Attack, atau Rainbow Table Attack.
 - **Deauthentication Attack:** Serangan yang bertujuan memutuskan koneksi client dari AP dengan mengirimkan paket deautentikasi palsu. Tujuannya adalah memaksa client untuk memulai ulang proses autentikasi, sehingga menghasilkan 4-way handshake baru yang dapat ditangkap oleh penyerang.
@@ -22,7 +22,7 @@
 - **Rainbow Table Attack:** Serangan yang memanfaatkan tabel hash yang telah dihitung sebelumnya (pre-computed) untuk mempercepat proses pemecahan kata sandi WPA/WPA2-PSK. Tabel ini berisi pasangan hash dan kata sandi yang dihasilkan berdasarkan SSID tertentu, memungkinkan penyerang untuk mencocokkan hash yang ditangkap dari jaringan Wi-Fi dengan cepat tanpa perlu melakukan perhitungan ulang secara real-time.
 - **Evil Twin Attack:** Serangan yang melibatkan pembuatan AP palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
 
-## Protokol WPA/WPA2-Enterprise (802.1X) (DONE)
+## Serangan Pada Protokol WPA/WPA2-Enterprise (802.1X)
 
 - **EAP Handshake Capture:** Proses menangkap paket data dari proses autentikasi Extensible Authentication Protocol (EAP) antara client dan server autentikasi (biasanya RADIUS) dalam jaringan WPA/WPA2-Enterprise. Paket ini dapat berisi informasi seperti hash kata sandi atau kredensial yang digunakan untuk serangan lanjutan, tergantung pada metode EAP yang digunakan (misalnya, EAP-TLS, PEAP, atau EAP-TTLS).
 - **MITM Attack:** Serangan yang melibatkan penyerang menyamar sebagai AP atau server autentikasi untuk mencegat komunikasi antara client dan server RADIUS. Penyerang dapat menangkap kredensial atau memanipulasi data autentikasi, terutama pada metode EAP yang rentan seperti PEAP tanpa validasi sertifikat.
@@ -32,21 +32,21 @@
 - **Dictionary Attack:** Serangan yang menargetkan metode EAP seperti MS-CHAPv2 atau GTC, di mana hash kata sandi yang ditangkap dari proses autentikasi dicocokkan dengan daftar kata sandi (wordlist) untuk memecahkan kredensial pengguna.
 - **Brute Force Attack:** Serangan yang mencoba semua kombinasi karakter secara sistematis untuk memecahkan kata sandi pengguna, terutama pada metode EAP yang menghasilkan hash rentan seperti MS-CHAPv2. Serangan ini lebih efektif jika kata sandi pengguna lemah.
 
-## Protokol Keamanan WPS 
-
-- **PIN Brute Force Attack:** Serangan ini mencoba semua kemungkinan kombinasi PIN WPS (8 digit, tetapi dibagi menjadi dua bagian 4 digit) untuk mendapatkan kunci WPA/WPA2-PSK. Karena checksum pada digit terakhir, hanya sekitar 11.000 kombinasi yang diperlukan. Alat seperti Reaver atau Bully digunakan untuk mencoba PIN secara sistematis hingga menemukan yang benar.
-- **Pixie Dust Attack:** Serangan yang mengeksploitasi kelemahan pada implementasi WPS tertentu (terutama pada chipset seperti Broadcom atau Ralink) untuk mendapatkan PIN WPS langsung dari data yang dihasilkan oleh access point. Menggunakan alat seperti Reaver dan PixieWPS dengan mode Pixie Dust, serangan ini jauh lebih cepat daripada brute force, sering kali selesai dalam hitungan detik.
-- **Physical Access Attack (Push Button Configuration):** Serangan yang memanfaatkan fitur WPS Push Button Configuration (PBC), di mana penyerang menekan tombol fisik pada Access Point (AP) atau client untuk memulai koneksi tanpa memasukkan PIN. Memerlukan akses fisik ke perangkat, sehingga terbatas pada skenario di mana penyerang dapat menyentuh perangkat.
-- **Null PIN Attack:** Serangan yang mengeksploitasi kerentanan pada beberapa Access Point (AP) yang menerima PIN kosong (null PIN) atau PIN default (seperti 00000000) sebagai valid. Penyerang mencoba PIN kosong atau default untuk mendapatkan akses tanpa perlu brute force, efektif pada perangkat dengan konfigurasi WPS yang buruk.
-- **Known PIN Attack:** Serangan yang menggunakan PIN WPS yang sudah diketahui, baik dari dokumentasi default perangkat, stiker pada router, atau kebocoran sebelumnya. Penyerang memasukkan PIN yang diketahui untuk langsung mendapatkan kunci WPA/WPA2-PSK tanpa perlu proses cracking tambahan.
-
-## Protokol WPA3
+## Serangan Pada Protokol WPA3-Personal (SAE)
 
 - **Dragonblood Attack:** Serangan ini mengeksploitasi kelemahan dalam implementasi protokol Simultaneous Authentication of Equals (SAE), atau Dragonfly Key Exchange, yang digunakan WPA3. Kelemahan ini mencakup kerentanan terhadap serangan timing, cache-based side-channel, dan kebocoran kata sandi melalui analisis respons protokol. Memungkinkan penyerang untuk memecahkan kata sandi jika implementasi SAE tidak diperbarui atau dikonfigurasi dengan buruk.
-- **Downgrade Attack:** Serangan yang memanfaatkan mode transisi WPA3 (yang mendukung WPA2 untuk kompatibilitas). Penyerang memaksa perangkat WPA3 untuk beralih ke protokol WPA2-PSK yang lebih lemah dengan mengelabui client atau Access Point (AP), sehingga memungkinkan serangan seperti Dictionary Attack atau Brute Force Attack pada WPA2.
+- **Downgrade Attack:** Serangan yang memanfaatkan mode transisi WPA3 (yang mendukung WPA2 untuk kompatibilitas). Penyerang memaksa perangkat WPA3 untuk beralih ke protokol WPA2-PSK yang lebih lemah dengan mengelabui client atau AP, sehingga memungkinkan serangan seperti Dictionary Attack atau Brute Force Attack pada WPA2.
 - **Side-Channel Attack:** Serangan yang mengeksploitasi kebocoran informasi dari implementasi SAE, seperti waktu eksekusi, konsumsi daya, atau cache memory perangkat. Informasi ini dapat digunakan untuk mengekstrak kunci kriptografi atau mempersempit kemungkinan kata sandi, terutama pada perangkat dengan implementasi yang rentan.
-- **Evil-Twin Attack Via Downgrade:** Serangan yang membuat Access Point (AP) palsu dengan SSID yang sama untuk menipu client WPA3 agar terhubung. Penyerang dapat menangkap data autentikasi atau memaksa client untuk menggunakan mode transisi WPA2, memungkinkan serangan lebih lanjut seperti Dictionary Attack atau Brute Force Attack.
-- **Denial-of-Service (DoS):** Serangan yang mengganggu proses autentikasi WPA3 dengan membanjiri Access Point (AP) atau client dengan frame autentikasi SAE palsu. Hal ini dapat menyebabkan kegagalan koneksi atau memaksa perangkat untuk terus mencoba autentikasi, menghabiskan sumber daya perangkat.
+- **Evil-Twin Attack Via Downgrade:** Serangan yang membuat AP palsu dengan SSID yang sama untuk menipu client WPA3 agar terhubung. Penyerang dapat menangkap data autentikasi atau memaksa client untuk menggunakan mode transisi WPA2, memungkinkan serangan lebih lanjut seperti Dictionary Attack atau Brute Force Attack.
+- **Denial-of-Service (DoS):** Serangan yang mengganggu proses autentikasi WPA3 dengan membanjiri AP atau client dengan frame autentikasi SAE palsu. Hal ini dapat menyebabkan kegagalan koneksi atau memaksa perangkat untuk terus mencoba autentikasi, menghabiskan sumber daya perangkat.
+
+## Serangan Pada Fitur WPS
+
+- **PIN Brute Force Attack:** Serangan ini mencoba semua kemungkinan kombinasi PIN WPS (8 digit, tetapi dibagi menjadi dua bagian 4 digit) untuk mendapatkan kunci WPA/WPA2-PSK. Karena checksum pada digit terakhir, hanya sekitar 11.000 kombinasi yang diperlukan.
+- **Pixie Dust Attack:** Serangan yang mengeksploitasi kelemahan pada implementasi WPS tertentu (terutama pada chipset seperti Broadcom atau Ralink) untuk mendapatkan PIN WPS langsung dari data yang dihasilkan oleh AP.
+- **Physical Access Attack (Push Button Configuration):** Serangan yang memanfaatkan fitur WPS Push Button Configuration (PBC), di mana penyerang menekan tombol fisik pada AP atau client untuk memulai koneksi tanpa memasukkan PIN. Memerlukan akses fisik ke perangkat, sehingga terbatas pada skenario di mana penyerang dapat menyentuh perangkat.
+- **Null PIN Attack:** Serangan yang mengeksploitasi kerentanan pada beberapa AP yang menerima PIN kosong (null PIN) atau PIN default (seperti 00000000) sebagai valid. Penyerang mencoba PIN kosong atau default untuk mendapatkan akses tanpa perlu brute force, efektif pada perangkat dengan konfigurasi WPS yang buruk.
+- **Known PIN Attack:** Serangan yang menggunakan PIN WPS yang sudah diketahui, baik dari dokumentasi default perangkat, stiker pada router, atau kebocoran sebelumnya. Penyerang memasukkan PIN yang diketahui untuk langsung mendapatkan kunci WPA/WPA2-PSK tanpa perlu proses cracking tambahan.
 
 ## Serangan Lainnya
 
