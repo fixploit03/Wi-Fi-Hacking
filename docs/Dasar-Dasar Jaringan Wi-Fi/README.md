@@ -51,7 +51,7 @@ Frekuensi adalah jumlah gelombang yang melewati suatu titik dalam satu detik. Wi
 
 ### Kapan Menggunakan 2.4 GHz dan 5 GHz:
 - **Gunakan 2.4 GHz:** Cocok untuk jangkauan yang lebih luas atau area dengan banyak penghalang (seperti tembok). Ideal untuk perangkat IoT, smart home, atau perangkat yang tidak membutuhkan kecepatan tinggi.
-- **Gunakan 5 GHz:** Pilihan terbaik untuk kinerja tinggi, seperti gaming online, streaming video berkualitas tinggi, atau transfer data besar. Cocok digunakan di area padat pengguna (misalnya apartemen), karena lebih sedikit gangguan dan memiliki lebih banyak channel.
+- **Gunakan 5 GHz:** Pilihan terbaik untuk kinerja tinggi, seperti gaming online, streaming video berkualitas tinggi, atau transfer data besar. Cocok digunakan di area padat pengguna (misalnya: apartemen), karena lebih sedikit gangguan dan memiliki lebih banyak channel.
 
 ## 4. Channel
 
@@ -70,7 +70,7 @@ Channel Bandwidth adalah lebar pita (width) dari sebuah channel frekuensi. Semak
 
 - **Pada Frekuensi 2.4 GHz:**
   - 20 MHz: Merupakan lebar standar yang paling stabil dan umum digunakan.
-  - 40 MHz: Dapat menggandakan kecepatan transfer, tetapi juga mengganggu channel tetangga dan meningkatkan risiko interferensi. Tidak direkomendasikan untuk area dengan banyak jaringan Wi-Fi (misalnya apartemen atau perkantoran).
+  - 40 MHz: Dapat menggandakan kecepatan transfer, tetapi juga mengganggu channel tetangga dan meningkatkan risiko interferensi. Tidak direkomendasikan untuk area dengan banyak jaringan Wi-Fi (misalnya: apartemen atau perkantoran).
 - **Pada Frekuensi 5 GHz:**
   - Mendukung 20 MHz, 40 MHz, 80 MHz, dan 160 MHz.
   - Pita 5 GHz memiliki lebih banyak ruang frekuensi, sehingga dapat menggunakan bandwidth lebih lebar tanpa tumpang tindih.
@@ -82,29 +82,9 @@ Channel Bandwidth adalah lebar pita (width) dari sebuah channel frekuensi. Semak
 
 ## 6. Konsep BSSID, SSID, RSSI, dll
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 1. MAC Address
 
-MAC Address (Media Access Control Address) adalah alamat fisik unik yang diberikan ke setiap antarmuka jaringan (Network Interface Card/NIC), baik pada Access Point (AP) maupun Client (STA). Alamat ini digunakan pada lapisan data-link (Layer 2) dalam model OSI untuk identifikasi dan komunikasi antar perangkat di jaringan lokal.
+MAC Address (Media Access Control Address) adalah alamat fisik unik yang diberikan ke setiap antarmuka jaringan (Network Interface Card/NIC), baik pada AP maupun client. Alamat ini digunakan pada lapisan data-link (Layer 2) dalam model OSI untuk identifikasi dan komunikasi antar perangkat di jaringan lokal.
 
 **Format:**
 - Biasanya terdiri dari 6 pasangan heksadesimal (48-bit).
@@ -112,7 +92,7 @@ MAC Address (Media Access Control Address) adalah alamat fisik unik yang diberik
 **Contoh:**
 - `00:1A:2B:3C:4D:5E`
 
-**Fungsi dalam Wi-Fi:**
+**Fungsi dalam jaringan Wi-Fi:**
 - Mengidentifikasi setiap perangkat dalam jaringan.
 - Digunakan dalam proses association, authentication, dan frame transmission.
 - Dapat diubah (spoofing) untuk penyamaran identitas saat pengujian keamanan (pentesting).
@@ -123,7 +103,7 @@ AP (Access Point) adalah perangkat jaringan yang memancarkan sinyal Wi-Fi dan be
 
 ### 3. Client/STA (Station)
 
-Client atau STA (Station) adalah perangkat pengguna yang terhubung ke jaringan Wi-Fi melalui Access Point (AP). Perangkat ini berperan sebagai penerima dan pengirim data dalam jaringan nirkabel.
+Client atau STA (Station) adalah perangkat pengguna yang terhubung ke jaringan Wi-Fi melalui AP. Perangkat ini berperan sebagai penerima dan pengirim data dalam jaringan nirkabel.
 
 **Contoh:**
 - Laptop
@@ -133,7 +113,7 @@ Client atau STA (Station) adalah perangkat pengguna yang terhubung ke jaringan W
 
 ### 4. BSS
 
-BSS (Basic Service Set) adalah unit dasar dari jaringan Wi-Fi yang terdiri dari satu Access Point (AP) dan satu atau lebih perangkat client (STA) yang terhubung ke AP tersebut. BSS memiliki BSSID (Basic Service Set Identifier) yang berfungsi sebagai identitas unik dari jaringan tersebut, biasanya berupa alamat MAC dari antarmuka nirkabel milik AP.
+BSS (Basic Service Set) adalah unit dasar dari jaringan Wi-Fi yang terdiri dari satu AP dan satu atau lebih perangkat client yang terhubung ke AP tersebut. BSS memiliki BSSID (Basic Service Set Identifier) yang berfungsi sebagai identitas unik dari jaringan tersebut, biasanya berupa alamat MAC dari antarmuka nirkabel milik AP.
 
 **Jenis-jenis BSS:**
 - **Infrastructure BSS:** Mode paling umum digunakan, di mana terdapat AP yang menghubungkan client ke jaringan kabel (LAN) atau internet.
@@ -146,28 +126,28 @@ BSS (Basic Service Set) adalah unit dasar dari jaringan Wi-Fi yang terdiri dari 
 
 ### 5. BSSID
 
-BSSID adalah alamat MAC unik yang digunakan untuk mengidentifikasi Access Point (AP) atau Basic Service Set (BSS) tertentu dalam jaringan Wi-Fi. Setiap AP memiliki BSSID berbeda, bahkan jika memancarkan SSID (nama jaringan) yang sama.
+BSSID adalah alamat MAC unik yang digunakan untuk mengidentifikasi AP atau Basic Service Set (BSS) tertentu dalam jaringan Wi-Fi. Setiap AP memiliki BSSID berbeda, bahkan jika memancarkan SSID (nama jaringan) yang sama.
 
 **Contoh:** 
 - `F8:32:E4:9A:1B:2C`
 
 ### 6. SSID
 
-SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh Access Point (AP) dan terlihat oleh pengguna saat mencari koneksi. SSID membantu pengguna memilih jaringan mana yang akan dihubungkan.
+SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh AP dan terlihat oleh pengguna saat mencari koneksi. SSID membantu pengguna memilih jaringan mana yang akan dihubungkan.
 
 **Contoh:** 
 - `WIFI_KERE`
 - `MODAL_BANG`
 - `CIE_KEPO`
 
-**Detail Penting:**
+**Detail penting:**
 - Maksimal 32 karakter.
 - Bisa disembunyikan (hidden SSID), tidak dipancarkan dalam beacon, namun masih bisa terdeteksi lewat probe atau analisis lalu lintas.
 - **SSID bersifat kosmetik:** banyak AP bisa menggunakan SSID yang sama (termasuk pada ESS), sehingga untuk identifikasi fisik tetap pakai BSSID.
 
 ### 7. ESS
 
-ESS (Extended Service Set) adalah sekumpulan beberapa BSS (Basic Service Set) yang saling terhubung melalui backbone jaringan yang sama, seperti switch atau router. Setiap BSS memiliki Access Point (AP) dengan BSSID unik, namun seluruhnya menggunakan SSID yang sama, sehingga pengguna dapat berpindah dari satu AP ke AP lain tanpa memutus koneksi (seamless roaming).
+ESS (Extended Service Set) adalah sekumpulan beberapa BSS (Basic Service Set) yang saling terhubung melalui backbone jaringan yang sama, seperti switch atau router. Setiap BSS memiliki AP dengan BSSID unik, namun seluruhnya menggunakan SSID yang sama, sehingga pengguna dapat berpindah dari satu AP ke AP lain tanpa memutus koneksi (seamless roaming).
 
 **Peran ESS:**
 - Memperluas jangkauan sinyal Wi-Fi.
@@ -200,7 +180,7 @@ Vendor atau Manufacturer adalah produsen perangkat jaringan yang dapat diidentif
 
 RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
 
-**Kisaran Umum:**
+**Kisaran umum:**
   - `-30 dBm`: Sinyal sangat kuat
   - `-50` s/d `-60 dBm`: Baik
   - `-70 dBm`: Cukup
@@ -230,7 +210,7 @@ Speed (sering dipakai secara informal) mengacu pada kecepatan transfer data nyat
 
 ### 12. Encryption (WEP/WPA/WPA2/WPA3)
 
-Encryption adalah protokol keamanan yang digunakan untuk mengenkripsi komunikasi Wi-Fi, sehingga data yang dikirim antara client dan Access Point (AP) tidak dapat dibaca oleh pihak yang tidak berwenang.
+Encryption adalah protokol keamanan yang digunakan untuk mengenkripsi komunikasi Wi-Fi, sehingga data yang dikirim antara client dan AP tidak dapat dibaca oleh pihak yang tidak berwenang.
 
 **Evolusi:**
 - **WEP (Wired Equivalent Privacy):** Menggunakan algoritma RC4, sangat lemah dan mudah diretas.
@@ -254,7 +234,7 @@ Tujuannya adalah menjaga kerahasiaan dan integritas data selama transmisi antar 
 
 Auth (Authentication) adalah proses pengenalan dan verifikasi identitas perangkat atau pengguna sebelum diizinkan bergabung ke jaringan Wi-Fi.
 
-Tujuannya adalah memastikan bahwa hanya perangkat yang sah yang dapat terhubung ke Access Point (AP).
+Tujuannya adalah memastikan bahwa hanya perangkat yang sah yang dapat terhubung ke AP.
 
 **Contoh:**
 - **Open:** Tidak ada otentikasi (jaringan terbuka, tidak aman).
@@ -267,7 +247,7 @@ Tujuannya adalah memastikan bahwa hanya perangkat yang sah yang dapat terhubung 
 
 WPS (Wi-Fi Protected Setup) adalah fitur untuk menyederhanakan proses koneksi perangkat ke jaringan Wi-Fi menggunakan PIN atau tombol push-button (PBC — Push Button Configuration).
 
-**Status Umum:**
+**Status umum:**
 - **WPS Locked:** Fitur WPS sementara dikunci (biasanya setelah terlalu banyak percobaan PIN), tidak bisa digunakan sampai periode penguncian berakhir.
 - **WPS Enabled:** WPS aktif, memudahkan koneksi tapi berpotensi rentan terhadap serangan (misalnya: PIN Brute Force Attack dan Pixie Dust Attack menggunakan Reaver dan PixieWPS).
 - **WPS Disabled:** WPS dinonaktifkan, metode koneksi cepat ini tidak tersedia (biasanya paling aman dari segi WPS).
@@ -279,14 +259,14 @@ WPS (Wi-Fi Protected Setup) adalah fitur untuk menyederhanakan proses koneksi pe
 
 ### 16. First Seen
 
-First Seen adalah waktu pertama kali suatu perangkat (baik Access Point maupun Client/STA) terdeteksi oleh alat monitoring (misalnya: Airodump-ng, Wireshark, atau Bettercap). Nilai ini menunjukkan kapan perangkat mulai aktif atau terlihat di udara (airtime) oleh perangkat yang melakukan pemantauan.
+First Seen adalah waktu pertama kali suatu perangkat (baik AP maupun client) terdeteksi oleh alat monitoring (misalnya: Airodump-ng, Wireshark, atau Bettercap). Nilai ini menunjukkan kapan perangkat mulai aktif atau terlihat di udara (airtime) oleh perangkat yang melakukan pemantauan.
 
 **Contoh:**
 - **First Seen:** `2025-10-17 18:23:45`: Artinya perangkat pertama kali terdeteksi pada waktu tersebut.
 
 ### 17. Last Seen
 
-Last Seen adalah waktu terakhir kali suatu perangkat (baik Access Point maupun Client/STA) terdeteksi oleh alat monitoring (misalnya: Airodump-NG, Wireshark, atau Bettercap). Nilai ini menunjukkan momen terakhir perangkat mengirim atau memancarkan frame yang ditangkap oleh perangkat pemantau.
+Last Seen adalah waktu terakhir kali suatu perangkat (baik AP maupun client) terdeteksi oleh alat monitoring (misalnya: Airodump-NG, Wireshark, atau Bettercap). Nilai ini menunjukkan momen terakhir perangkat mengirim atau memancarkan frame yang ditangkap oleh perangkat pemantau.
 
 **Contoh:**
 - **Last Seen:** `2025-10-17 18:45:02`: Artinya perangkat terakhir terlihat pada waktu tersebut.
@@ -296,11 +276,11 @@ Last Seen adalah waktu terakhir kali suatu perangkat (baik Access Point maupun C
 Sent adalah jumlah frame/paket yang dikirim oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang dikirim oleh AP, pada baris client, artinya paket yang dikirim oleh client.
 
 **Contoh:**
-- Pada baris AP, Sent: `1200` berarti AP tersebut mengirim `1200` frame ke client.
+- **Pada baris AP, Sent:** `1200` berarti AP tersebut mengirim `1200` frame ke client.
 
 ### 18. Received
 
 Received adalah jumlah frame/paket yang diterima oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang diterima oleh AP, pada baris client, artinya paket yang diterima oleh client.
 
 **Contoh:**
-- Pada baris AP, Received: `430` berarti AP tersebut menerima `430` frame dari client.
+- **Pada baris AP, Received:** `430` berarti AP tersebut menerima `430` frame dari client.
