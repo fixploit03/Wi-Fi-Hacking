@@ -28,10 +28,9 @@ Setiap versi standar (seperti 802.11a, 802.11b, 802.11g, dan seterusnya) membawa
 | 802.11n (Wi-Fi 4)	| 2009 | 2.4 & 5 GHz| 600 Mbps | Mendukung kecepatan tinggi (hingga 600 Mbps) dan jangkauan lebih luas berkat teknologi MIMO (Multiple Input Multiple Output) serta dukungan dual band (2,4 GHz dan 5 GHz). | Performa bisa menurun jika digunakan pada frekuensi 2,4 GHz karena masih rentan terhadap interferensi dari perangkat lain. |
 | 802.11ac (Wi-Fi 5) | 2013 | 5 GHz | 3.5 Gbps | Mendukung kecepatan sangat tinggi (hingga beberapa gigabit per detik) dengan bandwidth lebar dan teknologi MU-MIMO, sehingga mampu melayani banyak perangkat sekaligus secara efisien. | Hanya beroperasi di frekuensi 5 GHz, sehingga jangkauan sinyal lebih pendek dan lebih mudah terhalang oleh dinding atau objek fisik. |
 | 802.11ax (Wi-Fi 6/6E) | 2019/2020 | 2.4, 5, (6 GHz) | 9.6 Gbps | Memiliki efisiensi dan kapasitas tinggi, mampu melayani banyak perangkat secara bersamaan dengan teknologi OFDMA dan MU-MIMO pada frekuensi 2,4 GHz, 5 GHz, dan 6 GHz (untuk Wi-Fi 6E).| Perangkat dan router yang kompatibel masih relatif mahal, serta kinerja optimal hanya dirasakan jika semua perangkat mendukung Wi-Fi 6/6E. |
-| 802.11be (Wi-Fi 7) | 2024 | 2.4, 5, 6 GHz | hingga 46 Gbps | Menawarkan kecepatan ultra tinggi, latensi sangat rendah, serta efisiensi spektrum lebih baik melalui teknologi Multi-Link Operation (MLO), 320 MHz channel bandwidth, dan 4096-QAM. Sangat ideal untuk VR/AR, gaming, dan streaming 8K. | Masih baru, belum banyak perangkat yang mendukung, serta biaya perangkat dan router masih tinggi. |
 
 **Keterangan:**
-- **Wi-Fi 4-7:** Merupakan penamaan baru untuk standar IEEE 802.11n hingga 802.11be, yang diperkenalkan agar lebih mudah dipahami oleh konsumen.
+- **Wi-Fi 4-6/6E:** Merupakan penamaan baru untuk standar IEEE 802.11n hingga 802.11ax, yang diperkenalkan agar lebih mudah dipahami oleh konsumen.
 - **MIMO (Multiple-Input Multiple-Output):** Teknologi yang menggunakan banyak antena untuk mengirim dan menerima data secara bersamaan, sehingga meningkatkan kecepatan, kapasitas, dan keandalan koneksi.
 - **MU-MIMO (Multi-User MIMO):** Pengembangan dari MIMO yang memungkinkan router berkomunikasi dengan beberapa perangkat sekaligus, bukan satu per satu, sehingga mengurangi antrean data dan meningkatkan efisiensi jaringan.
 - **OFDMA (Orthogonal Frequency Division Multiple Access):** Teknologi yang membagi satu channel menjadi beberapa sub-channel kecil, memungkinkan banyak perangkat dilayani secara bersamaan. Hal ini meningkatkan efisiensi dan menurunkan latensi, terutama di lingkungan dengan banyak perangkat terhubung.
@@ -48,6 +47,8 @@ Wi-Fi menggunakan gelombang radio untuk mengirim dan menerima data secara nirkab
 Frekuensi adalah jumlah siklus gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Dalam teknologi Wi-Fi, frekuensi menentukan karakteristik gelombang, seperti panjang gelombang, jangkauan sinyal, dan kemampuan menembus hambatan fisik seperti dinding atau benda padat.
 
 Wi-Fi umumnya beroperasi pada dua pita frekuensi utama: 2.4 GHz dan 5 GHz. Meskipun keduanya digunakan untuk mentransmisikan data secara nirkabel, masing-masing memiliki karakteristik fisik dan performa yang berbeda.
+
+### Tabel Perbandingan Karakteristik Wi-Fi 2.4 GHz dan 5 GHz
 
 | Karakteristik | 2.4 GHz | 5 GHz |
 |:--:|:--:|:--:|
