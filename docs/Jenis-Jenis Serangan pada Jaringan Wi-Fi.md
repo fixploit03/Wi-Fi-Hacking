@@ -1,6 +1,6 @@
 # Jenis-Jenis Serangan pada Jaringan Wi-Fi
 
-## Serangan Fundamental (Foundation)
+## Serangan Fundamental
 
 - **Packet Sniffing (Passive Monitoring):** Serangan yang melibatkan penyadapan lalu lintas jaringan Wi-Fi untuk menangkap paket data yang dikirim antara client dan AP tanpa mengganggu komunikasi.
 - **MAC Spoofing Attack:** Serangan yang mengubah alamat MAC penyerang untuk menyamar sebagai client atau AP yang sah. Digunakan untuk melewati filter MAC atau mendukung serangan lain.
