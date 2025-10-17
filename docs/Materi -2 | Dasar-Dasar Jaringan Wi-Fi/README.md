@@ -66,12 +66,12 @@ Wi-Fi umumnya beroperasi pada dua pita frekuensi utama: 2.4 GHz dan 5 GHz. Meski
 
 Channel adalah jalur komunikasi dalam sebuah pita frekuensi yang digunakan untuk mengirim dan menerima data Wi-Fi. Bayangkan pita frekuensi sebagai jalan raya besar, dan channel sebagai jalur/lajurnya. Jika terlalu banyak AP menggunakan channel yang sama atau berdekatan (overlapping), akan terjadi interferensi yang mengganggu stabilitas dan performa koneksi, seperti kemacetan di jalan raya.
 
-### 2.4.1 Frekuensi 2.4 GHz:
+### 2.4.1 Frekuensi 2.4 GHz
 
 - Terdapat 14 channel, tetapi hanya channel 1, 6, dan 11 yang benar-benar non-overlapping di sebagian besar wilayah.
 - Setiap channel memiliki bandwidth standar 20 MHz, tetapi channel yang berdekatan (misalnya: channel 1 dan 2) dapat tumpang tindih, menyebabkan interferensi.
 
-### 2.4.2 Frekuensi 5 GHz:
+### 2.4.2 Frekuensi 5 GHz
 
 - Menyediakan lebih banyak channel non-overlapping, seperti channel 36, 40, 44, 48, 149, 153, 157, 161, dan lainnya, tergantung regulasi wilayah.
 - Karena lebih banyak channel dan jarak antar-channel yang lebih lebar, risiko interferensi jauh lebih kecil dibandingkan frekuensi 2.4 GHz.
@@ -80,12 +80,12 @@ Channel adalah jalur komunikasi dalam sebuah pita frekuensi yang digunakan untuk
 
 Channel Bandwidth adalah lebar pita frekuensi yang digunakan oleh sebuah channel dalam jaringan Wi-Fi. Semakin lebar bandwidth, semakin banyak data yang dapat ditransmisikan secara bersamaan, mirip seperti jalan yang lebih lebar memungkinkan lebih banyak kendaraan melintas. Namun, bandwidth yang lebih lebar juga lebih rentan terhadap interferensi dan dapat mengurangi jumlah saluran bebas yang tersedia.
 
-### 2.5.1 Frekuensi 2.4 GHz:
+### 2.5.1 Frekuensi 2.4 GHz
 
 - **20 MHz:** Bandwidth standar yang paling umum digunakan. Menawarkan stabilitas tinggi dan minim interferensi, cocok untuk lingkungan dengan banyak jaringan Wi-Fi.
 - **40 MHz:** Menggandakan potensi kecepatan transfer dibandingkan bandwidth 20 MHz, tetapi menempati lebih banyak ruang frekuensi, sehingga meningkatkan risiko interferensi dan mengganggu saluran tetangga. Tidak direkomendasikan di area padat seperti perumahan atau perkantoran.
 
-### 2.5.2 Frekuensi 5 GHz:
+### 2.5.2 Frekuensi 5 GHz
 
 - Mendukung bandwidth 20 MHz, 40 MHz, 80 MHz, dan 160 MHz.
 - Frekuensi 5 GHz memiliki lebih banyak saluran non-tumpang tindih dibandingkan 2.4 GHz, memungkinkan penggunaan bandwidth lebih lebar tanpa interferensi signifikan.
