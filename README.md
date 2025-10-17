@@ -8,7 +8,7 @@
   - [Disclaimer & Tanggung Jawab](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#disclaimer--tanggung-jawab)
   - [Larangan Keras](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#larangan-keras)
   - [Etika & Hukum](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Pendahuluan/README.md#etika--hukum)
-- [Materi - 2 | Dasar-Dasar Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Materi%20-2%20%7C%20Dasar-Dasar%20Jaringan%20Wi-Fi#materi---2--dasar-dasar-jaringan-wi-fi)
+- [Materi - 2 | Dasar-Dasar Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Materi%20-%202%20%7C%20Dasar-Dasar%20Jaringan%20Wi-Fi#materi---2--dasar-dasar-jaringan-wi-fi)
   - [2.1 Standar IEEE 802.11 (a/b/g/n/ac/ax)](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Materi%20-2%20%7C%20Dasar-Dasar%20Jaringan%20Wi-Fi#21-standar-ieee-80211-abgnacax)
     - [2.1.1 Tabel Perbandingan Standar IEEE 802.11](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Materi%20-2%20%7C%20Dasar-Dasar%20Jaringan%20Wi-Fi#211-tabel-perbandingan-standar-ieee-80211)
     - [2.1.2 Ilustrasi MIMO, MU-MIMO, dan OFDMA](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Materi%20-2%20%7C%20Dasar-Dasar%20Jaringan%20Wi-Fi#212-ilustrasi-mimo-mu-mimo-dan-ofdma)
