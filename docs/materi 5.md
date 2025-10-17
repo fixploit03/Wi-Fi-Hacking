@@ -1,10 +1,10 @@
-# Materi - 5 | Keamanan Jaringan Wi-Fi
+# Materi - 4 | Keamanan Jaringan Wi-Fi
 
 Keamanan jaringan Wi-Fi adalah aspek krusial dalam melindungi data dan privasi pengguna dari akses tidak sah. Jaringan Wi-Fi yang tidak aman dapat menjadi pintu masuk bagi serangan siber, pencurian data, hingga penyalahgunaan bandwidth.
 
-## Protokol Keamanan Wi-Fi
+## 4.1 Protokol Keamanan Wi-Fi
 
-### 1. WEP (Wired Equivalent Privacy)
+### 4.1.1 WEP (Wired Equivalent Privacy)
 
 WEP adalah protokol keamanan nirkabel pertama yang dikembangkan untuk standar IEEE 802.11, bertujuan memberikan tingkat keamanan setara dengan jaringan kabel.
 
@@ -26,7 +26,7 @@ WEP adalah protokol keamanan nirkabel pertama yang dikembangkan untuk standar IE
 - Rekomendasi Penggunaan:
 - Tidak direkomendasikan untuk digunakan dalam jaringan modern karena kerentanannya yang signifikan. Sebagai gantinya, gunakan protokol keamanan yang lebih baru seperti WPA3 atau setidaknya WPA2.
 
-### WPA (Wi-Fi Protected Access)
+### 4.1.2 WPA (Wi-Fi Protected Access)
 
 WPA adalah protokol keamanan nirkabel yang dikembangkan untuk mengatasi kelemahan WEP (Wired Equivalent Privacy) berdasarkan standar IEEE 802.11. WPA dirancang sebagai solusi sementara sebelum peluncuran WPA2, menawarkan keamanan yang lebih baik untuk jaringan Wi-Fi.
 
@@ -46,7 +46,7 @@ WPA adalah protokol keamanan nirkabel yang dikembangkan untuk mengatasi kelemaha
 **Status:**  
 WPA dianggap usang sejak diperkenalkannya WPA2 pada tahun 2004. Penggunaan WPA saat ini tidak direkomendasikan untuk jaringan modern karena adanya protokol yang lebih aman seperti WPA2 dan WPA3.
 
-### WPA2 (Wi-Fi Protected Access 2)
+### 4.1.3 WPA2 (Wi-Fi Protected Access 2)
 
 WPA2 adalah protokol keamanan nirkabel generasi kedua yang mengimplementasikan standar lengkap IEEE 802.11i. Dikembangkan untuk menggantikan WPA dan WEP, WPA2 menawarkan keamanan yang lebih kuat untuk jaringan Wi-Fi dan menjadi standar wajib hingga diperkenalkannya WPA3.
 
@@ -67,7 +67,7 @@ WPA2 adalah protokol keamanan nirkabel generasi kedua yang mengimplementasikan s
 **Status:**  
 WPA2 masih banyak digunakan pada tahun 2025 karena kompatibilitasnya yang luas, tetapi dianggap kurang aman dibandingkan WPA3. Sejak 2020, WPA3 menjadi standar wajib untuk sertifikasi Wi-Fi, dan WPA2 dianggap usang untuk jaringan baru.
 
-### WPA3 (Wi-Fi Protected Access 3)
+### 4.1.4 WPA3 (Wi-Fi Protected Access 3)
 
 WPA3 adalah protokol keamanan nirkabel generasi ketiga yang diperkenalkan oleh Wi-Fi Alliance sebagai penerus WPA2. Berbasis standar IEEE 802.11, WPA3 dirancang untuk meningkatkan keamanan jaringan Wi-Fi dengan mengatasi kelemahan WPA2 dan mendukung fitur keamanan modern.
 
@@ -89,7 +89,8 @@ WPA3 adalah protokol keamanan nirkabel generasi ketiga yang diperkenalkan oleh W
 **Status:**  
 Pada tahun 2025, WPA3 adalah standar keamanan Wi-Fi terkini dan wajib untuk sertifikasi perangkat Wi-Fi sejak 2020. WPA3 menawarkan perlindungan terbaik untuk jaringan modern, meskipun adopsinya masih terbatas oleh kompatibilitas perangkat.
 
-### Tabel Rangkuman Perbandingan Protokol Keamanan
+### 4.1.5 Tabel Rangkuman Perbandingan Protokol Keamanan
+
 | Protokol | Tahun | Enkripsi | Keamanan | Status | Rekomendasi |
 |:--:|:--:|:--:|:--:|:--:|:--:|
 | WEP | 1997 | RC4 (64/128-bit) | Sangat Lemah | Deprecated | Jangan Gunakan |
@@ -97,9 +98,50 @@ Pada tahun 2025, WPA3 adalah standar keamanan Wi-Fi terkini dan wajib untuk sert
 | WPA2 | 2004 | AES-CCMP | Kuat | Active | Minimum Standard |
 | WPA3 | 2018 | AES-CCMP (128/192-bit) | Sangat Kuat | Active | Sangat Direkomendasikan |
 
-## Metode Autentikasi
+## 4.2 Cipher
 
-### 1. Open Authentication
+Cipher adalah algoritma kriptografi yang digunakan untuk mengenkripsi dan melindungi data yang dikirim melalui jaringan Wi-Fi. Cipher bertugas menjaga kerahasiaan dan integritas data, bekerja bersama protokol autentikasi untuk menghasilkan kunci dinamis.
+
+Dalam konteks Wi-Fi, cipher dipilih berdasarkan versi protokol keamanan (WEP, WPA, WPA2, WPA3) dan kebutuhan jaringan (performa vs. keamanan).
+
+### 4.2.1 Karakteristik-Karakteristik Cipher
+
+**1. RC4**
+- Digunakan pada WEP dan WPA dengan TKIP (Temporal Key Integrity Protocol).
+- Merupakan stream cipher yang cepat.
+- Kelemahan: Rentan terhadap serangan kriptografis, sehingga tidak direkomendasikan untuk jaringan modern.
+
+**2. AES-CCMP**
+- Digunakan pada WPA2 (standar modern).
+- Merupakan block cipher dengan enkripsi 128-bit.
+- Menyediakan enkripsi dan autentikasi data (data integrity).
+- Cocok untuk sebagian besar jaringan modern hingga 2025.
+
+**3. AES-GCMP**
+- Digunakan pada WPA3.
+- Menawarkan enkripsi 128-bit untuk WPA3-Personal dan 256-bit untuk WPA3-Enterprise.
+- Lebih efisien dibanding CCMP dan dilengkapi dengan Galois Message Authentication Code (GMAC) untuk perlindungan tambahan.
+
+### 4.2.2 Cara Kerja Cipher
+
+Cipher bekerja bersama protokol autentikasi (misalnya PSK atau 802.1X/EAP) untuk menghasilkan kunci dinamis:
+  - Pairwise Transient Key (PTK): Kunci untuk komunikasi unicast antara client dan AP.
+  - Group Temporal Key (GTK): Kunci untuk komunikasi broadcast/multicast dalam jaringan.
+
+### 4.2.3 Tabel Penggunaan Cipher
+
+| Cipher | Protokol	| Keterangan |
+|:--:|:--:|:--:|
+| RC4/TKIP | WEP, WPA | Hanya untuk perangkat lama, sudah usang dan kurang aman. |
+| AES-CCMP | WPA2 | Standar modern, aman untuk kebanyakan jaringan. |
+| AES-GCMP | WPA3 | Digunakan untuk keamanan tinggi, efisien, cocok untuk enterprise & IoT. |
+
+**Catatan:**  
+Selalu gunakan cipher modern (AES-CCMP atau AES-GCMP) untuk mencegah serangan keamanan. Hindari RC4/TKIP kecuali diperlukan kompatibilitas perangkat lama.
+
+## 4.3 Metode Autentikasi
+
+### 4.3.1 Open Authentication
 
 Open Authentication adalah metode autentikasi Wi-Fi yang tidak memerlukan kredensial seperti kata sandi atau kunci keamanan. Siapa pun dalam jangkauan sinyal dapat terhubung ke jaringan tanpa proses verifikasi, menjadikannya metode dengan keamanan paling rendah.
 
@@ -114,7 +156,7 @@ Open Authentication adalah metode autentikasi Wi-Fi yang tidak memerlukan kreden
 - Jaringan tamu (guest network) yang dikombinasikan dengan captive portal untuk autentikasi tambahan (misalnya: login melalui browser).
 - Cocok untuk lingkungan yang mengutamakan kemudahan akses daripada keamanan.
 
-### 2. Pre-Shared Key (PSK)
+### 4.3.2 Pre-Shared Key (PSK)
 
 Pre-Shared Key (PSK) adalah metode autentikasi Wi-Fi yang menggunakan kunci rahasia bersama (kata sandi) untuk mengamankan akses ke jaringan. PSK digunakan dalam mode WPA-Personal (WPA, WPA2, atau WPA3) dan cocok untuk jaringan rumah atau kantor kecil tanpa server autentikasi.
 
@@ -129,7 +171,7 @@ Pre-Shared Key (PSK) adalah metode autentikasi Wi-Fi yang menggunakan kunci raha
 - Jaringan dengan jumlah pengguna terbatas yang dapat berbagi kata sandi dengan aman.
 - Cocok untuk lingkungan yang mengutamakan kemudahan pengaturan dengan tingkat keamanan sedang hingga tinggi (tergantung pada kata sandi dan versi WPA).
 
-### 3. Enterprise Authentication (RADIUS, 802.1X)
+### 4.3.3 Enterprise Authentication (RADIUS, 802.1X)
 
 Enterprise Authentication adalah metode autentikasi Wi-Fi yang menggunakan protokol 802.1X dan server RADIUS (Remote Authentication Dial-In User Service) untuk mengelola akses jaringan secara terpusat. Digunakan dalam mode WPA-Enterprise (WPA, WPA2, atau WPA3), metode ini cocok untuk lingkungan korporat atau organisasi besar yang membutuhkan keamanan tinggi dan manajemen pengguna yang ketat.
 
