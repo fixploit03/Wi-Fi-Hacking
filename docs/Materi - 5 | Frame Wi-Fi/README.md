@@ -1,6 +1,6 @@
 # Materi - 5 | Frame Wi-Fi
 
-![Materi - 5 | Frame Wi-Fi]()
+![Materi - 5 | Frame Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Materi%20-%205%20%7C%20Frame%20Wi-Fi/img/frame%20wifi.jpg)
 
 Dalam jaringan Wi-Fi, komunikasi data dilakukan melalui frame. Frame Wi-Fi dibagi menjadi tiga kategori utama berdasarkan fungsinya:
 - **Management Frames:** Untuk mengelola koneksi dan informasi jaringan.
