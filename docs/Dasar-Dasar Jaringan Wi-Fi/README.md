@@ -10,9 +10,15 @@ Sebuah jaringan Wi-Fi umumnya dibangun menggunakan router nirkabel, yang berfung
 
 ## 1. Standar IEEE 802.11 (a/b/g/n/ac/ax)
 
-Standar IEEE 802.11 merupakan dasar dari seluruh komunikasi Wi-Fi modern. Dikembangkan oleh komite kerja IEEE (Institute of Electrical and Electronics Engineers), standar ini mengatur berbagai aspek komunikasi nirkabel pada jaringan lokal (WLAN), mulai dari mekanisme pertukaran sinyal antar perangkat (modulasi dan transmisi radio), kecepatan transfer data, rentang frekuensi yang digunakan, hingga prosedur keamanan untuk melindungi koneksi.
+Standar IEEE 802.11 merupakan fondasi utama seluruh teknologi komunikasi Wi-Fi modern. Standar ini dikembangkan oleh IEEE (Institute of Electrical and Electronics Engineers) dan mengatur berbagai aspek komunikasi nirkabel pada Wireless Local Area Network (WLAN), mulai dari:
+- Mekanisme pertukaran sinyal antar perangkat (modulasi & transmisi radio)
+- Kecepatan transfer data
+- Rentang frekuensi operasi
+- Hingga prosedur keamanan untuk melindungi koneksi
 
-Setiap standar (seperti 802.11a, 802.11b, 802.11g, dll) membawa peningkatan dalam hal kecepatan, jangkauan, efisiensi, dan keamanan. Berikut ini adalah berbagai standar IEEE 802.11:
+Setiap versi standar (seperti 802.11a, 802.11b, 802.11g, dan seterusnya) membawa peningkatan dalam kecepatan, jangkauan, efisiensi, dan keamanan.
+
+### Tabel Perbandingan Standar IEEE 802.11
 
 | Standar | Tahun Rilis | Frekuensi | Kecepatan Teoritis Maksimum | Kelebihan | Kekurangan |
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -24,11 +30,12 @@ Setiap standar (seperti 802.11a, 802.11b, 802.11g, dll) membawa peningkatan dala
 | 802.11ax (Wi-Fi 6/6E) | 2019/2020 | 2.4, 5, (6 GHz) | 9.6 Gbps | Memiliki efisiensi dan kapasitas tinggi, mampu melayani banyak perangkat secara bersamaan dengan teknologi OFDMA dan MU-MIMO pada frekuensi 2,4 GHz, 5 GHz, dan 6 GHz (untuk Wi-Fi 6E).| Perangkat dan router yang kompatibel masih relatif mahal, serta kinerja optimal hanya dirasakan jika semua perangkat mendukung Wi-Fi 6/6E. |
 | 802.11be (Wi-Fi 7) | 2024 | 2.4, 5, 6 GHz | hingga 46 Gbps | Menawarkan kecepatan ultra tinggi, latensi sangat rendah, serta efisiensi spektrum lebih baik melalui teknologi Multi-Link Operation (MLO), 320 MHz channel bandwidth, dan 4096-QAM. Sangat ideal untuk VR/AR, gaming, dan streaming 8K. | Masih baru, belum banyak perangkat yang mendukung, serta biaya perangkat dan router masih tinggi. |
 
+
 **Keterangan:**
 - **Wi-Fi 4-7:** Merupakan penamaan baru untuk standar IEEE 802.11n hingga 802.11be, yang diperkenalkan agar lebih mudah dipahami oleh konsumen.
 - **MIMO (Multiple-Input Multiple-Output):** Teknologi yang menggunakan banyak antena untuk mengirim dan menerima data secara bersamaan, sehingga meningkatkan kecepatan, kapasitas, dan keandalan koneksi.
 - **MU-MIMO (Multi-User MIMO):** Pengembangan dari MIMO yang memungkinkan router berkomunikasi dengan beberapa perangkat sekaligus, bukan satu per satu, sehingga mengurangi antrean data dan meningkatkan efisiensi jaringan.
-- **OFDMA (Orthogonal Frequency Division Multiple Access):** eknologi yang membagi satu channel menjadi beberapa sub-channel kecil, memungkinkan banyak perangkat dilayani secara bersamaan. Hal ini meningkatkan efisiensi dan menurunkan latensi, terutama di lingkungan dengan banyak perangkat terhubung.
+- **OFDMA (Orthogonal Frequency Division Multiple Access):** Teknologi yang membagi satu channel menjadi beberapa sub-channel kecil, memungkinkan banyak perangkat dilayani secara bersamaan. Hal ini meningkatkan efisiensi dan menurunkan latensi, terutama di lingkungan dengan banyak perangkat terhubung.
   
 ## 2. Gelombang Radio
 
@@ -39,7 +46,9 @@ Wi-Fi menggunakan gelombang radio untuk mengirim dan menerima data secara nirkab
 
 ## 3. Frekuensi (2.4 GHz vs 5 GHz)
 
-Frekuensi adalah jumlah gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Wi-Fi beroperasi pada beberapa pita frekuensi, dengan yang paling umum adalah 2.4 GHz dan 5 GHz (serta 6 GHz untuk Wi-Fi 6/6E dan Wi-Fi 7). Masing-masing pita memiliki karakteristik, kelebihan, dan kekurangan yang berbeda.
+Frekuensi adalah jumlah siklus gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Dalam teknologi Wi-Fi, frekuensi menentukan karakteristik gelombang, seperti panjang gelombang, jangkauan sinyal, dan kemampuan menembus hambatan fisik seperti dinding atau benda padat.
+
+Wi-Fi umumnya beroperasi pada dua pita frekuensi utama: 2.4 GHz dan 5 GHz. Meskipun keduanya digunakan untuk mentransmisikan data secara nirkabel, masing-masing memiliki karakteristik fisik dan performa yang berbeda.
 
 | Karakteristik | 2.4 GHz | 5 GHz |
 |:--:|:--:|:--:|
@@ -48,10 +57,6 @@ Frekuensi adalah jumlah gelombang radio yang melewati suatu titik dalam satu det
 | Kemampuan menembus dinding | Lebih baik | Lebih buruk |
 | Interferensi | Lebih tinggi (sering terganggu oleh Bluetooth, microwave, dan jaringan tetangga) | Lebih rendah (karena memiliki lebih banyak channel) |
 | Jumlah channel yang tersedia | Sedikit (hanya 3 channel yang tidak saling tumpang tindih) | Banyak (lebih dari 24 channel tidak tumpang tindih) |
-
-### Kapan Menggunakan 2.4 GHz dan 5 GHz:
-- **Gunakan 2.4 GHz:** Cocok untuk jangkauan yang lebih luas atau area dengan banyak penghalang (seperti tembok). Ideal untuk perangkat IoT, smart home, atau perangkat yang tidak membutuhkan kecepatan tinggi.
-- **Gunakan 5 GHz:** Pilihan terbaik untuk kinerja tinggi, seperti gaming online, streaming video berkualitas tinggi, atau transfer data besar. Cocok digunakan di area padat pengguna (misalnya: apartemen), karena lebih sedikit gangguan dan memiliki lebih banyak channel.
 
 ## 4. Channel
 
