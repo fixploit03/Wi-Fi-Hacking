@@ -1,5 +1,7 @@
 # Materi - 4 | Keamanan Jaringan Wi-Fi
 
+![Materi - 4 | Keamanan Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Materi%20-%204%20%7C%20Keamanan%20Jaringan%20Wi-Fi/img/materi%204.jpg)
+
 Keamanan jaringan Wi-Fi adalah aspek krusial dalam melindungi data dan privasi pengguna dari akses tidak sah. Jaringan Wi-Fi yang tidak aman dapat menjadi pintu masuk bagi serangan siber, pencurian data, hingga penyalahgunaan bandwidth.
 
 ## 4.1 Protokol Keamanan Wi-Fi
