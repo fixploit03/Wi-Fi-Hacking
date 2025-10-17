@@ -39,7 +39,7 @@ Wi-Fi menggunakan gelombang radio untuk mengirim dan menerima data secara nirkab
 
 ## 3. Frekuensi (2.4 GHz vs 5 GHz)
 
-Frekuensi adalah jumlah gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Wi-Fi beroperasi pada beberapa pita frekuensi, dengan yang paling umum adalah 2.4 GHz dan 5 GHz (serta 6 GHz untuk Wi-Fi 6E). Masing-masing pita memiliki karakteristik, kelebihan, dan kekurangan yang berbeda.
+Frekuensi adalah jumlah gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Wi-Fi beroperasi pada beberapa pita frekuensi, dengan yang paling umum adalah 2.4 GHz dan 5 GHz (serta 6 GHz untuk Wi-Fi 6/6E dan Wi-Fi 7). Masing-masing pita memiliki karakteristik, kelebihan, dan kekurangan yang berbeda.
 
 | Karakteristik | 2.4 GHz | 5 GHz |
 |:--:|:--:|:--:|
