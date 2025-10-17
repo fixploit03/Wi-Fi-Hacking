@@ -1,4 +1,6 @@
-# Dasar-Dasar Jaringan Wi-Fi
+# Materi -2 | Dasar-Dasar Jaringan Wi-Fi
+
+![materi 2](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
 
 Wi-Fi (Wireless Fidelity) adalah teknologi yang memungkinkan perangkat elektronik untuk bertukar data atau terhubung ke internet secara nirkabel menggunakan gelombang radio.
 
@@ -80,77 +82,146 @@ Channel Bandwidth adalah lebar pita (width) dari sebuah channel frekuensi. Semak
 
 ## 6. Konsep BSSID, SSID, RSSI, dll
 
-### 1. SSID (Service Set Identifier)
+### 1. SSID [MANTAP]
 
-SSID adalah nama jaringan Wi-Fi yang terlihat oleh pengguna saat mencari koneksi.
+SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh Access Point (AP) dan terlihat oleh pengguna saat mencari koneksi. SSID membantu pengguna memilih jaringan mana yang akan dihubungkan.
 
-**Contoh:** `WIFI_KERE`, `MODAL_BANG`, `CIE_KEPO`
+**Contoh:** 
+- `WIFI_KERE`
+- `MODAL_BANG`
+- `CIE_KEPO`
+
+**Detail Penting:**
+- Maksimal 32 karakter.
+- Bisa disembunyikan (hidden SSID), tidak dipancarkan dalam beacon, namun masih bisa terdeteksi lewat probe atau analisis lalu lintas.
+- **SSID bersifat kosmetik:** banyak AP bisa menggunakan SSID yang sama (termasuk pada ESS), sehingga untuk identifikasi fisik tetap pakai BSSID.
 
 **Catatan:** 
 - SSID bisa disembunyikan (hidden SSID), sehingga tidak muncul di daftar jaringan publik.
 
-### 2. BSSID (Basic Service Set Identifier)
+### 2. BSSID [MANTAP]
 
-BSSID adalah alamat MAC Address unik dari AP.
+BSSID adalah alamat MAC unik yang digunakan untuk mengidentifikasi Access Point (AP) atau Basic Service Set (BSS) tertentu dalam jaringan Wi-Fi. Setiap AP memiliki BSSID berbeda, bahkan jika memancarkan SSID (nama jaringan) yang sama.
 
-**Contoh:** `F8:32:E4:9A:1B:2C`
+**Contoh:** 
+- `F8:32:E4:9A:1B:2C`
 
-### 3. ESSID (Extended Service Set Identifier)
+### 3. ESSID [MANTAP]
 
-ESSID adalah kumpulan dari beberapa BSSID (AP) yang menggunakan SSID yang sama dan terhubung ke satu jaringan yang sama.
+ESSID (Extended Service Set Identifier) merujuk pada identifier (nama) dari sebuah ESS (Extended Service Set), yaitu SSID yang dipakai oleh sekelompok AP yang saling terhubung pada backbone yang sama. Dalam praktik sehari-hari ESSID sering dipakai bergantian dengan SSID ketika berbicara tentang jaringan yang lebih besar (multi-AP).
 
-**Contoh:** SSID `WIFI_KERE` disiarkan dari 5 AP berbeda di area kost, semuanya memiliki ESSID yang sama yaitu `WIFI_KERE`.
+**Penjelasan:**
+- ESSID menunjukkan bahwa beberapa BSSID (AP berbeda) menyiarkan nama jaringan yang sama dan tergabung dalam satu infrastruktur yang sama, sehingga client dapat roaming antar-AP tanpa putus koneksi.
 
-### 4. MAC Address (Media Access Control Address)
+**Contoh:**
+- **SSID:** `WIFI_KERE` dipancarkan oleh 5 AP berbeda di area kost, semua AP tersebut memakai ESSID yang sama yaitu `WIFI_KERE`.
 
-MAC Address adalah alamat unik yang dimiliki setiap perangkat jaringan (termasuk AP dan client).
+### 4. MAC Address [MANTAP]
 
-**Contoh:** `00:1A:2B:3C:4D:5E`
+MAC Address (Media Access Control Address) adalah alamat fisik unik yang diberikan ke setiap antarmuka jaringan (Network Interface Card/NIC), baik pada Access Point (AP) maupun Client (STA). Alamat ini digunakan pada lapisan data-link (Layer 2) dalam model OSI untuk identifikasi dan komunikasi antar perangkat di jaringan lokal.
 
-### 5. BSS (Basic Service Set)
+**Format:**
+- Biasanya terdiri dari 6 pasangan heksadesimal (48-bit).
 
-BSS adalah satu jaringan Wi-Fi dasar yang terdiri dari satu AP dan client-client yang terhubung ke AP tersebut.
+**Contoh:**
+- `00:1A:2B:3C:4D:5E`
 
-**Jenis:**
-- Infrastructure BSS: Ada AP (umum digunakan).
-- Independent BSS (IBSS): Tanpa AP, disebut juga Ad-hoc mode (peer-to-peer).
+**Fungsi dalam Wi-Fi:**
+- Mengidentifikasi setiap perangkat dalam jaringan.
+- Digunakan dalam proses association, authentication, dan frame transmission.
+- Dapat diubah (spoofing) untuk penyamaran identitas saat pengujian keamanan (pentesting).
 
-### 6. ESS (Extended Service Set) 
+### 5. BSS [MANTAP]
 
-ESS adalah sekumpulan beberapa BSS (beberapa AP) yang saling terhubung menggunakan backbone jaringan yang sama.
+BSS (Basic Service Set) adalah unit dasar dari jaringan Wi-Fi yang terdiri dari satu Access Point (AP) dan satu atau lebih perangkat client (STA) yang terhubung ke AP tersebut. BSS memiliki BSSID (Basic Service Set Identifier) yang berfungsi sebagai identitas unik dari jaringan tersebut, biasanya berupa alamat MAC dari antarmuka nirkabel milik AP.
 
-**Contoh:** Sistem Wi-Fi di kost, hotel, atau kantor besar.
+**Jenis-jenis BSS:**
+- **Infrastructure BSS:** Mode paling umum digunakan, di mana terdapat AP yang menghubungkan client ke jaringan kabel (LAN) atau internet.
+- **Independent BSS (IBSS):** Tidak menggunakan AP, komunikasi terjadi langsung antar perangkat (peer-to-peer), biasa disebut Ad-hoc mode.
 
-### 7. AP (Access Point)
+**Contoh:**
+- **BSSID:** `F8:32:E4:9A:1B:2C`
+- **SSID:** `WIFI_KERE`
+- **Client Terhubung:** Laptop & smartphone
 
-AP (Access Point) adalah perangkat yang memancarkan sinyal Wi-Fi dan menghubungkan client nirkabel ke jaringan kabel (LAN).
+### 6. ESS [MANTAP]
 
-### 8. Client/STA (Station)
+ESS (Extended Service Set) adalah sekumpulan beberapa BSS (Basic Service Set) yang saling terhubung melalui backbone jaringan yang sama, seperti switch atau router. Setiap BSS memiliki Access Point (AP) dengan BSSID unik, namun seluruhnya menggunakan SSID yang sama, sehingga pengguna dapat berpindah dari satu AP ke AP lain tanpa memutus koneksi (seamless roaming).
 
-Client/STA (Station) adalah perangkat pengguna (laptop, smartphone, tablet, IoT) yang terhubung ke jaringan Wi-Fi.
+**Peran ESS:**
+- Memperluas jangkauan sinyal Wi-Fi.
+- Memungkinkan roaming antar-AP tanpa perlu koneksi ulang.
+- Digunakan pada jaringan berskala besar seperti kampus, kantor, atau hotel.
 
-### 9. Encryption (WEP/WPA/WPA2/WPA3)
+**Contoh:**
+- **SSID:** `WIFI_KERE` dipancarkan oleh tiga AP berbeda di lantai 1, 2, dan 3, semuanya tergabung dalam satu ESS.
 
-Encryption adalah protokol keamanan yang digunakan untuk mengenkripsi komunikasi Wi-Fi.
+### 7. AP [MANTAP]
+
+AP (Access Point) adalah perangkat jaringan yang memancarkan sinyal Wi-Fi dan berfungsi sebagai jembatan (bridge) antara perangkat nirkabel (client/STA) dengan jaringan kabel (LAN). Access Point memungkinkan perangkat seperti laptop, smartphone, atau IoT untuk terhubung ke jaringan dan mengakses internet tanpa menggunakan kabel.
+
+### 8. Client/STA (Station) [MANTAP]
+
+Client atau STA (Station) adalah perangkat pengguna yang terhubung ke jaringan Wi-Fi melalui Access Point (AP). Perangkat ini berperan sebagai penerima dan pengirim data dalam jaringan nirkabel.
+
+**Contoh:**
+- Laptop
+- Smartphone
+- Tablet
+- Perangkat IoT (kamera, smart TV, printer, sensor, dll).
+
+### 9. Encryption (WEP/WPA/WPA2/WPA3) [MANTAP]
+
+Encryption adalah protokol keamanan yang digunakan untuk mengenkripsi komunikasi Wi-Fi, sehingga data yang dikirim antara client dan Access Point (AP) tidak dapat dibaca oleh pihak yang tidak berwenang.
 
 **Evolusi:**
-- WEP: Lemah, mudah diretas.
-- WPA: Peningkatan dari WEP dengan TKIP.
-- WPA2: Menggunakan AES (lebih aman).
-- WPA3: Paling baru, menggunakan SAE (Simultaneous Authentication of Equals).
+- **WEP (Wired Equivalent Privacy):** Menggunakan algoritma RC4, sangat lemah dan mudah diretas.
+- **WPA (Wi-Fi Protected Access):** Peningkatan dari WEP dengan penggunaan TKIP (Temporal Key Integrity Protocol) untuk memperbaiki kelemahan WEP.
+- **WPA2:** Menggunakan AES (Advanced Encryption Standard) dengan mode CCMP, jauh lebih aman dan stabil.
+- **WPA3:** Versi terbaru, menggunakan SAE (Simultaneous Authentication of Equals) yang lebih kuat terhadap serangan offline Brute Force Attack dan Dictionary Attack.
 
-### 10. Channel & Frequency
+### Cipher [MANTAP]
 
-Channel & Frequency adalah jalur komunikasi tempat sinyal radio dikirimkan.
+Cipher adalah algoritma kriptografi yang digunakan untuk mengenkripsi payload data pada koneksi Wi-Fi.
 
-**Catatan:**
-- 2.4 GHz: 14 channel (1, 6, 11 paling aman).
-- 5 GHz: Banyak channel, interferensi rendah.
-- 6 GHz: Channel eksklusif untuk Wi-Fi 6/6E dan7, performa sangat tinggi.
+Tujuannya adalah menjaga kerahasiaan dan integritas data selama transmisi antar perangkat.
 
-### 11. RSSI (Received Signal Strength Indicator)
+**Contoh:**
+- **WEP (RC4):** Cipher lama yang sudah usang dan sangat lemah.
+- **TKIP (Temporal Key Integrity Protocol):** Digunakan pada WPA, memiliki beberapa perbaikan dibanding WEP, tetapi kini sudah deprecated.
+- **CCMP (AES-CCM):** Cipher modern berbasis AES, digunakan pada WPA2, memberikan keamanan kuat dan stabilitas tinggi.
+- **GCMP:** Cipher yang digunakan pada WPA3 dan Wi-Fi 6, menawarkan efisiensi dan performa tinggi pada throughput besar.
 
-RSSI adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
+### Auth [MANTAP]
+
+Auth (Authentication) adalah proses pengenalan dan verifikasi identitas perangkat atau pengguna sebelum diizinkan bergabung ke jaringan Wi-Fi.
+
+Tujuannya adalah memastikan bahwa hanya perangkat yang sah yang dapat terhubung ke Access Point (AP).
+
+**Contoh:**
+- **Open:** Tidak ada otentikasi (jaringan terbuka, tidak aman).
+- **WEP (Shared):** Otentikasi lama menggunakan shared key, sudah usang dan mudah diretas.
+- **WPA-/WPA2-PSK:** Pre-Shared Key (kata sandi bersama), Umum digunakan di jaringan rumah atau skala kecil.
+- **WPA-WPA2-Enterprise (802.1X):** Otentikasi berbasis server RADIUS menggunakan username/password atau sertifikat digital.
+- **SAE (Simultaneous Authentication of Equals):** Metode otentikasi pada WPA3-Personal, menggantikan PSK tradisional dan lebih tahan terhadap serangan offline Brute Force Attack.
+
+
+## 10 WPS Status [MANTAP]
+
+WPS (Wi-Fi Protected Setup) adalah fitur untuk menyederhanakan proses koneksi perangkat ke jaringan Wi-Fi menggunakan PIN atau tombol push-button (PBC — Push Button Configuration).
+
+**Status Umum:**
+- **WPS Locked:** Fitur WPS sementara dikunci (biasanya setelah terlalu banyak percobaan PIN), tidak bisa digunakan sampai periode penguncian berakhir.
+- **WPS Enabled:** WPS aktif, memudahkan koneksi tapi berpotensi rentan terhadap serangan (misalnya: PIN Brute Force Attack dan Pixie Dust Attack menggunakan Reaver dan PixieWPS).
+- **WPS Disabled:** WPS dinonaktifkan, metode koneksi cepat ini tidak tersedia (biasanya paling aman dari segi WPS).
+
+**Versi:**
+- **v1.0**: Versi awal spesifikasi WPS.
+- **v2.0**: Perbaikan dan tambahan fitur dari v1.0, namun keberadaan versi tidak selalu menjamin keamanan lebih baik karena kerentanan implementasi tetap bisa ada pada perangkat.
+
+### 12. RSSI [MANTAP]
+
+RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
 
 **Kisaran Umum:**
   - `-30 dBm`: Sinyal sangat kuat
@@ -158,19 +229,64 @@ RSSI adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satu
   - `-70 dBm`: Cukup
   - Di bawah `-80 dBm` (`-90` s/d `-200dBm`): Lemah/tidak stabil
 
-## 12. Data Rate
+### 13. Sent [DONE]
 
-Data Rate adalah kecepatan teoritis yang bisa dicapai (misalnya 300 Mbps).
+Sent adalah jumlah frame/paket yang dikirim oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang dikirim oleh AP, pada baris client, artinya paket yang dikirim oleh client.
 
-## 13. Throughput
+**Contoh:**
+- Pada baris AP, Sent: `1200` berarti AP tersebut mengirim `1200` frame ke client.
 
-Throughput adalah kecepatan aktual setelah dikurangi overhead (biasanya 60–80% dari data rate).
+### 14. Received [DONE]
 
-## 14. Frame Wi-Fi (Management, Control, Data)
+Received adalah jumlah frame/paket yang diterima oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang diterima oleh AP, pada baris client, artinya paket yang diterima oleh client.
 
-Frame Wi-Fi adalah paket data yang membawa informasi antara client dan AP, berisi data pengguna, alamat pengirim/penerima, serta informasi kontrol jaringan.
+**Contoh:**
+- Pada baris AP, Received: `430` berarti AP tersebut menerima `430` frame dari client.
 
-**Jenis-Jenis Frame Wi-Fi:**
-- Management Frame: Untuk mengatur koneksi (Beacon, Probe, Authentication, dll).
-- Control Frame: Untuk mengontrol pengiriman (ACK, RTS/CTS).
-- Data Frame: Untuk mengirimkan data pengguna.
+### 15. First Seen [MANTAP]
+
+First Seen adalah waktu pertama kali suatu perangkat (baik Access Point maupun Client/STA) terdeteksi oleh alat monitoring (misalnya: Airodump-ng, Wireshark, atau Bettercap). Nilai ini menunjukkan kapan perangkat mulai aktif atau terlihat di udara (airtime) oleh perangkat yang melakukan pemantauan.
+
+**Contoh:**
+- **First Seen:** `2025-10-17 18:23:45`: Artinya perangkat pertama kali terdeteksi pada waktu tersebut.
+
+### 16. Last Seen [MANTAP]
+
+Last Seen adalah waktu terakhir kali suatu perangkat (baik Access Point maupun Client/STA) terdeteksi oleh alat monitoring (misalnya: Airodump-NG, Wireshark, atau Bettercap). Nilai ini menunjukkan momen terakhir perangkat mengirim atau memancarkan frame yang ditangkap oleh perangkat pemantau.
+
+**Contoh:**
+- **Last Seen:** `2025-10-17 18:45:02`: Artinya perangkat terakhir terlihat pada waktu tersebut.
+
+
+### 17. Data Rate [MANTAP]
+
+Data Rate adalah kecepatan teoritis maksimum yang dapat dicapai oleh koneksi Wi-Fi dalam kondisi ideal. Nilai ini menggambarkan kapasitas transmisi data antara Access Point (AP) dan Client/STA, dinyatakan dalam Mbps (Megabit per detik).
+
+**Contoh:**
+- **Data Rate:** `300 Mbps`
+- **Data Rate:** `866.7 Mbps`
+
+## 18. Throughput [MANTAP]
+
+Throughput adalah kecepatan transmisi data aktual yang tercapai pada jaringan Wi-Fi setelah mempertimbangkan semua overhead (protokol, enkripsi, retransmisi, interferensi, dll.). Biasanya lebih rendah daripada Data Rate teoritis.
+
+**Contoh:**
+- **Data Rate:** `300 Mbps`: Throughput nyata mungkin `~180–240 Mbps` tergantung kondisi.
+
+**Faktor yang memengaruhi Throughput:**
+- Overhead protokol (header, ACK, management frame).
+- Enkripsi (misalnya: WPA2-AES menambah sedikit overhead).
+- Interferensi radio (dari perangkat lain atau jaringan tetangga).
+- Jarak & RSSI (sinyal lemah menurunkan modulasu dan throughput).
+- Jumlah client & konkruensi trafik (banyak client: bandwidth dibagi).
+- Kualitas perangkat (antenna, radio, driver) dan channel bandwidth (20/40/80/160 MHz).
+- Retransmisi & packet loss akibat gangguan atau kesalahan link.
+
+### 19. Vendor/Manufacturer (OUI - Organizationally Unique Identifier)
+
+Vendor atau Manufacturer adalah produsen perangkat jaringan yang dapat diidentifikasi melalui tiga byte pertama dari alamat MAC Address, yang disebut OUI (Organizationally Unique Identifier). Setiap vendor memiliki OUI yang terdaftar secara resmi di IEEE.
+
+**Contoh:**
+- `00:1A:2B`: Cisco Systems
+- `F8:32:E4`: TP-Link
+- `D4:6E:0E`: Xiaomi
