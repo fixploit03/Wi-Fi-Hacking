@@ -1,0 +1,227 @@
+Daftar Isi
+
+Bagian I: Pendahuluan & Dasar-Dasar
+
+    Pendahuluan
+
+        Latar Belakang
+
+        Tujuan Dari Repositori Ini
+
+        Sasaran Pembaca
+
+        Struktur Pembahasan
+
+    Etika, Hukum, dan Tanggung Jawab
+
+        Pentingnya Etika dalam Keamanan Siber
+
+        Disclaimer & Penafian Tanggung Jawab
+
+        Larangan Keras & Aktivitas yang Tidak Diperbolehkan
+
+        Ruang Lingkup Hukum (Penetration Testing yang Sah)
+
+Bagian II: Teori Jaringan & Keamanan Wi-Fi
+
+    Dasar-Dasar Jaringan Wi-Fi
+
+        Standar IEEE 802.11 (a/b/g/n/ac/ax)
+
+        Gelombang Radio & Frekuensi (2.4 GHz vs 5 GHz)
+
+        Kanal dan Lebar Pita (Channel Bandwidth)
+
+        Konsep BSSID, SSID, dan RSSI
+
+    Komponen Fisik Jaringan Wi-Fi
+
+        Modem
+
+        Router
+
+        Access Point (AP)
+
+        Client/Station (STA)
+
+        Antena (Gain, Polarisasi, dll)
+
+        Repeater/Extender
+
+        Switch vs Hub
+
+        Adapter Wi-Fi Eksternal (Penting untuk Penetration Testing)
+
+    Protokol Keamanan & Enkripsi Wi-Fi
+
+        Open Network (Tidak Ada Enkripsi)
+
+        Wired Equivalent Privacy (WEP) dan Kelemahannya
+
+        Wi-Fi Protected Access (WPA/WPA2)
+
+            WPA/WPA2-Personal (PSK - Pre-Shared Key)
+
+            WPA/WPA2-Enterprise (802.1X/EAP)
+
+        Wi-Fi Protected Access 3 (WPA3)
+
+            WPA3-Personal (SAE - Simultaneous Authentication of Equals)
+
+            WPA3-Enterprise
+
+        Wi-Fi Protected Setup (WPS) dan Celah Keamanannya
+
+Bagian III: Ancaman dan Teknik Serangan
+
+    Jenis-Jenis Serangan pada Jaringan Wi-Fi
+
+        Serangan Pasif
+
+            Sniffing & Packet Analysis
+
+            Wardriving
+
+        Serangan Aktif
+
+            Denial-of-Service (DoS) & Deauthentication Attack
+
+            Evil Twin Attack (Rogue Access Point)
+
+            Man-in-the-Middle (MitM) Attack
+
+        Serangan Berdasarkan Protokol
+
+            Serangan Pada Protokol WEP (IV Collision, ChopChop, dll)
+
+            Serangan Pada Protokol WPA/WPA2-Personal (PSK)
+
+                Brute-Force Attack
+
+                Dictionary Attack
+
+                Capturing Handshake & PMKID Attack
+
+            Serangan Pada Protokol WPA/WPA2-Enterprise (EAP)
+
+            Serangan Pada Protokol WPA3-Personal (Dragonblood Attack)
+
+            Serangan Pada Fitur WPS (Pixie Dust Attack, Offline Brute-Force)
+
+Bagian IV: Membangun Lingkungan Lab (Lab Setup)
+
+    Persiapan Lab
+
+        Hardware yang Direkomendasikan
+
+            Laptop/PC
+
+            Adapter Wi-Fi Eksternal (Dengan Chipset yang Didukung)
+
+        Software & Sistem Operasi
+
+            Distro Linux untuk Keamanan (Kali Linux, Parrot Security OS)
+
+            Virtualisasi (VirtualBox, VMware)
+
+            File ISO Distro
+
+    Setup Lab Attacker (Mesin Penyerang)
+
+        Aktifkan Fitur Virtualisasi (Intel VT-x / AMD-V) di BIOS/UEFI
+
+        Instal VirtualBox / VMware di Host (Windows)
+
+        Instal Extension Pack untuk VirtualBox
+
+        Instal & Konfigurasi Distro Keamanan (Kali/Parrot) di Virtual Machine
+
+        Konfigurasi Jaringan Virtual Machine (NAT, Bridged Adapter)
+
+        Menyambungkan Adapter Wi-Fi Eksternal ke Virtual Machine
+
+        Tips Optimasi & Kenyamanan Penggunaan VM
+
+    Setup Lab Target (Jaringan Wi-Fi untuk Diuji)
+
+        Membuat Jaringan Wi-Fi WEP yang Terisolasi
+
+        Membuat Jaringan Wi-Fi WPA/WPA2-PSK yang Terisolasi
+
+        Membuat Jaringan dengan WPS yang Diaktifkan
+
+        Konsep Lab yang Terisolasi & Aman
+
+Bagian V: Alat dan Implementasi (Tools & Practical)
+
+    Pengenalan & Instalasi Tools Penting
+
+        Aircrack-ng Suite (airmon-ng, airodump-ng, aireplay-ng, aircrack-ng)
+
+        hashcat (Password Cracking Accelerator)
+
+        hcxdumptool & hcxtools (Untuk menangkap PMKID)
+
+        Reaver & PixieWPS (Serangan WPS)
+
+        Bully (Alternatif Serangan WPS)
+
+        Wifite (Automation Tool)
+
+        Kismet (Wireless Network Detector)
+
+        Bettercap (Framework untuk MitM)
+
+        MDK3 & MDK4 (Tool untuk DoS/Stress Testing)
+
+    Panduan Instalasi Driver Adapter Wi-Fi
+
+        TP-LINK TL-WN722N (V1/V2/V3)
+
+        TP-LINK Archer T2U Plus (AC600)
+
+        Alfa AWUS036ACH (AC1200)
+
+        Panduan Umum Instalasi Driver di Linux
+
+Bagian VI: Praktikum & Teknik Langkah-demi-Langkah
+
+    Pengumpulan Informasi & Reconnaissance
+
+        Memindai Jaringan Wi-Fi di Sekitar (airodump-ng)
+
+        Menentukan Target yang Valid
+
+    Praktikum Serangan
+
+        Menjalankan Serangan Deauthentication
+
+        Menangkap Handshake 4-Way WPA/WPA2
+
+        Mengekstrak dan Membobol Handshake (Menggunakan aircrack-ng & hashcat)
+
+        Melakukan PMKID Attack
+
+        Membobol Jaringan WEP
+
+        Melakukan Serangan WPS (Menggunakan reaver & pixiewps)
+
+        Membuat Evil Twin Access Point
+
+Bagian VII: Pencegahan & Pengamanan
+
+    Rekomendasi Konfigurasi yang Aman
+
+        Menggunakan WPA2/WPA3 dengan Kata Sandi Kuat
+
+        Menonaktifkan WPS
+
+        Memisahkan Jaringan Guest
+
+        Membuat Whitelist MAC Address (Filtering)
+
+        Mengurangi Daya Pemancar (Tx Power)
+
+        Monitoring Log untuk Aktivitas Mencurigakan
+
+    Kesimpulan dan Penutup
