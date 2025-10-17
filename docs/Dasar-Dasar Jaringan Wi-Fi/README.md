@@ -24,7 +24,7 @@ Setiap standar (seperti 802.11a, 802.11b, 802.11g, dll) membawa peningkatan dala
 | 802.11ax (Wi-Fi 6/6E) | 2019/2020 | 2.4, 5, (6 GHz) | 9.6 Gbps | Memiliki efisiensi dan kapasitas tinggi, mampu melayani banyak perangkat secara bersamaan dengan teknologi OFDMA dan MU-MIMO pada frekuensi 2,4 GHz, 5 GHz, dan 6 GHz (untuk Wi-Fi 6E).| Perangkat dan router yang kompatibel masih relatif mahal, serta kinerja optimal hanya dirasakan jika semua perangkat mendukung Wi-Fi 6/6E. |
 | 802.11be (Wi-Fi 7) | 2024 | 2.4, 5, 6 GHz | hingga 46 Gbps | Menawarkan kecepatan ultra tinggi, latensi sangat rendah, serta efisiensi spektrum lebih baik melalui teknologi Multi-Link Operation (MLO), 320 MHz channel bandwidth, dan 4096-QAM. Sangat ideal untuk VR/AR, gaming, dan streaming 8K. | Masih baru, belum banyak perangkat yang mendukung, serta biaya perangkat dan router masih tinggi. |
 
-### Keterangan:
+**Keterangan:**
 - **Wi-Fi 4-7:** Merupakan penamaan baru untuk standar IEEE 802.11n hingga 802.11be, yang diperkenalkan agar lebih mudah dipahami oleh konsumen.
 - **MIMO (Multiple-Input Multiple-Output):** Teknologi yang menggunakan banyak antena untuk mengirim dan menerima data secara bersamaan, sehingga meningkatkan kecepatan, kapasitas, dan keandalan koneksi.
 - **MU-MIMO (Multi-User MIMO):** Pengembangan dari MIMO yang memungkinkan router berkomunikasi dengan beberapa perangkat sekaligus, bukan satu per satu, sehingga mengurangi antrean data dan meningkatkan efisiensi jaringan.
@@ -39,7 +39,7 @@ Wi-Fi menggunakan gelombang radio untuk mengirim dan menerima data secara nirkab
 
 ## 3. Frekuensi (2.4 GHz vs 5 GHz)
 
-Frekuensi adalah jumlah gelombang yang melewati suatu titik dalam satu detik. Wi-Fi umumnya beroperasi pada dua pita frekuensi utama: 2.4 GHz dan 5 GHz, masing-masing memiliki kelebihan dan kekurangannya sendiri.
+Frekuensi adalah jumlah gelombang radio yang melewati suatu titik dalam satu detik, diukur dalam satuan Hertz (Hz). Wi-Fi beroperasi pada beberapa pita frekuensi, dengan yang paling umum adalah 2.4 GHz dan 5 GHz (serta 6 GHz untuk Wi-Fi 6E). Masing-masing pita memiliki karakteristik, kelebihan, dan kekurangan yang berbeda.
 
 | Karakteristik | 2.4 GHz | 5 GHz |
 |:--:|:--:|:--:|
@@ -55,83 +55,41 @@ Frekuensi adalah jumlah gelombang yang melewati suatu titik dalam satu detik. Wi
 
 ## 4. Channel
 
-Channel adalah jalur komunikasi di dalam sebuah pita frekuensi tempat data Wi-Fi mengalir. Bayangkan frekuensi sebagai jalan raya besar, sedangkan channel adalah lajurnya, jika terlalu banyak perangkat di lajur yang sama, akan terjadi kemacetan (interferensi).
+Channel adalah jalur komunikasi dalam sebuah pita frekuensi yang digunakan untuk mengirim dan menerima data Wi-Fi. Bayangkan pita frekuensi sebagai jalan raya besar, dan channel sebagai jalur/lajurnya. Jika terlalu banyak AP menggunakan channel yang sama atau berdekatan (overlapping), akan terjadi interferensi yang mengganggu stabilitas dan performa koneksi, seperti kemacetan di jalan raya.
 
-- **2.4 GHz:** Memiliki 14 channel, namun hanya channel 1, 6, dan 11 yang tidak saling tumpang tindih (non-overlapping). Jika dua router menggunakan channel yang sama atau berdekatan, sinyal akan saling mengganggu (interferensi) dan menyebabkan koneksi tidak stabil.
-- **5 GHz:** Menyediakan lebih banyak channel non-overlapping (contohnya 36, 40, 44, 48, 149, 153, 157, 161, dan lainnya), sehingga risiko interferensi jauh lebih kecil dan kinerja lebih optimal.
+**Frekuensi 2.4 GHz:**
+- Terdapat 14 channel, tetapi hanya channel 1, 6, dan 11 yang benar-benar non-overlapping di sebagian besar wilayah.
+- Setiap channel memiliki bandwidth standar 20 MHz, tetapi channel yang berdekatan (misalnya: channel 1 dan 2) dapat tumpang tindih, menyebabkan interferensi.
+- Interferensi terjadi jika dua router menggunakan channel yang sama atau berdekatan, sehingga mengurangi kecepatan dan stabilitas koneksi.
 
-### Praktik Terbaik:
-
-Selalu atur router Anda ke channel yang paling sepi untuk meminimalkan interferensi. Sebagian besar router modern sudah mendukung pengaturan otomatis (Auto Channel Selection) untuk memilih channel terbaik secara dinamis.
+**Frekuensi 5 GHz:**
+- Menyediakan lebih banyak channel non-overlapping, seperti channel 36, 40, 44, 48, 149, 153, 157, 161, dan lainnya, tergantung regulasi wilayah.
+- Karena lebih banyak channel dan jarak antar-channel yang lebih lebar, risiko interferensi jauh lebih kecil dibandingkan frekuensi 2.4 GHz.
+- Mendukung bandwidth lebih lebar (misalnya: 40 MHz, 80 MHz, hingga 160 MHz), memungkinkan kecepatan lebih tinggi, terutama pada standar Wi-Fi 5 (802.11ac) dan Wi-Fi 6 (802.11ax).
 
 ## 5. Channel Bandwidth
 
-Channel Bandwidth adalah lebar pita (width) dari sebuah channel frekuensi. Semakin lebar channel, semakin banyak data yang dapat dikirim secara bersamaan, seperti memperlebar jalan agar lebih banyak mobil bisa lewat sekaligus. Namun, bandwidth yang lebih lebar juga lebih rentan terhadap interferensi dan mengurangi jumlah channel bebas yang tersedia.
+Channel Bandwidth adalah lebar pita frekuensi yang digunakan oleh sebuah channel dalam jaringan Wi-Fi. Semakin lebar bandwidth, semakin banyak data yang dapat ditransmisikan secara bersamaan, mirip seperti jalan yang lebih lebar memungkinkan lebih banyak kendaraan melintas. Namun, bandwidth yang lebih lebar juga lebih rentan terhadap interferensi dan dapat mengurangi jumlah saluran bebas yang tersedia.
 
-- **Pada Frekuensi 2.4 GHz:**
-  - 20 MHz: Merupakan lebar standar yang paling stabil dan umum digunakan.
-  - 40 MHz: Dapat menggandakan kecepatan transfer, tetapi juga mengganggu channel tetangga dan meningkatkan risiko interferensi. Tidak direkomendasikan untuk area dengan banyak jaringan Wi-Fi (misalnya: apartemen atau perkantoran).
-- **Pada Frekuensi 5 GHz:**
-  - Mendukung 20 MHz, 40 MHz, 80 MHz, dan 160 MHz.
-  - Pita 5 GHz memiliki lebih banyak ruang frekuensi, sehingga dapat menggunakan bandwidth lebih lebar tanpa tumpang tindih.
-  - 80 MHz dan 160 MHz digunakan pada Wi-Fi 5 (802.11ac) dan Wi-Fi 6 (802.11ax) untuk mencapai kecepatan hingga gigabit.
+**Frekuensi 2.4 GHz:**
+- **20 MHz:** Bandwidth standar yang paling umum digunakan. Menawarkan stabilitas tinggi dan minim interferensi, cocok untuk lingkungan dengan banyak jaringan Wi-Fi.
+- **40 MHz:** Menggandakan potensi kecepatan transfer dibandingkan bandwidth 20 MHz, tetapi menempati lebih banyak ruang frekuensi, sehingga meningkatkan risiko interferensi dan mengganggu saluran tetangga. Tidak direkomendasikan di area padat seperti perumahan atau perkantoran.
 
-### Trade-off:
-- **Bandwidth lebar (80–160 MHz):** Kecepatan tinggi, tetapi lebih rentan terhadap gangguan dan hanya cocok di lingkungan dengan sedikit jaringan lain.
-- **Bandwidth sempit (20–40 MHz):** Lebih stabil dan cocok untuk area padat, meskipun dengan kecepatan yang lebih rendah.
+**Frekuensi 5 GHz:**
+- Mendukung bandwidth 20 MHz, 40 MHz, 80 MHz, dan 160 MHz.
+- Frekuensi 5 GHz memiliki lebih banyak saluran non-tumpang tindih dibandingkan 2.4 GHz, memungkinkan penggunaan bandwidth lebih lebar tanpa interferensi signifikan.
+- Bandwidth 80 MHz dan 160 MHz umum digunakan pada standar Wi-Fi 5 (802.11ac) dan Wi-Fi 6 (802.11ax) untuk mendukung kecepatan tinggi, bahkan hingga gigabit, ideal untuk aplikasi seperti streaming 4K atau gaming.
 
-## 6. Konsep BSSID, SSID, RSSI, dll
+## 6. Konsep BSSID, SSID, RSSI
 
-### 1. MAC Address
+### 1. BSSID
 
-MAC Address (Media Access Control Address) adalah alamat fisik unik yang diberikan ke setiap antarmuka jaringan (Network Interface Card/NIC), baik pada AP maupun client. Alamat ini digunakan pada lapisan data-link (Layer 2) dalam model OSI untuk identifikasi dan komunikasi antar perangkat di jaringan lokal.
-
-**Format:**
-- Biasanya terdiri dari 6 pasangan heksadesimal (48-bit).
-
-**Contoh:**
-- `00:1A:2B:3C:4D:5E`
-
-**Fungsi dalam jaringan Wi-Fi:**
-- Mengidentifikasi setiap perangkat dalam jaringan.
-- Digunakan dalam proses association, authentication, dan frame transmission.
-- Dapat diubah (spoofing) untuk penyamaran identitas saat pengujian keamanan (pentesting).
-
-### 2. AP
-
-AP (Access Point) adalah perangkat jaringan yang memancarkan sinyal Wi-Fi dan berfungsi sebagai jembatan (bridge) antara perangkat nirkabel (client/STA) dengan jaringan kabel (LAN). Access Point memungkinkan perangkat seperti laptop, smartphone, atau IoT untuk terhubung ke jaringan dan mengakses internet tanpa menggunakan kabel.
-
-### 3. Client/STA (Station)
-
-Client atau STA (Station) adalah perangkat pengguna yang terhubung ke jaringan Wi-Fi melalui AP. Perangkat ini berperan sebagai penerima dan pengirim data dalam jaringan nirkabel.
-
-**Contoh:**
-- Laptop
-- Smartphone
-- Tablet
-- Perangkat IoT (kamera, smart TV, printer, sensor, dll).
-
-### 4. BSS
-
-BSS (Basic Service Set) adalah unit dasar dari jaringan Wi-Fi yang terdiri dari satu AP dan satu atau lebih perangkat client yang terhubung ke AP tersebut. BSS memiliki BSSID (Basic Service Set Identifier) yang berfungsi sebagai identitas unik dari jaringan tersebut, biasanya berupa alamat MAC dari antarmuka nirkabel milik AP.
-
-**Jenis-jenis BSS:**
-- **Infrastructure BSS:** Mode paling umum digunakan, di mana terdapat AP yang menghubungkan client ke jaringan kabel (LAN) atau internet.
-- **Independent BSS (IBSS):** Tidak menggunakan AP, komunikasi terjadi langsung antar perangkat (peer-to-peer), biasa disebut Ad-hoc mode.
-
-**Contoh:**
-- **BSSID:** `F8:32:E4:9A:1B:2C`
-- **SSID:** `WIFI_KERE`
-- **Client Terhubung:** Laptop & smartphone
-
-### 5. BSSID
-
-BSSID adalah alamat MAC unik yang digunakan untuk mengidentifikasi AP atau Basic Service Set (BSS) tertentu dalam jaringan Wi-Fi. Setiap AP memiliki BSSID berbeda, bahkan jika memancarkan SSID (nama jaringan) yang sama.
+BSSID (Basic Service Set Identifier) adalah alamat MAC unik yang digunakan untuk mengidentifikasi AP tertentu dalam jaringan Wi-Fi. Setiap AP memiliki BSSID berbeda, bahkan jika memancarkan SSID yang sama.
 
 **Contoh:** 
 - `F8:32:E4:9A:1B:2C`
 
-### 6. SSID
+### 2. SSID
 
 SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh AP dan terlihat oleh pengguna saat mencari koneksi. SSID membantu pengguna memilih jaringan mana yang akan dihubungkan.
 
@@ -140,43 +98,7 @@ SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh A
 - `MODAL_BANG`
 - `CIE_KEPO`
 
-**Detail penting:**
-- Maksimal 32 karakter.
-- Bisa disembunyikan (hidden SSID), tidak dipancarkan dalam beacon, namun masih bisa terdeteksi lewat probe atau analisis lalu lintas.
-- **SSID bersifat kosmetik:** banyak AP bisa menggunakan SSID yang sama (termasuk pada ESS), sehingga untuk identifikasi fisik tetap pakai BSSID.
-
-### 7. ESS
-
-ESS (Extended Service Set) adalah sekumpulan beberapa BSS (Basic Service Set) yang saling terhubung melalui backbone jaringan yang sama, seperti switch atau router. Setiap BSS memiliki AP dengan BSSID unik, namun seluruhnya menggunakan SSID yang sama, sehingga pengguna dapat berpindah dari satu AP ke AP lain tanpa memutus koneksi (seamless roaming).
-
-**Peran ESS:**
-- Memperluas jangkauan sinyal Wi-Fi.
-- Memungkinkan roaming antar-AP tanpa perlu koneksi ulang.
-- Digunakan pada jaringan berskala besar seperti kampus, kantor, atau hotel.
-
-**Contoh:**
-- **SSID:** `WIFI_KERE` dipancarkan oleh tiga AP berbeda di lantai 1, 2, dan 3, semuanya tergabung dalam satu ESS.
-
-### 8. ESSID
-
-ESSID (Extended Service Set Identifier) merujuk pada identifier (nama) dari sebuah ESS (Extended Service Set), yaitu SSID yang dipakai oleh sekelompok AP yang saling terhubung pada backbone yang sama. Dalam praktik sehari-hari ESSID sering dipakai bergantian dengan SSID ketika berbicara tentang jaringan yang lebih besar (multi-AP).
-
-**Penjelasan:**
-- ESSID menunjukkan bahwa beberapa BSSID (AP berbeda) menyiarkan nama jaringan yang sama dan tergabung dalam satu infrastruktur yang sama, sehingga client dapat roaming antar-AP tanpa putus koneksi.
-
-**Contoh:**
-- **SSID:** `WIFI_KERE` dipancarkan oleh 5 AP berbeda di area kost, semua AP tersebut memakai ESSID yang sama yaitu `WIFI_KERE`.
-
-### 9. Vendor/Manufacturer
-
-Vendor atau Manufacturer adalah produsen perangkat jaringan yang dapat diidentifikasi melalui tiga byte pertama dari alamat MAC Address, yang disebut OUI (Organizationally Unique Identifier). Setiap vendor memiliki OUI yang terdaftar secara resmi di IEEE.
-
-**Contoh:**
-- `00:1A:2B`: Cisco Systems
-- `F8:32:E4`: TP-Link
-- `D4:6E:0E`: Xiaomi
-
-### 1O. RSSI
+### 3. RSSI
 
 RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
 
@@ -185,102 +107,3 @@ RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi ya
   - `-50` s/d `-60 dBm`: Baik
   - `-70 dBm`: Cukup
   - Di bawah `-80 dBm` (`-90` s/d `-200dBm`): Lemah/tidak stabil
-
-### 11. Speed
-
-Speed (sering dipakai secara informal) mengacu pada kecepatan transfer data nyata yang dirasakan pengguna pada koneksi jaringan, biasanya digunakan bergantian dengan Throughput, tetapi perlu dibedakan dari Data Rate (teoritis).
-
-**Penjelasan singkat:**
-- **Data Rate:** Kecepatan teoritis maksimum (misalnya: `300 Mbps`).
-- **Throughput/Speed:** Kecepatan aktual yang terukur saat transfer data, setelah memperhitungkan overhead, enkripsi, interferensi, dan kondisi jaringan lainnya.
-- **Satuan:** Mbps (Megabit per detik) atau MB/s (Megabyte per detik), ingat konversi: `1 Byte` = `8 bit` (misalnya: `80 Mbps` ≈ `10 MB/s`).
-
-**Contoh nilai:**
-- **Data Rate:** `300 Mbps`
-- **Speed (Throughput) nyata:** `~180–240 Mbps` pada kondisi bagus, atau lebih rendah di lingkungan berisik.
-
-**Faktor yang memengaruhi Speed:**
-- Jarak & RSSI (kekuatan sinyal).
-- Interferensi dari jaringan dan perangkat lain.
-- Overhead protokol dan enkripsi (WPA2/AES, dll.).
-- Jumlah client yang bersaing pada AP.
-- Channel bandwidth (20/40/80/160 MHz) dan MIMO/antenna.
-- Kualitas perangkat keras, driver, dan konfigurasi jaringan.
-
-
-### 12. Encryption (WEP/WPA/WPA2/WPA3)
-
-Encryption adalah protokol keamanan yang digunakan untuk mengenkripsi komunikasi Wi-Fi, sehingga data yang dikirim antara client dan AP tidak dapat dibaca oleh pihak yang tidak berwenang.
-
-**Evolusi:**
-- **WEP (Wired Equivalent Privacy):** Menggunakan algoritma RC4, sangat lemah dan mudah diretas.
-- **WPA (Wi-Fi Protected Access):** Peningkatan dari WEP dengan penggunaan TKIP (Temporal Key Integrity Protocol) untuk memperbaiki kelemahan WEP.
-- **WPA2:** Menggunakan AES (Advanced Encryption Standard) dengan mode CCMP, jauh lebih aman dan stabil.
-- **WPA3:** Versi terbaru, menggunakan SAE (Simultaneous Authentication of Equals) yang lebih kuat terhadap serangan offline Brute Force Attack dan Dictionary Attack.
-
-### 13. Cipher
-
-Cipher adalah algoritma kriptografi yang digunakan untuk mengenkripsi payload data pada koneksi Wi-Fi.
-
-Tujuannya adalah menjaga kerahasiaan dan integritas data selama transmisi antar perangkat.
-
-**Contoh:**
-- **WEP (RC4):** Cipher lama yang sudah usang dan sangat lemah.
-- **TKIP (Temporal Key Integrity Protocol):** Digunakan pada WPA, memiliki beberapa perbaikan dibanding WEP, tetapi kini sudah deprecated.
-- **CCMP (AES-CCM):** Cipher modern berbasis AES, digunakan pada WPA2, memberikan keamanan kuat dan stabilitas tinggi.
-- **GCMP:** Cipher yang digunakan pada WPA3 dan Wi-Fi 6, menawarkan efisiensi dan performa tinggi pada throughput besar.
-
-### 14. Auth
-
-Auth (Authentication) adalah proses pengenalan dan verifikasi identitas perangkat atau pengguna sebelum diizinkan bergabung ke jaringan Wi-Fi.
-
-Tujuannya adalah memastikan bahwa hanya perangkat yang sah yang dapat terhubung ke AP.
-
-**Contoh:**
-- **Open:** Tidak ada otentikasi (jaringan terbuka, tidak aman).
-- **WEP (Shared):** Otentikasi lama menggunakan shared key, sudah usang dan mudah diretas.
-- **WPA-/WPA2-PSK:** Pre-Shared Key (kata sandi bersama), Umum digunakan di jaringan rumah atau skala kecil.
-- **WPA-WPA2-Enterprise (802.1X):** Otentikasi berbasis server RADIUS menggunakan username/password atau sertifikat digital.
-- **SAE (Simultaneous Authentication of Equals):** Metode otentikasi pada WPA3-Personal, menggantikan PSK tradisional dan lebih tahan terhadap serangan offline Brute Force Attack.
-
-## 15. WPS Status
-
-WPS (Wi-Fi Protected Setup) adalah fitur untuk menyederhanakan proses koneksi perangkat ke jaringan Wi-Fi menggunakan PIN atau tombol push-button (PBC — Push Button Configuration).
-
-**Status umum:**
-- **WPS Locked:** Fitur WPS sementara dikunci (biasanya setelah terlalu banyak percobaan PIN), tidak bisa digunakan sampai periode penguncian berakhir.
-- **WPS Enabled:** WPS aktif, memudahkan koneksi tapi berpotensi rentan terhadap serangan (misalnya: PIN Brute Force Attack dan Pixie Dust Attack menggunakan Reaver dan PixieWPS).
-- **WPS Disabled:** WPS dinonaktifkan, metode koneksi cepat ini tidak tersedia (biasanya paling aman dari segi WPS).
-
-**Versi:**
-- **v1.0**: Versi awal spesifikasi WPS.
-- **v2.0**: Perbaikan dan tambahan fitur dari v1.0, namun keberadaan versi tidak selalu menjamin keamanan lebih baik karena kerentanan implementasi tetap bisa ada pada perangkat.
-
-
-### 16. First Seen
-
-First Seen adalah waktu pertama kali suatu perangkat (baik AP maupun client) terdeteksi oleh alat monitoring (misalnya: Airodump-ng, Wireshark, atau Bettercap). Nilai ini menunjukkan kapan perangkat mulai aktif atau terlihat di udara (airtime) oleh perangkat yang melakukan pemantauan.
-
-**Contoh:**
-- **First Seen:** `2025-10-17 18:23:45`: Artinya perangkat pertama kali terdeteksi pada waktu tersebut.
-
-### 17. Last Seen
-
-Last Seen adalah waktu terakhir kali suatu perangkat (baik AP maupun client) terdeteksi oleh alat monitoring (misalnya: Airodump-NG, Wireshark, atau Bettercap). Nilai ini menunjukkan momen terakhir perangkat mengirim atau memancarkan frame yang ditangkap oleh perangkat pemantau.
-
-**Contoh:**
-- **Last Seen:** `2025-10-17 18:45:02`: Artinya perangkat terakhir terlihat pada waktu tersebut.
-
-### 18. Sent
-
-Sent adalah jumlah frame/paket yang dikirim oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang dikirim oleh AP, pada baris client, artinya paket yang dikirim oleh client.
-
-**Contoh:**
-- **Pada baris AP, Sent:** `1200` berarti AP tersebut mengirim `1200` frame ke client.
-
-### 18. Received
-
-Received adalah jumlah frame/paket yang diterima oleh perangkat yang sedang dipantau (misalnya: AP atau client). Nilai ini dilaporkan dari perspektif alat capture, jadi pada baris AP, artinya paket yang diterima oleh AP, pada baris client, artinya paket yang diterima oleh client.
-
-**Contoh:**
-- **Pada baris AP, Received:** `430` berarti AP tersebut menerima `430` frame dari client.
