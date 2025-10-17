@@ -16,41 +16,7 @@ Modem adalah perangkat yang digunakan untuk menghubungkan jaringan lokal (LAN) k
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/router.jpg" width="50%" />
 </div>
 
-Router adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
-
-## 3. Access Point (AP)
-
-<div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/ap.jpg" width="50%" />
-</div>
-
-Access Point (AP) adalah perangkat yang memungkinkan perangkat nirkabel, seperti laptop, ponsel, atau tablet, untuk terhubung ke jaringan komputer, biasanya melalui Wi-Fi. Access Point berfungsi sebagai titik akses yang menghubungkan perangkat nirkabel ke jaringan kabel (seperti jaringan lokal/LAN) atau ke router untuk akses internet.
-
-## 4. Client/Station (STA)
-
-<div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/client.jpeg" width="50%" />
-</div>
-
-Client atau Station adalah perangkat yang terhubung ke jaringan nirkabel melalui Access Point (AP) untuk mengakses layanan jaringan, seperti internet atau sumber daya lokal. STA biasanya adalah perangkat pengguna akhir seperti ponsel, laptop, tablet, atau perangkat IoT yang mendukung Wi-Fi.
-
-## 5. Antena
-
-<div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/antena.jpg" width="50%">
-</div>
-
-Antena adalah perangkat yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi.
-
-## 6. Repeater/Extender
-
-<div align="center">
-  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/repeater.jpeg" width="50%">
-</div>
-
-Repeater atau Extender adalah perangkat yang digunakan untuk memperluas jangkauan sinyal Wi-Fi dengan menerima dan memancarkan ulang sinyal dari Access Point (AP) atau router.
-
-## 7. Switch/Hub
+## 3. Switch/Hub
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/switch.jpg" width="50%">
@@ -58,13 +24,47 @@ Repeater atau Extender adalah perangkat yang digunakan untuk memperluas jangkaua
 
 Switch atau Hub adalah perangkat yang digunakan untuk menghubungkan beberapa perangkat dalam jaringan kabel, seperti komputer, Access Point (AP), atau router.
 
-## 8. Network Interface Card (NIC)
+Router adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaringan komputer, seperti menghubungkan jaringan lokal (LAN) dengan internet (WAN). Router bekerja dengan cara meneruskan (routing) data atau paket informasi dari satu jaringan ke jaringan lain berdasarkan alamat IP tujuan.
+
+## 4. Access Point (AP)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/ap.jpg" width="50%" />
+</div>
+
+Access Point (AP) adalah perangkat yang memungkinkan perangkat nirkabel, seperti laptop, ponsel, atau tablet, untuk terhubung ke jaringan komputer, biasanya melalui Wi-Fi. Access Point berfungsi sebagai titik akses yang menghubungkan perangkat nirkabel ke jaringan kabel (seperti jaringan lokal/LAN) atau ke router untuk akses internet.
+
+## 5. Repeater/Extender
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/repeater.jpeg" width="50%">
+</div>
+
+Repeater atau Extender adalah perangkat yang digunakan untuk memperluas jangkauan sinyal Wi-Fi dengan menerima dan memancarkan ulang sinyal dari Access Point (AP) atau router.
+
+## 6. Antena
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/antena.jpg" width="50%">
+</div>
+
+Antena adalah perangkat yang digunakan untuk memancarkan dan menerima sinyal radio dalam jaringan Wi-Fi.
+
+## 7. Network Interface Card (NIC)
 
 <div align="center">
   <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/nic.jpg" width="50%">
 </div>
 
 Network Interface Card (NIC) atau Wireless Adapter adalah perangkat keras yang memungkinkan komputer atau perangkat lain untuk terhubung ke jaringan, baik melalui kabel (Ethernet) maupun nirkabel (Wi-Fi). NIC berfungsi sebagai antarmuka antara perangkat dengan jaringan untuk mengirim dan menerima data.
+
+## 8. Client/Station (STA)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/client.jpeg" width="50%" />
+</div>
+
+Client atau Station adalah perangkat yang terhubung ke jaringan nirkabel melalui Access Point (AP) untuk mengakses layanan jaringan, seperti internet atau sumber daya lokal. STA biasanya adalah perangkat pengguna akhir seperti ponsel, laptop, tablet, atau perangkat IoT yang mendukung Wi-Fi.
 
 ## 9. Kabel Jaringan
 
