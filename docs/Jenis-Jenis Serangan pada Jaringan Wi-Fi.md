@@ -1,5 +1,12 @@
 # Jenis-Jenis Serangan pada Jaringan Wi-Fi
 
+## Serangan Fundamental (Foundation)
+
+- **Packet Sniffing (Passive Monitoring):** Serangan yang melibatkan penyadapan lalu lintas jaringan Wi-Fi untuk menangkap paket data yang dikirim antara client dan AP tanpa mengganggu komunikasi.
+- **MAC Spoofing Attack:** Serangan yang mengubah alamat MAC penyerang untuk menyamar sebagai client atau AP yang sah. Digunakan untuk melewati filter MAC atau mendukung serangan lain.
+- **Rogue Access Point Attack:** Serangan yang membuat AP tidak sah untuk memberikan akses ke jaringan internal atau mencuri data. AP palsu dapat menggunakan SSID yang sama (Evil Twin) atau berbeda dari jaringan target.
+- **Evil Twin Attack:** Serangan yang membuat AP palsu dengan SSID identik dengan jaringan target untuk menipu client agar terhubung. Merupakan subset spesifik dari Rogue AP yang fokus pada impersonation.
+  
 ## Serangan Pada Protokol WEP
 
 - **FMS Attack:** Serangan yang mengeksploitasi kelemahan algoritma RC4 dalam protokol WEP dengan mengumpulkan Initialization Vector (IV) lemah dari paket data yang dikirim melalui jaringan. Serangan ini, dinamakan berdasarkan Fluhrer, Mantin, dan Shamir, membutuhkan ratusan ribu hingga jutaan IV untuk memecahkan kunci WEP.
@@ -20,13 +27,13 @@
 - **Dictionary Attack:** Serangan yang mencoba memecahkan kata sandi WPA/WPA2-PSK dengan mencocokkan hash kata sandi dari handshake menggunakan daftar kata (wordlist) yang berisi kemungkinan kata sandi.
 - **Brute Force Attack:** Serangan yang mencoba semua kombinasi karakter yang mungkin secara sistematis untuk memecahkan kata sandi WPA/WPA2-PSK.
 - **Rainbow Table Attack:** Serangan yang memanfaatkan tabel hash yang telah dihitung sebelumnya (pre-computed) untuk mempercepat proses pemecahan kata sandi WPA/WPA2-PSK. Tabel ini berisi pasangan hash dan kata sandi yang dihasilkan berdasarkan SSID tertentu, memungkinkan penyerang untuk mencocokkan hash yang ditangkap dari jaringan Wi-Fi dengan cepat tanpa perlu melakukan perhitungan ulang secara real-time.
-- **Evil Twin Attack:** Serangan yang melibatkan pembuatan AP palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
+- **Evil Twin Attack (untuk Handshake Capture):** Serangan yang melibatkan pembuatan AP palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
 
 ## Serangan Pada Protokol WPA/WPA2-Enterprise (802.1X)
 
 - **EAP Handshake Capture:** Proses menangkap paket data dari proses autentikasi Extensible Authentication Protocol (EAP) antara client dan server autentikasi (biasanya RADIUS) dalam jaringan WPA/WPA2-Enterprise. Paket ini dapat berisi informasi seperti hash kata sandi atau kredensial yang digunakan untuk serangan lanjutan, tergantung pada metode EAP yang digunakan (misalnya, EAP-TLS, PEAP, atau EAP-TTLS).
 - **MITM Attack:** Serangan yang melibatkan penyerang menyamar sebagai AP atau server autentikasi untuk mencegat komunikasi antara client dan server RADIUS. Penyerang dapat menangkap kredensial atau memanipulasi data autentikasi, terutama pada metode EAP yang rentan seperti PEAP tanpa validasi sertifikat.
-- **Evil Twin Attack:** Serangan yang menciptakan AP palsu dengan SSID yang sama seperti jaringan asli untuk menipu client agar terhubung. Penyerang dapat merekam kredensial autentikasi (misalnya, username dan kata sandi) jika client tidak memvalidasi sertifikat server dengan benar atau menggunakan metode EAP yang lemah.
+- **Evil Twin Attack (untuk Credential Harvesting):** Serangan yang menciptakan AP palsu dengan SSID yang sama seperti jaringan asli untuk menipu client agar terhubung. Penyerang dapat merekam kredensial autentikasi (misalnya, username dan kata sandi) jika client tidak memvalidasi sertifikat server dengan benar atau menggunakan metode EAP yang lemah.
 - **Downgrade Attack:** Serangan yang memaksa client untuk menggunakan metode autentikasi EAP yang kurang aman (misalnya, dari EAP-TLS ke MS-CHAPv2) dengan memanipulasi negosiasi protokol. Ini memungkinkan penyerang untuk menangkap kredensial dalam format yang lebih mudah di-crack.
 - **RADIUS Impersonation Attack:** Serangan di mana penyerang menyamar sebagai server RADIUS untuk menerima kredensial autentikasi dari client. Ini sering dilakukan bersamaan dengan Evil Twin Attack untuk menipu client agar mengirimkan username dan kata sandi.
 - **Dictionary Attack:** Serangan yang menargetkan metode EAP seperti MS-CHAPv2 atau GTC, di mana hash kata sandi yang ditangkap dari proses autentikasi dicocokkan dengan daftar kata sandi (wordlist) untuk memecahkan kredensial pengguna.
@@ -50,9 +57,6 @@
 
 ## Serangan Lainnya
 
-- **Packet Sniffing (Passive Monitoring):** Serangan yang melibatkan penyadapan lalu lintas jaringan Wi-Fi untuk menangkap paket data yang dikirim antara client dan Access Point (AP).
-- **MAC Spoofing Attack:** Serangan yang mengubah alamat MAC penyerang untuk menyamar sebagai client atau AP yang sah. Digunakan untuk melewati filter MAC pada jaringan Wi-Fi atau mendukung serangan lain seperti Rogue AP.
-- **Rogue Access Point (AP) Attack:** Serangan yang membuat AP palsu dengan SSID yang menyerupai jaringan resmi untuk menipu client agar terhubung. Dapat digunakan untuk mencuri data, menyebarkan malware, atau melakukan phishing.
 - **Beacon Flooding Attack:** Serangan yang mengirimkan frame beacon palsu untuk membuat banyak AP fiktif terlihat di perangkat client. Ini dapat mengacaukan pemindai jaringan (network scanners) atau bahkan menyebabkan kerusakan pada driver Wi-Fi client tertentu, menghasilkan Denial-of-Service (DoS) ringan.
 - **Authentication Denial-of-Service (DoS) Attack:** Serangan yang mengirimkan frame autentikasi palsu ke semua AP dalam jangkauan untuk membebani mereka dengan permintaan koneksi dari client fiktif. Hal ini dapat menyebabkan AP membeku atau mereset, mengganggu konektivitas jaringan.
 - **SSID Probing and Bruteforcing Attack:** Serangan yang mengirimkan probe request untuk mendeteksi SSID tersembunyi (hidden SSID) dan memverifikasi apakah AP berada dalam jangkauan pengiriman. Penyerang juga dapat melakukan bruteforce pada SSID tersembunyi dengan atau tanpa wordlist untuk menemukan nama jaringan yang benar.
@@ -62,4 +66,3 @@
 - **Mesh Network Attacks (IEEE 802.11s):** Serangan yang menargetkan jaringan mesh Wi-Fi (IEEE 802.11s) dengan mengganggu manajemen tautan atau rute. Teknik meliputi membanjiri tetangga dan rute, menciptakan black hole, atau mengalihkan lalu lintas jaringan.
 - **WIDS/WIPS Confusion Attack:** Serangan yang mengacaukan sistem deteksi dan pencegahan intrusi nirkabel (WIDS/WIPS) dengan menghubungkan client ke beberapa node WDS (Wireless Distribution System) atau membuat AP palsu. Ini membingungkan sistem keamanan jaringan, memungkinkan penyerang untuk beroperasi tanpa terdeteksi.
 - **Packet Fuzzer Attack:** Serangan yang mengirimkan paket acak atau rusak ke AP atau client untuk menguji ketahanan sistem atau menemukan kerentanan. Menggunakan berbagai sumber paket dan modifikasi, serangan ini dapat menyebabkan crash atau perilaku tak terduga. Harus dilakukan dengan hati-hati karena dapat mengganggu stabilitas jaringan.
-- **Karma Attack:** Serangan yang memanfaatkan fitur auto-connect pada perangkat Wi-Fi. Penyerang membuat AP palsu yang menjawab permintaan probe dari client untuk SSID yang pernah diketahui perangkat. Client dapat terhubung secara otomatis, memungkinkan penyerang menangkap data atau kredensial.
