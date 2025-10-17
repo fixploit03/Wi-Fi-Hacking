@@ -113,7 +113,7 @@ ESSID (Extended Service Set Identifier) adalah nama jaringan yang digunakan oleh
 
 ### 4. RSSI
 
-RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
+RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan decibel-milliwatts (dBm).
 
 **Kisaran umum:**
   - `-30 dBm`: Sinyal sangat kuat (biasanya sangat dekat dengan AP)
