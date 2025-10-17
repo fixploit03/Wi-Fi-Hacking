@@ -23,6 +23,8 @@
   - [Antena](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#5-antena)
   - [Repeater/Extender](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#6-repeaterextender)
   - [Switch/Hub](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#7-switchhub)
+  - [Network Interface Card (NIC) ]()
+  - [Kabel Jaringan]()
 - [Jenis-Jenis Serangan pada Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Jenis-Jenis%20Serangan%20pada%20Jaringan%20Wi-Fi#jenis-jenis-serangan-pada-jaringan-wi-fi)
   - [Serangan Fundamental](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Jenis-Jenis%20Serangan%20pada%20Jaringan%20Wi-Fi#serangan-fundamental)
   - [Serangan Pada Protokol WEP](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Jenis-Jenis%20Serangan%20pada%20Jaringan%20Wi-Fi#serangan-pada-protokol-wep)
