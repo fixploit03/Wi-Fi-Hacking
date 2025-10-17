@@ -1,6 +1,6 @@
 # Materi -2 | Dasar-Dasar Jaringan Wi-Fi
 
-![materi 2](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
+![Materi -2 | Dasar-Dasar Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
 
 Wi-Fi (Wireless Fidelity) adalah teknologi komunikasi nirkabel yang memungkinkan perangkat elektronik saling bertukar data atau terhubung ke internet tanpa kabel, dengan memanfaatkan gelombang radio.
 
@@ -34,7 +34,11 @@ Setiap versi standar (seperti 802.11a, 802.11b, 802.11g, dan seterusnya) membawa
 - **MIMO (Multiple-Input Multiple-Output):** Teknologi yang menggunakan banyak antena untuk mengirim dan menerima data secara bersamaan, sehingga meningkatkan kecepatan, kapasitas, dan keandalan koneksi.
 - **MU-MIMO (Multi-User MIMO):** Pengembangan dari MIMO yang memungkinkan router berkomunikasi dengan beberapa perangkat sekaligus, bukan satu per satu, sehingga mengurangi antrean data dan meningkatkan efisiensi jaringan.
 - **OFDMA (Orthogonal Frequency Division Multiple Access):** Teknologi yang membagi satu channel menjadi beberapa sub-channel kecil, memungkinkan banyak perangkat dilayani secara bersamaan. Hal ini meningkatkan efisiensi dan menurunkan latensi, terutama di lingkungan dengan banyak perangkat terhubung.
-  
+
+### Ilustrasi MIMO, MU-MIMO, dan OFDMA
+
+![Ilustrasi MIMO, MU-MIMO, dan OFDMA](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/mimo.png)
+
 ## 2. Gelombang Radio
 
 Wi-Fi menggunakan gelombang radio untuk mengirim dan menerima data secara nirkabel antara perangkat dan router.
