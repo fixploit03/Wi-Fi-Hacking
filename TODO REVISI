@@ -108,6 +108,20 @@ Bagian III: Ancaman dan Teknik Serangan
 
             Serangan Pada Fitur WPS (Pixie Dust Attack, Offline Brute-Force)
 
+2. Autentikasi & Manajemen Jaringan Wi-Fi
+
+Tujuan: Memahami bagaimana perangkat berinteraksi dengan jaringan secara aman.
+
+Contoh materi:
+
+Diagram alur autentikasi Wi-Fi (Open vs WPA2 vs WPA3)
+
+Proses handshake 4-way / SAE handshake
+
+Peran RADIUS server di WPA2/WPA3-Enterprise
+
+Cocok sebagai jembatan sebelum masuk ke praktik hacking atau konfigurasi jaringan.
+
 Bagian IV: Membangun Lingkungan Lab (Lab Setup)
 
     Persiapan Lab
