@@ -1,6 +1,6 @@
-# Materi -2 | Dasar-Dasar Jaringan Wi-Fi
+# Materi - 2 | Dasar-Dasar Jaringan Wi-Fi
 
-![Materi -2 | Dasar-Dasar Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
+![Materi - 2 | Dasar-Dasar Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
 
 Wi-Fi (Wireless Fidelity) adalah teknologi komunikasi nirkabel yang memungkinkan perangkat elektronik saling bertukar data atau terhubung ke internet tanpa kabel, dengan memanfaatkan gelombang radio.
 
