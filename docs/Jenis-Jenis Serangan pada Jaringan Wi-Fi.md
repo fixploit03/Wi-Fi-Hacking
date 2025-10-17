@@ -22,6 +22,16 @@
 - **Rainbow Table Attack:** Serangan yang memanfaatkan tabel hash yang telah dihitung sebelumnya (pre-computed) untuk mempercepat proses pemecahan kata sandi WPA/WPA2-PSK. Tabel ini berisi pasangan hash dan kata sandi yang dihasilkan berdasarkan SSID tertentu, memungkinkan penyerang untuk mencocokkan hash yang ditangkap dari jaringan Wi-Fi dengan cepat tanpa perlu melakukan perhitungan ulang secara real-time.
 - **Evil Twin Attack:** Serangan yang melibatkan pembuatan Access Point (AP) palsu dengan SSID yang sama dengan jaringan asli untuk menipu client agar terhubung. Penyerang dapat menangkap 4-way handshake, data autentikasi, atau bahkan lalu lintas jaringan client.
 
+## WPA/WPA2-Enterprise (802.1X)
+
+- **EAP Handshake Capture:** Proses menangkap paket data dari proses autentikasi Extensible Authentication Protocol (EAP) antara client dan server autentikasi (biasanya RADIUS) dalam jaringan WPA/WPA2-Enterprise. Paket ini dapat berisi informasi seperti hash kata sandi atau kredensial yang digunakan untuk serangan lanjutan, tergantung pada metode EAP yang digunakan (misalnya, EAP-TLS, PEAP, atau EAP-TTLS).
+- **MITM Attack:** Serangan yang melibatkan penyerang menyamar sebagai Access Point (AP) atau server autentikasi untuk mencegat komunikasi antara client dan server RADIUS. Penyerang dapat menangkap kredensial atau memanipulasi data autentikasi, terutama pada metode EAP yang rentan seperti PEAP tanpa validasi sertifikat.
+- **Evil Twin Attack:** Serangan yang menciptakan Access Point palsu dengan SSID yang sama seperti jaringan asli untuk menipu client agar terhubung. Penyerang dapat merekam kredensial autentikasi (misalnya, username dan kata sandi) jika client tidak memvalidasi sertifikat server dengan benar atau menggunakan metode EAP yang lemah.
+- **Downgrade Attack:** Serangan yang memaksa client untuk menggunakan metode autentikasi EAP yang kurang aman (misalnya, dari EAP-TLS ke MS-CHAPv2) dengan memanipulasi negosiasi protokol. Ini memungkinkan penyerang untuk menangkap kredensial dalam format yang lebih mudah di-crack.
+- **RADIUS Impersonation Attack:** Serangan di mana penyerang menyamar sebagai server RADIUS untuk menerima kredensial autentikasi dari client. Ini sering dilakukan bersamaan dengan Evil Twin Attack untuk menipu client agar mengirimkan username dan kata sandi.
+- **Dictionary Attack:** Serangan yang menargetkan metode EAP seperti MS-CHAPv2 atau GTC, di mana hash kata sandi yang ditangkap dari proses autentikasi dicocokkan dengan daftar kata sandi (wordlist) untuk memecahkan kredensial pengguna.
+- **Brute Force Attack:** Serangan yang mencoba semua kombinasi karakter secara sistematis untuk memecahkan kata sandi pengguna, terutama pada metode EAP yang menghasilkan hash rentan seperti MS-CHAPv2. Serangan ini lebih efektif jika kata sandi pengguna lemah.
+
 ## Serangan Pada Protokol WPS (Wi-Fi Protected Setup)
 
 - **PIN Brute Force Attack:** Serangan ini mencoba semua kemungkinan kombinasi PIN WPS (8 digit, tetapi dibagi menjadi dua bagian 4 digit) untuk mendapatkan kunci WPA/WPA2-PSK. Karena checksum pada digit terakhir, hanya sekitar 11.000 kombinasi yang diperlukan. Alat seperti Reaver atau Bully digunakan untuk mencoba PIN secara sistematis hingga menemukan yang benar.
