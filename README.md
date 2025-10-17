@@ -15,7 +15,7 @@
   - [Channel](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi#4-channel)
   - [Channel Bandwith](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi#5-channel-bandwidth)
   - [Konsep BSSID, SSID, ESSID, RSSI](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi#6-konsep-bssid-ssid-essid-rssi)
-- [Komponen Fisik Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#komponen-fisik-jaringan-wi-fi)
+- [Materi - 3 | Komponen Fisik Jaringan Wi-Fi](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#komponen-fisik-jaringan-wi-fi)
   - [Modem](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#1-modem)
   - [Router](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#2-router)
   - [Switch/Hub](https://github.com/fixploit03/Pentest-WiFi/tree/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi#3-switchhub)
