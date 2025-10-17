@@ -1,5 +1,7 @@
 # Jenis-Jenis Serangan pada Jaringan Wi-Fi
 
+Berikut adalah jenis-jenis serangan pada jaringan Wi-Fi:
+
 ## Serangan Fundamental
 
 - **Packet Sniffing (Passive Monitoring):** Serangan yang melibatkan penyadapan lalu lintas jaringan Wi-Fi untuk menangkap paket data yang dikirim antara client dan AP tanpa mengganggu komunikasi.
