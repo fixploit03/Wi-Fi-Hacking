@@ -106,18 +106,21 @@ Dalam konteks Wi-Fi, cipher dipilih berdasarkan versi protokol keamanan (WEP, WP
 
 ### 4.2.1 Karakteristik-Karakteristik Cipher
 
-**1. RC4**
+#### 4.2.1.1 RC4
+
 - Digunakan pada WEP dan WPA dengan TKIP (Temporal Key Integrity Protocol).
 - Merupakan stream cipher yang cepat.
 - Kelemahan: Rentan terhadap serangan kriptografis, sehingga tidak direkomendasikan untuk jaringan modern.
 
-**2. AES-CCMP**
+#### 4.2.1.2 AES-CCMP
+
 - Digunakan pada WPA2 (standar modern).
 - Merupakan block cipher dengan enkripsi 128-bit.
 - Menyediakan enkripsi dan autentikasi data (data integrity).
 - Cocok untuk sebagian besar jaringan modern hingga 2025.
 
-**3. AES-GCMP**
+#### 4.2.1.3 AES-GCMP
+
 - Digunakan pada WPA3.
 - Menawarkan enkripsi 128-bit untuk WPA3-Personal dan 256-bit untuk WPA3-Enterprise.
 - Lebih efisien dibanding CCMP dan dilengkapi dengan Galois Message Authentication Code (GMAC) untuk perlindungan tambahan.
