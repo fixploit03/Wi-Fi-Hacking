@@ -2,11 +2,11 @@
 
 ![materi 2](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Dasar-Dasar%20Jaringan%20Wi-Fi/img/materi%202.jpg)
 
-Wi-Fi (Wireless Fidelity) adalah teknologi yang memungkinkan perangkat elektronik untuk bertukar data atau terhubung ke internet secara nirkabel menggunakan gelombang radio.
+Wi-Fi (Wireless Fidelity) adalah teknologi komunikasi nirkabel yang memungkinkan perangkat elektronik saling bertukar data atau terhubung ke internet tanpa kabel, dengan memanfaatkan gelombang radio.
 
-Secara teknis, Wi-Fi beroperasi berdasarkan standar IEEE 802.11 dan dapat bekerja pada frekuensi 2,4 GHz, 5 GHz, hingga 6 GHz (pada versi terbaru seperti Wi-Fi 6/6E dan Wi-Fi 7).
+Secara teknis, Wi-Fi bekerja berdasarkan standar IEEE 802.11 dan menggunakan beberapa pita frekuensi utama, yaitu 2.4 GHz dan 5 GHz. Pita frekuensi ini menentukan jangkauan sinyal, kecepatan transmisi, serta kemampuan menembus hambatan fisik seperti dinding atau benda padat.
 
-Sebuah jaringan Wi-Fi umumnya dibangun menggunakan router nirkabel, yang berfungsi sebagai pusat pengatur lalu lintas data. Router ini terhubung ke internet melalui koneksi kabel, kemudian mengubah sinyal kabel tersebut menjadi gelombang radio yang dapat ditangkap oleh perangkat di sekitarnya yang memiliki modul atau adaptor Wi-Fi.
+Sebuah jaringan Wi-Fi umumnya dibangun menggunakan router nirkabel, yang berfungsi sebagai pusat pengatur lalu lintas data. Router terhubung ke internet melalui kabel, lalu mengubah sinyal kabel menjadi gelombang radio agar dapat ditangkap oleh perangkat yang memiliki modul atau adapter Wi-Fi.
 
 ## 1. Standar IEEE 802.11 (a/b/g/n/ac/ax)
 
@@ -29,7 +29,6 @@ Setiap versi standar (seperti 802.11a, 802.11b, 802.11g, dan seterusnya) membawa
 | 802.11ac (Wi-Fi 5) | 2013 | 5 GHz | 3.5 Gbps | Mendukung kecepatan sangat tinggi (hingga beberapa gigabit per detik) dengan bandwidth lebar dan teknologi MU-MIMO, sehingga mampu melayani banyak perangkat sekaligus secara efisien. | Hanya beroperasi di frekuensi 5 GHz, sehingga jangkauan sinyal lebih pendek dan lebih mudah terhalang oleh dinding atau objek fisik. |
 | 802.11ax (Wi-Fi 6/6E) | 2019/2020 | 2.4, 5, (6 GHz) | 9.6 Gbps | Memiliki efisiensi dan kapasitas tinggi, mampu melayani banyak perangkat secara bersamaan dengan teknologi OFDMA dan MU-MIMO pada frekuensi 2,4 GHz, 5 GHz, dan 6 GHz (untuk Wi-Fi 6E).| Perangkat dan router yang kompatibel masih relatif mahal, serta kinerja optimal hanya dirasakan jika semua perangkat mendukung Wi-Fi 6/6E. |
 | 802.11be (Wi-Fi 7) | 2024 | 2.4, 5, 6 GHz | hingga 46 Gbps | Menawarkan kecepatan ultra tinggi, latensi sangat rendah, serta efisiensi spektrum lebih baik melalui teknologi Multi-Link Operation (MLO), 320 MHz channel bandwidth, dan 4096-QAM. Sangat ideal untuk VR/AR, gaming, dan streaming 8K. | Masih baru, belum banyak perangkat yang mendukung, serta biaya perangkat dan router masih tinggi. |
-
 
 **Keterangan:**
 - **Wi-Fi 4-7:** Merupakan penamaan baru untuk standar IEEE 802.11n hingga 802.11be, yang diperkenalkan agar lebih mudah dipahami oleh konsumen.
@@ -65,12 +64,10 @@ Channel adalah jalur komunikasi dalam sebuah pita frekuensi yang digunakan untuk
 **Frekuensi 2.4 GHz:**
 - Terdapat 14 channel, tetapi hanya channel 1, 6, dan 11 yang benar-benar non-overlapping di sebagian besar wilayah.
 - Setiap channel memiliki bandwidth standar 20 MHz, tetapi channel yang berdekatan (misalnya: channel 1 dan 2) dapat tumpang tindih, menyebabkan interferensi.
-- Interferensi terjadi jika dua router menggunakan channel yang sama atau berdekatan, sehingga mengurangi kecepatan dan stabilitas koneksi.
 
 **Frekuensi 5 GHz:**
 - Menyediakan lebih banyak channel non-overlapping, seperti channel 36, 40, 44, 48, 149, 153, 157, 161, dan lainnya, tergantung regulasi wilayah.
 - Karena lebih banyak channel dan jarak antar-channel yang lebih lebar, risiko interferensi jauh lebih kecil dibandingkan frekuensi 2.4 GHz.
-- Mendukung bandwidth lebih lebar (misalnya: 40 MHz, 80 MHz, hingga 160 MHz), memungkinkan kecepatan lebih tinggi, terutama pada standar Wi-Fi 5 (802.11ac) dan Wi-Fi 6 (802.11ax).
 
 ## 5. Channel Bandwidth
 
@@ -83,9 +80,8 @@ Channel Bandwidth adalah lebar pita frekuensi yang digunakan oleh sebuah channel
 **Frekuensi 5 GHz:**
 - Mendukung bandwidth 20 MHz, 40 MHz, 80 MHz, dan 160 MHz.
 - Frekuensi 5 GHz memiliki lebih banyak saluran non-tumpang tindih dibandingkan 2.4 GHz, memungkinkan penggunaan bandwidth lebih lebar tanpa interferensi signifikan.
-- Bandwidth 80 MHz dan 160 MHz umum digunakan pada standar Wi-Fi 5 (802.11ac) dan Wi-Fi 6 (802.11ax) untuk mendukung kecepatan tinggi, bahkan hingga gigabit, ideal untuk aplikasi seperti streaming 4K atau gaming.
 
-## 6. Konsep BSSID, SSID, RSSI
+## 6. Konsep BSSID, SSID, ESSID, RSSI
 
 ### 1. BSSID
 
@@ -103,12 +99,19 @@ SSID (Service Set Identifier) adalah nama jaringan Wi-Fi yang dipancarkan oleh A
 - `MODAL_BANG`
 - `CIE_KEPO`
 
-### 3. RSSI
+### 3. ESSID
+
+ESSID (Extended Service Set Identifier) adalah nama jaringan yang digunakan oleh sekelompok AP yang saling terhubung dalam satu infrastruktur (ESS). Dalam praktik sehari-hari, ESSID sering digunakan bergantian dengan SSID ketika berbicara tentang jaringan multi-AP.
+
+**Contoh:**
+- SSID `WIFI_KERE` dipancarkan oleh 10 AP berbeda di kost. Semua AP tersebut menggunakan ESSID yang sama yaitu `WIFI_KERE`, sehingga penghuni kost dapat berpindah ruangan tanpa terputus dari jaringan.
+
+### 4. RSSI
 
 RSSI (Received Signal Strength Indicator) adalah Ukuran kekuatan sinyal Wi-Fi yang diterima oleh perangkat dalam satuan `dBm` (decibel-milliwatts).
 
 **Kisaran umum:**
-  - `-30 dBm`: Sinyal sangat kuat
-  - `-50` s/d `-60 dBm`: Baik
+  - `-30 dBm`: Sinyal sangat kuat (biasanya sangat dekat dengan AP)
+  - `-50` hingga `-60 dBm`: Baik
   - `-70 dBm`: Cukup
-  - Di bawah `-80 dBm` (`-90` s/d `-200dBm`): Lemah/tidak stabil
+  - Di bawah `-80 dBm` (sekitar `-85` hingga `-100 dBm`): Lemah/tidak stabil
