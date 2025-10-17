@@ -1,4 +1,6 @@
-# Komponen Fisik Jaringan Wi-Fi
+# Materi - 3 | Komponen Fisik Jaringan Wi-Fi
+
+![](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Komponen%20Fisik%20Jaringan%20Wi-Fi/img/materi%203.jpg)
 
 Komponen fisik jaringan Wi-Fi adalah perangkat keras (hardware) yang digunakan untuk membangun, mengoperasikan, dan menjaga konektivitas jaringan nirkabel. Berikut adalah penjelasan singkat tentang komponen fisik utama dalam jaringan Wi-Fi:
 
