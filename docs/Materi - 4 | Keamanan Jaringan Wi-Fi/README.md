@@ -249,3 +249,215 @@ PMKID (Pairwise Master Key Identifier) adalah hash identitas kunci utama (PMK) y
 ### 4.5.2 Kelemahan PMKID
 
 Jika dicapture, PMKID dapat digunakan untuk melakukan serangan offline terhadap PSK, sehingga tetap perlu keamanan PSK yang kuat.
+
+# 4.6 Jenis-Jenis Serangan pada Jaringan Wi-Fi
+
+Berikut adalah jenis-jenis serangan pada jaringan Wi-Fi:
+
+## 4.6.1 Serangan Fundamental
+
+### 4.6.1.1 Packet Sniffing (Passive Monitoring)
+
+Packet Sniffing adalah serangan yang melibatkan penyadapan lalu lintas jaringan Wi-Fi untuk menangkap paket data yang dikirim antara client dan AP tanpa mengganggu komunikasi.
+
+### 4.6.1.2 MAC Spoofing Attack
+
+MAC Spoofing Attack adalah serangan yang mengubah alamat MAC penyerang untuk menyamar sebagai client atau AP yang sah. Digunakan untuk melewati filter MAC atau mendukung serangan lain.
+
+### 4.6.1.3 Rogue Access Point Attack
+
+Rogue Access Point Attack adalah serangan yang membuat AP tidak sah untuk memberikan akses ke jaringan internal atau mencuri data. AP palsu bisa meniru SSID (Evil Twin) atau menggunakan SSID berbeda dari jaringan target.
+
+### 4.6.1.4 Evil Twin Attack
+
+Evil Twin Attack adalah serangan yang membuat AP palsu dengan SSID identik dengan jaringan target untuk menipu client agar terhubung. Merupakan subset spesifik dari Rogue AP yang fokus pada impersonation.
+
+## 4.6.2 Serangan Pada Protokol Keamanan
+
+### 4.6.2.1 WEP (Wired Equivalent Privacy)
+
+#### 4.6.2.1.1 FMS Attack
+
+FMS Attack mengeksploitasi kelemahan algoritma RC4 dalam WEP dengan mengumpulkan IV lemah dari paket data. Membutuhkan ratusan ribu hingga jutaan IV untuk memecahkan kunci WEP.
+
+#### 4.6.2.1.2 KoreK Attack
+
+KoreK Attack adalah versi lebih cepat dari FMS Attack dengan analisis statistik IV yang lebih efisien.
+
+#### 4.6.2.1.3 PTW Attack
+
+PTW Attack menargetkan kelemahan spesifik WEP, hanya membutuhkan 20.000–50.000 IV untuk memecahkan kunci. Default di Aircrack-NG.
+
+#### 4.6.2.1.4 Fragmentation Attack
+
+Memanipulasi fragmen paket untuk merekonstruksi kunci WEP. Biasanya dipadukan dengan Chop-Chop atau ARP Replay.
+
+#### 4.6.2.1.5 Chop-Chop Attack
+
+Mendekripsi satu paket WEP tanpa kunci langsung dengan memotong paket dan merekonstruksi data via AP.
+
+#### 4.6.2.1.6 ARP Request Replay Attack
+
+Menangkap dan mengirim ulang paket ARP untuk memaksa AP menghasilkan lebih banyak IV, mempercepat serangan WEP.
+
+#### 4.6.2.1.7 Fake Authentication Attack
+
+Mengelabui AP agar menerima penyerang sebagai client sah, memungkinkan injeksi paket ke jaringan.
+
+#### 4.6.2.1.8 Caffe Latte Attack
+
+Menargetkan client yang pernah terhubung ke jaringan WEP melalui AP palsu (Evil Twin) untuk menghasilkan IV.
+
+#### 4.6.2.1.9 Hirte Attack
+
+Versi canggih dari Caffe Latte Attack, memanipulasi data client untuk menghasilkan IV tanpa akses ke AP asli.
+
+### 4.6.2.2 WPA/WPA2-Personal (PSK)
+
+#### 4.6.2.2.1 Capture Handshake
+
+Menangkap 4-way handshake antara client dan AP. Handshake ini berisi hash kata sandi untuk serangan Dictionary, Brute Force, atau Rainbow Table.
+
+#### 4.6.2.2.2 Deauthentication Attack
+
+Mengirim paket deautentikasi palsu untuk memutus client, memaksa handshake baru yang bisa ditangkap.
+
+#### 4.6.2.2.3 PMKID Attack
+
+Mengeksploitasi PMKID dalam frame RSN tanpa perlu 4-way handshake lengkap. Digunakan untuk memecahkan kata sandi WPA/WPA2-PSK.
+
+#### 4.6.2.2.4 Dictionary Attack
+
+Mencocokkan hash handshake dengan daftar kata (wordlist) untuk menebak kata sandi.
+
+#### 4.6.2.2.5 Brute Force Attack
+
+Mencoba semua kombinasi karakter untuk memecahkan kata sandi WPA/WPA2-PSK.
+
+#### 4.6.2.2.6 Rainbow Table Attack
+
+Memanfaatkan tabel hash pre-computed untuk mempercepat pemecahan kata sandi berdasarkan SSID target.
+
+#### 4.6.2.2.7 Evil Twin Attack
+
+Membuat AP palsu dengan SSID sama untuk menangkap handshake, data autentikasi, atau lalu lintas client.
+
+#### 4.6.2.2.8 KRACK Attack
+
+Memanfaatkan kelemahan pada implementasi 4-way handshake WPA2 untuk memaksa reinstall kunci enkripsi, memungkinkan dekripsi paket.
+
+### 4.6.2.3 WPA/WPA2-Enterprise (802.1X)
+
+#### 4.6.2.3.1 EAP Handshake Capture
+
+Menangkap paket autentikasi EAP antara client dan server RADIUS, berisi hash kata sandi atau kredensial.
+
+#### 4.6.2.3.2 MITM Attack
+
+Menyamar sebagai AP atau server RADIUS untuk mencegat komunikasi dan kredensial.
+
+#### 4.6.2.3.3 Evil Twin Attack
+
+Membuat AP palsu untuk merekam kredensial autentikasi client.
+
+#### 4.6.2.3.4 Downgrade Attack
+
+Memaksa client menggunakan metode EAP yang kurang aman untuk memudahkan serangan.
+
+#### 4.6.2.3.5 RADIUS Impersonation Attack
+
+Menyamar sebagai server RADIUS untuk menerima kredensial client.
+
+#### 4.6.2.3.6 Dictionary Attack
+
+Mencocokkan hash EAP (mis. MS-CHAPv2) dengan wordlist untuk memecahkan kredensial.
+
+#### 4.6.2.3.7 Brute Force Attack
+
+Mencoba semua kombinasi karakter untuk memecahkan kata sandi client.
+
+### 4.6.2.4 WPA3-Personal (SAE)
+
+#### 4.6.2.4.1 Dragonblood Attack
+
+Mengeksploitasi kelemahan implementasi SAE, termasuk timing, side-channel, dan kebocoran kata sandi.
+
+#### 4.6.2.4.2 Downgrade Attack
+
+Memaksa client WPA3 ke protokol WPA2-PSK untuk mempermudah serangan.
+
+#### 4.6.2.4.3 Side-Channel Attack
+
+Mengeksploitasi kebocoran informasi dari implementasi SAE untuk mengekstrak kunci atau mempersempit kata sandi.
+
+#### 4.6.2.4.4 Evil Twin Via Downgrade
+
+Membuat AP palsu untuk memaksa client WPA3 menggunakan mode transisi WPA2.
+
+#### 4.6.2.4.5 Denial-of-Service (DoS)
+
+Membanjiri AP atau client dengan frame SAE palsu, mengganggu autentikasi.
+
+### 4.6.2.5 WPS
+
+#### 4.6.2.5.1 PIN Brute Force Attack
+
+Mencoba semua kombinasi PIN WPS (8 digit, dibagi dua) untuk mendapatkan kunci WPA/WPA2-PSK (~11.000 kombinasi).
+
+#### 4.6.2.5.2 Pixie Dust Attack
+
+Mengeksploitasi kelemahan WPS tertentu (Broadcom/Ralink) untuk mendapatkan PIN langsung.
+
+#### 4.6.2.5.3 Physical Access Attack (Push Button Configuration)
+
+Memanfaatkan PBC WPS dengan menekan tombol fisik pada AP/client.
+
+#### 4.6.2.5.4 Null PIN Attack
+
+Memanfaatkan AP yang menerima PIN kosong atau default sebagai valid.
+
+#### 4.6.2.5.5 Known PIN Attack
+
+Menggunakan PIN WPS yang sudah diketahui untuk mendapatkan akses tanpa cracking tambahan.
+
+### 4.6.2.6 Serangan Lainnya
+
+#### 4.6.2.6.1 Beacon Flooding Attack
+
+Mengirim frame beacon palsu untuk membuat banyak AP fiktif terlihat, mengacaukan pemindai jaringan.
+
+#### 4.6.2.6.2 Authentication DoS Attack
+
+Mengirim frame autentikasi palsu ke semua AP dalam jangkauan untuk membebani mereka.
+
+#### 4.6.2.6.3 SSID Probing and Bruteforcing Attack
+
+Mengirim probe request untuk mendeteksi hidden SSID dan melakukan bruteforce jika perlu.
+
+#### 4.6.2.6.4 Deauthentication Attack
+
+Mengirim paket deautentikasi palsu untuk memutus koneksi client dan menangkap handshake.
+
+#### 4.6.2.6.5 Disassociation Attack
+
+Mengirim paket disasosiasi palsu untuk memutus asosiasi client-AP.
+
+#### 4.6.2.6.6 Michael Countermeasures Exploitation Attack
+
+Mengeksploitasi fitur Michael Countermeasures pada AP dengan TKIP, memicu DoS.
+
+#### 4.6.2.6.7 EAPOL Start and Logoff Packet Injection Attack
+
+Membanjiri AP dengan frame EAPOL Start atau Logoff palsu untuk mengganggu autentikasi.
+
+#### 4.6.2.6.8 Mesh Network Attacks (IEEE 802.11s)
+
+Menargetkan jaringan mesh Wi-Fi, mengganggu manajemen tautan atau rute.
+
+#### 4.6.2.6.9 WIDS/WIPS Confusion Attack
+
+Mengacaukan sistem deteksi/pencegahan intrusi nirkabel dengan AP palsu atau node WDS.
+
+#### 4.6.2.6.10 Packet Fuzzer Attack
+
+Mengirim paket acak/rusak ke AP/client untuk menguji ketahanan atau menemukan kerentanan.
