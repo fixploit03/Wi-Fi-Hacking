@@ -74,7 +74,7 @@ Channel adalah jalur komunikasi dalam sebuah pita frekuensi yang digunakan untuk
 ### 2.4.2 Frekuensi 5 GHz
 
 - Menyediakan lebih banyak channel non-overlapping, seperti channel 36, 40, 44, 48, 149, 153, 157, 161, dan lainnya, tergantung regulasi wilayah.
-- Karena lebih banyak channel dan jarak antar-channel yang lebih lebar, risiko interferensi jauh lebih kecil dibandingkan frekuensi 2.4 GHz.
+- Karena lebih banyak channel dan jarak antar channel yang lebih lebar, risiko interferensi jauh lebih kecil dibandingkan frekuensi 2.4 GHz.
 
 ## 2.5 Channel Bandwidth
 
