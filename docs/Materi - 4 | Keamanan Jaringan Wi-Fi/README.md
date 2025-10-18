@@ -190,3 +190,61 @@ Enterprise Authentication adalah metode autentikasi Wi-Fi yang menggunakan proto
 - Jaringan Wi-Fi di lingkungan perusahaan, universitas, atau institusi besar dengan banyak pengguna.
 - Jaringan yang memerlukan autentikasi berbasis identitas individu, seperti karyawan atau mahasiswa, dengan kontrol akses yang terperinci.
 - Cocok untuk lingkungan yang membutuhkan keamanan tinggi dan kemampuan untuk mencabut akses pengguna secara cepat.
+
+## 4.4 Handshake Process
+
+Dalam keamanan Wi-Fi, handshake adalah proses pertukaran informasi kriptografi antara station (STA) dan access point (AP) sebelum koneksi aman dapat dilakukan. Handshake memastikan kedua pihak memiliki kunci enkripsi yang sama untuk melindungi komunikasi data.
+
+Handshake paling umum digunakan adalah 4-Way Handshake pada WPA/WPA2, serta konsep PMKID untuk autentikasi cepat.
+
+### 4.4.1 4-Way Handshake (WPA/WPA2)
+
+4-Way Handshake terjadi setelah STA berhasil mengautentikasi diri ke AP. Tujuan utama handshake ini adalah:
+- Membuktikan bahwa STA dan AP memiliki kunci utama yang sama (PMK – Pairwise Master Key).
+- Menetapkan kunci sementara (PTK – Pairwise Transient Key) untuk mengenkripsi data.
+- Menukar Nonce (angka acak) untuk menghasilkan kunci unik setiap sesi.
+
+### 4.4.2 Alur dasar 4-Way Handshake
+
+| Step | Dari | Ke | Tujuan |
+|:--:|:--:|:--:|:--|
+| 1 | AP | STA | Mengirim ANonce (AP Nonce) |
+| 2 | STA | AP | Mengirim SNonce (STA Nonce) + MIC |
+| 3 | AP | STA | Mengirim Group Temporal Key (GTK) + MIC |
+| 4 | STA | AP | Konfirmasi penerimaan GTK (ACK) 
+
+**Penjelasan istilah penting:**
+- **PMK (Pairwise Master Key):** Kunci utama dari PSK atau 802.1X.
+- **PTK (Pairwise Transient Key):** Kunci sementara untuk mengenkripsi data unicast.
+- **GTK (Group Temporal Key):** Kunci untuk data broadcast/multicast.
+- **Nonce:** Angka acak untuk memastikan setiap sesi memiliki kunci unik.
+- **MIC (Message Integrity Code):** Digunakan untuk memverifikasi integritas pesan.
+
+**Catatan:**  
+4-Way Handshake ini merupakan target utama dalam serangan WPA/WPA2 cracking, karena handshake berisi informasi yang bisa digunakan untuk menebak PSK jika dicapture.
+
+### 4.4.3 Ilustrasi Alur 4-Way Handshake
+
+![Ilustrasi Alur 4-Way Handshake](https://github.com/fixploit03/Pentest-WiFi/blob/main/docs/Materi%20-%204%20%7C%20Keamanan%20Jaringan%20Wi-Fi/img/4way%20handshake.png)
+
+**Keterangan:**  
+- ANonce dikirim AP untuk memulai handshake.
+- SNonce + MIC dikirim STA sebagai respon dengan Nonce sendiri.
+- AP mengirim GTK + MIC agar STA bisa menerima broadcast/multicast.
+- STA mengirim ACK sebagai konfirmasi.
+
+Alur ini memastikan kunci enkripsi aman sebelum data dienkripsi dan dikirim.
+
+## 4.5 PMKID
+
+PMKID (Pairwise Master Key Identifier) adalah hash identitas kunci utama (PMK) yang digunakan untuk autentikasi cepat.
+- PMKID biasanya ditemukan di RSN IE (Robust Security Network Information Element) pada frame Association Response.
+- PMKID memungkinkan STA terhubung kembali ke AP tanpa harus melakukan full 4-Way Handshake.
+- Serangan modern pada WPA/WPA2 sering menargetkan PMKID karena bisa dicapture langsung tanpa menunggu handshake penuh.
+
+**Kelebihan PMKID:**  
+- Mempercepat roaming (handoff) antar AP.
+- Mengurangi overhead handshake penuh jika STA sudah pernah terhubung sebelumnya.
+
+**Kelemahan PMKID:**  
+Jika dicapture, PMKID dapat digunakan untuk melakukan serangan offline terhadap PSK, sehingga tetap perlu keamanan PSK yang kuat.
