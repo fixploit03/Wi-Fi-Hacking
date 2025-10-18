@@ -46,32 +46,32 @@ Kecepatan lebih tinggi
      - Masih menggunakan frekuensi 2.4 GHz yang ramai
      - Performa turun jika ada perangkat 802.11b di jaringan
 5. **IEEE 802.11n (2009) - Wi-Fi 4**
-   - Kecepatan Maksimal: 600 Mbps (teoritis)
-   - Frekuensi: 2.4 GHz dan/atau 5 GHz (dual-band)
-   - Teknologi Kunci:
-     - MIMO: Multiple Input Multiple Output (hingga 4x4)
-     - Channel Bonding: Menggabungkan 2 kanal (40 MHz)
-     - Frame Aggregation: Menggabungkan beberapa frame data
-   - Jangkauan: Hingga 70 meter indoor, 250 meter outdoor
-   - Keunggulan:
+   - **Kecepatan Maksimal:** 600 Mbps (teoritis)
+   - **Frekuensi:** 2.4 GHz dan/atau 5 GHz (dual-band)
+   - **Teknologi Kunci:**
+     - **MIMO:** Multiple Input Multiple Output (hingga 4x4)
+     - **Channel Bonding:** Menggabungkan 2 kanal (40 MHz)
+     - **Frame Aggregation:** Menggabungkan beberapa frame data
+   - **Jangkauan:** Hingga 70 meter indoor, 250 meter outdoor
+   - **Keunggulan:**
      - Peningkatan kecepatan signifikan
      - Jangkauan lebih baik
      - Dual-band support
      - Backward compatible
-   - Penggunaan: Masih banyak digunakan hingga saat ini
+   - **Penggunaan:** Masih banyak digunakan hingga saat ini
 6. **IEEE 802.11ac (2013) - Wi-Fi 5**
-   - Kecepatan Maksimal: 1.3 Gbps (Wave 1), 6.9 Gbps (Wave 2)
-   - Frekuensi: 5 GHz saja
-   - Teknologi Kunci:
-     - MU-MIMO: Multi-User MIMO (hingga 8x8)
-     - Channel Width: Hingga 160 MHz
-     - Beamforming: Mengarahkan sinyal ke perangkat tertentu
-     - Modulasi: 256-QAM
-   - Keunggulan:
+   - **Kecepatan Maksimal:** 1.3 Gbps (Wave 1), 6.9 Gbps (Wave 2)
+   - **Frekuensi:** 5 GHz saja
+   - **Teknologi Kunci:**
+     - **MU-MIMO:** Multi-User MIMO (hingga 8x8)
+     - **Channel Width:** Hingga 160 MHz
+     - **Beamforming:** Mengarahkan sinyal ke perangkat tertentu
+     - **Modulasi:** 256-QAM
+   - **Keunggulan:**
      - Kecepatan sangat tinggi
      - Efisiensi lebih baik untuk multiple devices
      - Cocok untuk streaming HD/4K
-   - Kelemahan:
+   - **Kelemahan:**
      - Hanya bekerja di 5 GHz
      - Jangkauan lebih pendek dari 2.4 GHz
 7. **IEEE 802.11ax (2019) - Wi-Fi 6/6E**
@@ -125,26 +125,36 @@ Kecepatan lebih tinggi
 
 ### 1. MIMO (Multiple Input Multiple Output)
 
+![mimo](https://github.com/fixploit03/Pentest-WiFi/blob/main/belajar/gambar/mimo.png)
+
 Menggunakan multiple antena untuk transmit dan receive data secara bersamaan, meningkatkan throughput dan reliability.
 
 ### 2. MU-MIMO (Multi-User MIMO)
 
+![mumimo](https://github.com/fixploit03/Pentest-WiFi/blob/main/belajar/gambar/mumimo.png)
+
 Memungkinkan router berkomunikasi dengan beberapa perangkat secara simultan, bukan bergantian.
 
 ### 3. OFDM/OFDMA
+
+![ofdm_ofdma](https://github.com/fixploit03/Pentest-WiFi/blob/main/belajar/gambar/ofdm_ofdma.png)
 
 - **OFDM:** Membagi kanal menjadi sub-carrier untuk transmisi paralel.
 - **OFDMA:** Membagi sub-carrier untuk multiple users secara efisien.
 
 ### 4. Beamforming
 
+![beamforming](https://github.com/fixploit03/Pentest-WiFi/blob/main/belajar/gambar/beamforming.png)
+
 Teknologi yang mengarahkan sinyal Wi-Fi langsung ke perangkat client, bukan menyebar ke segala arah.
 
 ### 5. Channel Bonding
 
+![channel bonding](https://github.com/fixploit03/Pentest-WiFi/blob/main/belajar/gambar/channel%20bonding.png)
+
 Menggabungkan beberapa kanal frekuensi untuk meningkatkan bandwidth.
 
-## Pemilihan Standar
+## Tips Pemilihan Standar
 
 **Untuk Rumah Biasa:**
 - Wi-Fi 5 (802.11ac) sudah cukup
@@ -157,6 +167,6 @@ Menggabungkan beberapa kanal frekuensi untuk meningkatkan bandwidth.
 **Untuk Aplikasi High-Performance:**
 - Wi-Fi 7 (802.11be) untuk VR/AR, gaming kompetitif, streaming 8K
 
+## Kesimpul
 
-Kesimpul
 Evolusi standar IEEE 802.11 menunjukkan peningkatan dramatis dalam kecepatan, efisiensi, dan kemampuan menangani banyak perangkat. Dari 2 Mbps di 1997 hingga 46 Gbps teoritis di Wi-Fi 7, teknologi Wi-Fi terus berkembang untuk memenuhi kebutuhan konektivitas modern yang semakin kompleks.
