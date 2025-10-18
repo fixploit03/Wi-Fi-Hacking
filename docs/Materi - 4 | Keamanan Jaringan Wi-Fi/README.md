@@ -241,10 +241,12 @@ PMKID (Pairwise Master Key Identifier) adalah hash identitas kunci utama (PMK) y
 - PMKID biasanya ditemukan di RSN IE (Robust Security Network Information Element) pada frame Association Response.
 - PMKID memungkinkan STA terhubung kembali ke AP tanpa harus melakukan full 4-Way Handshake.
 - Serangan modern pada WPA/WPA2 sering menargetkan PMKID karena bisa dicapture langsung tanpa menunggu handshake penuh.
+  
+## Kelebihan PMKID
 
-**Kelebihan PMKID:**  
 - Mempercepat roaming (handoff) antar AP.
 - Mengurangi overhead handshake penuh jika STA sudah pernah terhubung sebelumnya.
 
-**Kelemahan PMKID:**  
+### Kelemahan PMKID
+
 Jika dicapture, PMKID dapat digunakan untuk melakukan serangan offline terhadap PSK, sehingga tetap perlu keamanan PSK yang kuat.
