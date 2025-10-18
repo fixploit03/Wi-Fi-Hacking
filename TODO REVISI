@@ -1,241 +1,231 @@
-Daftar Isi
+Daftar Isi — Versi Lengkap, Terstruktur & Logis
+
+Berikut saya sempurnakan dan lengkapi daftar isi Anda agar menjadi komprehensif, terurut secara logis, dan cocok dipakai sebagai playlist/materi pembelajaran dari tingkat dasar sampai mahir. Saya juga menambahkan tujuan belajar per-bagian, latihan/hasil yang diharapkan, serta lampiran penting (glossary, template, checklist).
+
+Bagian 0 — Prasyarat & Panduan Penggunaan Materi
+
+0.1. Sasaran pembaca & prasyarat teknis
+0.2. Cara menggunakan playlist ini (alur belajar yang direkomendasikan)
+0.3. Skill yang direkomendasikan sebelum mulai (Linux dasar, command line, jaringan TCP/IP dasar)
+0.4. Daftar software & akun yang diperlukan (VM, repositori, akses internet untuk update)
+0.5. Konvensi penulisan (contoh command, penamaan file, environment)
+
+Bagian I — Pendahuluan & Etika
+
+1.1. Pendahuluan
+1.1.1. Latar Belakang
+1.1.2. Tujuan Repositori / Materi
+1.1.3. Sasaran Pembaca
+1.1.4. Ringkasan Struktur Pembahasan
+
+1.2. Etika, Hukum, dan Tanggung Jawab
+1.2.1. Mengapa Etika Penting dalam Keamanan Siber
+1.2.2. Hukum & Regulasi Terkait Pengujian Jaringan di Indonesia (gambaran umum) — batasan tindakan yang diperbolehkan
+1.2.3. Disclaimer & Penafian Tanggung Jawab
+1.2.4. Prinsip Responsible Disclosure / Coordinated Vulnerability Disclosure
+1.2.5. Larangan & Aktivitas yang Tidak Diperbolehkan (studi kasus singkat)
+1.2.6. Checklist Persiapan Legal sebelum melakukan pentest (izin, scope, NDA)
+
+Tujuan: memastikan pembaca memahami batasan legal & etika sebelum praktik.
+
+Bagian II — Teori Jaringan & Dasar Wi-Fi
+
+2.1. Dasar-Dasar Jaringan Wi-Fi
+2.1.1. Sejarah singkat dan evolusi IEEE 802.11 (a/b/g/n/ac/ax/be)
+2.1.2. Model OSI & tempat Wi-Fi di sana
+2.1.3. Gelombang radio & frekuensi (2.4 GHz vs 5 GHz vs 6 GHz)
+2.1.4. Kanal, channel bonding, dan interferensi
+2.1.5. Konsep BSSID, SSID, ESS, dan RSSI / SNR
+
+2.2. Komponen Fisik & Perangkat
+2.2.1. Modem, Router, Access Point (AP) — peran & perbedaan
+2.2.2. Client/Station (STA) dan mode operasi (managed, monitor, master/ad-hoc)
+2.2.3. Antena: jenis, gain, polarisation, pattern
+2.2.4. Repeater/Extender, Mesh, Controller-based AP
+2.2.5. Switch vs Hub vs Bridge
+2.2.6. Wireless adapters: chipsets populer & dukungan fitur monitor/injection
+
+2.3. Arsitektur & Manajemen Jaringan Wi-Fi
+2.3.1. Association, Authentication, Roaming basics
+2.3.2. DHCP, DNS, captive portal, NAT pada jaringan Wi-Fi
+2.3.3. RADIUS & 802.1X — peran di lingkungan enterprise
+2.3.4. Konsep VLAN dan segmentasi jaringan nirkabel
+
+2.4. Format Capture & Analisis Paket
+2.4.1. Struktur frame 802.11 (management, control, data)
+2.4.2. Radiotap, capture fields, dan metadata (.pcap)
+2.4.3. Tools untuk analisis paket (Wireshark basics)
+
+Tujuan: membangun fondasi teoritis sebelum masuk ke protokol & serangan.
+
+Bagian III — Protokol Keamanan & Enkripsi Wi-Fi
+
+3.1. Open Network (tanpa enkripsi) — risiko & penggunaan sah
+3.2. WEP — arsitektur, IV, RC4, kelemahan kriptografi
+3.3. WPA / WPA2
+3.3.1. WPA-Personal (TKIP) — bagaimana bekerja & kelemahan
+3.3.2. WPA2-Personal (CCMP/AES) — 4-way handshake, PTK/PMK konsep
+3.3.3. WPA-Enterprise (802.1X/EAP) — EAP types, RADIUS flow
+3.4. WPA3
+3.4.1. WPA3-Personal (SAE) — perbedaan dengan PSK, anti-downgrade, known attacks
+3.4.2. WPA3-Enterprise features
+3.5. WPS — mode, PIN flow, alasan kerentanan (Pixie Dust dll)
+3.6. Evolving threats: Dragonblood, side-channel, downgrade attacks
+3.7. Key management & secure deployment best practices
+
+Tujuan: memahami bagaimana proteksi seharusnya bekerja dan mekanisme yang diserang.
+
+Bagian IV — Ancaman & Teknik Serangan (Teori + Contoh Kasus)
+
+4.1. Kategori Serangan: pasif vs aktif vs protokol-spesifik vs supply chain / firmware
+4.2. Serangan Pasif
+4.2.1. Sniffing & packet analysis (airodump, Wireshark)
+4.2.2. Wardriving / mapping coverage
+
+4.3. Serangan Aktif (umum)
+4.3.1. Deauthentication / Disassociation (DoS)
+4.3.2. Evil Twin / Rogue AP (captive portal phishing)
+4.3.3. Man-in-the-Middle (MitM) techniques (ARP spoofing, SSL strip concept)
+4.3.4. Captive portal + phishing combo
+
+4.4. Serangan berdasarkan protokol & teknik lanjutan
+4.4.1. WEP attacks: IV collision, FMS, PTW, Fragmentation, Chop-Chop
+4.4.2. WPA/WPA2-Personal: handshake capture, offline brute-force, dictionary, rainbow tables
+4.4.3. PMKID attack (hcxdumptool/hcxtools flow)
+4.4.4. WPA/WPA2-Enterprise: rogue AP against 802.1X, EAP downgrade attempts
+4.4.5. WPA3: Dragonblood summary, SAE side-channel (tingkat advanced)
+4.4.6. WPS attacks: Pixie Dust, offline PIN brute-force, rate-limiting bypass
+
+4.5. DoS & Radio-level Attacks
+4.5.1. MDK3/MDK4 use cases (testing only)
+4.5.2. Jamming basics & legal constraints
+
+4.6. Perangkat & Firmware Attacks
+4.6.1. Exploiting vulnerable AP firmware
+4.6.2. Supply-chain & default-credentials pada IoT
+
+4.7. Forensik & Evidence Preservation (ketika terjadi insiden)
+
+Tujuan: menjelaskan mekanisme serangan dan dampaknya (tanpa langkah yang actionable untuk disalahgunakan).
+
+Bagian V — Membangun Lab (Praktik Aman)
 
-Bagian I: Pendahuluan & Dasar-Dasar
+5.1. Prinsip keamanan lab (isolation, air-gap, legal scope)
+5.2. Hardware yang direkomendasikan (laptop, Wi-Fi adapters, antena, SDR optional)
+5.3. Software & OS
+5.3.1. Kali Linux / Parrot / BlackArch (plus manajemen update)
+5.3.2. VirtualBox, VMware, Proxmox — pengaturan jaringan VM (NAT vs Bridged)
+5.4. Menyiapkan target lab terisolasi
+5.4.1. Membangun AP terkontrol (WEP / WPA2-PSK / WPA3 / WPS enabled)
+5.4.2. Setup captive portal & client VMs
+5.5. Praktik aman: log, snapshot VM, backup, dokumentasi eksperimen
+5.6. Template lab (file .ovf, sample hostapd configs, RADIUS sample)
+
+Hasil yang diharapkan: lab siap pakai, aman, dan dapat direplikasi.
+
+Bagian VI — Tools: Panduan Lengkap & Instalasi
+
+6.1. Aircrack-ng suite (install, modul, contoh penggunaan tiap tool)
+6.2. Hashcat (format hash, optimasi, rules, session management)
+6.3. hcxdumptool & hcxtools (PMKID workflows)
+6.4. Reaver, Bully, PixieWPS (catatan legal & rate-limits)
+6.5. Wifite, Kismet, Bettercap — automation vs manual tradeoffs
+6.6. MDK3 / MDK4 — untuk testing DoS di lab
+6.7. Kismet & spectrum analyzer (SDR basics, optional)
+6.8. Driver & chipset installation guide (guide troubleshooting)
+6.9. Alternatif & tools pendukung (tcpdump, Wireshark, hostapd, isc-dhcp-server, freeradius)
+6.10. Integrasi dengan GPU (NVIDIA/AMD) untuk hashcat — caveats
 
-    Pendahuluan
+Lampiran: cheat-sheet command, troubleshooting common driver issues.
 
-        Latar Belakang
+Bagian VII — Praktikum Langkah-demi-Langkah (Tutorial Terukur)
 
-        Tujuan Dari Repositori Ini
+7.1. Reconnaissance & target selection (airodump-ng) — prosedur aman
+7.2. Menjalankan Deauthentication attack (lab only) — tujuan & mitigasi
+7.3. Menangkap 4-way handshake (scenario-based)
+7.4. Mengekstrak & memecah handshake dengan aircrack-ng dan hashcat (format conversion, potfile, rules)
+7.5. Melakukan PMKID attack — full workflow (capture → convert → crack)
+7.6. Membobol WEP (praktek rekonstruksi)
+7.7. Serangan WPS (reaver/pixiewps) — rate limits & mitigasi
+7.8. Membangun Evil Twin AP + captive portal (staging untuk social engineering awareness testing)
+7.9. Menggunakan Bettercap untuk MitM (DNS spoofing, traffic capture)
+7.10. Advanced: using SDR for spectrum analysis (optional)
 
-        Sasaran Pembaca
+Deliverable tiap praktikum: langkah, log output, bukti eksperimen (pcap), laporan ringkas.
 
-        Struktur Pembahasan
+Bagian VIII — Analisis, Cracking, & Otomasi
 
-    Etika, Hukum, dan Tanggung Jawab
+8.1. Menentukan strategi cracking (wordlist, rules, mask, combinator)
+8.2. Membuat wordlist custom (cegah bias) — tools: crunch, wordlists populer
+8.3. Hashcat recipes & tuning (attack modes, rules, mask attack examples)
+8.4. Distributed cracking basics (risks, koordinasi)
+8.5. Otomasi workflow (skrip bash/Python untuk pipeline capture→convert→crack)
 
-        Pentingnya Etika dalam Keamanan Siber
+Bagian IX — Deteksi, Pencegahan & Hardening (Defensive)
 
-        Disclaimer & Penafian Tanggung Jawab
+9.1. Rekomendasi konfigurasi aman untuk SMB & Enterprise
+9.1.1. Pilih WPA2/WPA3 dengan passphrase kuat (guidelines)
+9.1.2. Menonaktifkan WPS & default accounts
+9.1.3. Segmentasi Guest & IoT
+9.1.4. MAC filtering: kelemahan & kapan dipakai
 
-        Larangan Keras & Aktivitas yang Tidak Diperbolehkan
+9.2. Monitoring & Intrusion Detection untuk Wi-Fi
+9.2.1. Wireless IDS/IPS concepts (Kismet, Snort, Suricata with 802.11)
+9.2.2. SIEM integration, alert tuning, false positives
+9.2.3. Log aggregation & parsing (RADIUS logs, DHCP logs)
 
-        Ruang Lingkup Hukum (Penetration Testing yang Sah)
+9.3. Incident Response (playbook)
+9.3.1. Deteksi → Isolasi → Forensik → Recovery
+9.3.2. Chain of custody & bukti forensik (pcap preservation)
+9.3.3. Containment checklist untuk AP kompromi
 
-Bagian II: Teori Jaringan & Keamanan Wi-Fi
+9.4. Secure Deployment Checklist (ready-to-deploy)
 
-    Dasar-Dasar Jaringan Wi-Fi
+Tujuan: dari offense → defense: bagaimana mitigasi tiap vektor yang diajarkan.
 
-        Standar IEEE 802.11 (a/b/g/n/ac/ax)
+Bagian X — Enterprise Topics & Scale
 
-        Gelombang Radio & Frekuensi (2.4 GHz vs 5 GHz)
+10.1. Controller-based Wi-Fi & enterprise best practices
+10.2. WPA3 Enterprise, EAP methods (EAP-TLS, EAP-PEAP, EAP-TTLS)
+10.3. 802.11r/k/v (roaming, fast transition) dan implikasinya terhadap keamanan
+10.4. High-density deployments, spectrum planning, and capacity planning
+10.5. IoT & BYOD security patterns
 
-        Kanal dan Lebar Pita (Channel Bandwidth)
+Bagian XI — Advanced / Research Topics
 
-        Konsep BSSID, SSID, dan RSSI
+11.1. SDR untuk Wi-Fi (GNU Radio basics)
+11.2. Firmware analysis & reverse engineering APs
+11.3. Side-channel & physical layer attacks (advanced research overview)
+11.4. Wireless mesh & ad-hoc security challenges
+11.5. Academic papers & how-to-read research
 
-    Komponen Fisik Jaringan Wi-Fi
+Bagian XII — Reporting, Templates & Profesionalisme
 
-        Modem
+12.1. Struktur laporan pentest (Executive summary → Technical Findings → Risk Rating → Remediation)
+12.2. Template laporan (PDF/Markdown) & sample findings
+12.3. Evidence & appendix (pcap, logs, commands)
+12.4. Vulnerability disclosure template & example email to vendor/client
+12.5. Communication tips: klien non-teknis vs tim IT
 
-        Router
+Bagian XIII — Latihan, Quiz, dan Projek Akhir
 
-        Access Point (AP)
+13.1. Latihan bertingkat: Beginner → Intermediate → Advanced (daftar tugas konkret)
+13.2. Quiz & jawaban kunci per bab
+13.3. Projek akhir: melakukan assessment lab lengkap dan membuat laporan resmi (scope, metodologi, bukti, rekomendasi)
+13.4. Penilaian & rubrik (ceklist deliverable)
 
-        Client/Station (STA)
+Bagian XIV — Lampiran
 
-        Antena (Gain, Polarisasi, dll)
+14.1. Glossary istilah penting (SSID, BSSID, PMK, PTK, SAE, EAP, dll)
+14.2. Cheat-sheets & quick commands (airodump, aireplay, aircrack, hcxdumptool, hashcat)
+14.3. Daftar wordlists & sumber (dict-lists populer)
+14.4. Daftar chipset & kompatibilitas adapter (tabel singkat)
+14.5. Skenario triage insiden (flowchart)
+14.6. Referensi & bacaan lanjut (buku, paper, blog, forum)
+14.7. Change log materi / versi repository
 
-        Repeater/Extender
+Penutup: Roadmap Belajar & Rekomendasi Urutan
 
-        Switch vs Hub
+Urutan yang direkomendasikan: Bagian 0 → I → II → III → V → VI → VII → VIII → IX → XII → XIII
 
-        Adapter Wi-Fi Eksternal (Penting untuk Penetration Testing)
-
-    Protokol Keamanan & Enkripsi Wi-Fi
-
-        Open Network (Tidak Ada Enkripsi)
-
-        Wired Equivalent Privacy (WEP) dan Kelemahannya
-
-        Wi-Fi Protected Access (WPA/WPA2)
-
-            WPA/WPA2-Personal (PSK - Pre-Shared Key)
-
-            WPA/WPA2-Enterprise (802.1X/EAP)
-
-        Wi-Fi Protected Access 3 (WPA3)
-
-            WPA3-Personal (SAE - Simultaneous Authentication of Equals)
-
-            WPA3-Enterprise
-
-        Wi-Fi Protected Setup (WPS) dan Celah Keamanannya
-
-Bagian III: Ancaman dan Teknik Serangan
-
-    Jenis-Jenis Serangan pada Jaringan Wi-Fi
-
-        Serangan Pasif
-
-            Sniffing & Packet Analysis
-
-            Wardriving
-
-        Serangan Aktif
-
-            Denial-of-Service (DoS) & Deauthentication Attack
-
-            Evil Twin Attack (Rogue Access Point)
-
-            Man-in-the-Middle (MitM) Attack
-
-        Serangan Berdasarkan Protokol
-
-            Serangan Pada Protokol WEP (IV Collision, ChopChop, dll)
-
-            Serangan Pada Protokol WPA/WPA2-Personal (PSK)
-
-                Brute-Force Attack
-
-                Dictionary Attack
-
-                Capturing Handshake & PMKID Attack
-
-            Serangan Pada Protokol WPA/WPA2-Enterprise (EAP)
-
-            Serangan Pada Protokol WPA3-Personal (Dragonblood Attack)
-
-            Serangan Pada Fitur WPS (Pixie Dust Attack, Offline Brute-Force)
-
-2. Autentikasi & Manajemen Jaringan Wi-Fi
-
-Tujuan: Memahami bagaimana perangkat berinteraksi dengan jaringan secara aman.
-
-Contoh materi:
-
-Diagram alur autentikasi Wi-Fi (Open vs WPA2 vs WPA3)
-
-Proses handshake 4-way / SAE handshake
-
-Peran RADIUS server di WPA2/WPA3-Enterprise
-
-Cocok sebagai jembatan sebelum masuk ke praktik hacking atau konfigurasi jaringan.
-
-Bagian IV: Membangun Lingkungan Lab (Lab Setup)
-
-    Persiapan Lab
-
-        Hardware yang Direkomendasikan
-
-            Laptop/PC
-
-            Adapter Wi-Fi Eksternal (Dengan Chipset yang Didukung)
-
-        Software & Sistem Operasi
-
-            Distro Linux untuk Keamanan (Kali Linux, Parrot Security OS)
-
-            Virtualisasi (VirtualBox, VMware)
-
-            File ISO Distro
-
-    Setup Lab Attacker (Mesin Penyerang)
-
-        Aktifkan Fitur Virtualisasi (Intel VT-x / AMD-V) di BIOS/UEFI
-
-        Instal VirtualBox / VMware di Host (Windows)
-
-        Instal Extension Pack untuk VirtualBox
-
-        Instal & Konfigurasi Distro Keamanan (Kali/Parrot) di Virtual Machine
-
-        Konfigurasi Jaringan Virtual Machine (NAT, Bridged Adapter)
-
-        Menyambungkan Adapter Wi-Fi Eksternal ke Virtual Machine
-
-        Tips Optimasi & Kenyamanan Penggunaan VM
-
-    Setup Lab Target (Jaringan Wi-Fi untuk Diuji)
-
-        Membuat Jaringan Wi-Fi WEP yang Terisolasi
-
-        Membuat Jaringan Wi-Fi WPA/WPA2-PSK yang Terisolasi
-
-        Membuat Jaringan dengan WPS yang Diaktifkan
-
-        Konsep Lab yang Terisolasi & Aman
-
-Bagian V: Alat dan Implementasi (Tools & Practical)
-
-    Pengenalan & Instalasi Tools Penting
-
-        Aircrack-ng Suite (airmon-ng, airodump-ng, aireplay-ng, aircrack-ng)
-
-        hashcat (Password Cracking Accelerator)
-
-        hcxdumptool & hcxtools (Untuk menangkap PMKID)
-
-        Reaver & PixieWPS (Serangan WPS)
-
-        Bully (Alternatif Serangan WPS)
-
-        Wifite (Automation Tool)
-
-        Kismet (Wireless Network Detector)
-
-        Bettercap (Framework untuk MitM)
-
-        MDK3 & MDK4 (Tool untuk DoS/Stress Testing)
-
-    Panduan Instalasi Driver Adapter Wi-Fi
-
-        TP-LINK TL-WN722N (V1/V2/V3)
-
-        TP-LINK Archer T2U Plus (AC600)
-
-        Alfa AWUS036ACH (AC1200)
-
-        Panduan Umum Instalasi Driver di Linux
-
-Bagian VI: Praktikum & Teknik Langkah-demi-Langkah
-
-    Pengumpulan Informasi & Reconnaissance
-
-        Memindai Jaringan Wi-Fi di Sekitar (airodump-ng)
-
-        Menentukan Target yang Valid
-
-    Praktikum Serangan
-
-        Menjalankan Serangan Deauthentication
-
-        Menangkap Handshake 4-Way WPA/WPA2
-
-        Mengekstrak dan Membobol Handshake (Menggunakan aircrack-ng & hashcat)
-
-        Melakukan PMKID Attack
-
-        Membobol Jaringan WEP
-
-        Melakukan Serangan WPS (Menggunakan reaver & pixiewps)
-
-        Membuat Evil Twin Access Point
-
-Bagian VII: Pencegahan & Pengamanan
-
-    Rekomendasi Konfigurasi yang Aman
-
-        Menggunakan WPA2/WPA3 dengan Kata Sandi Kuat
-
-        Menonaktifkan WPS
-
-        Memisahkan Jaringan Guest
-
-        Membuat Whitelist MAC Address (Filtering)
-
-        Mengurangi Daya Pemancar (Tx Power)
-
-        Monitoring Log untuk Aktivitas Mencurigakan
-
-    Kesimpulan dan Penutup
+Tips pembelajaran: praktik 1 topik per hari, dokumentasikan setiap eksperimen, gunakan snapshot VM.
