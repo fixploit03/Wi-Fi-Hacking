@@ -6,7 +6,6 @@
 - Perbedaan Jaringan Kabel dan Nirkabel
 - Cara Kerja Komunikasi Wireless
 - Kelebihan dan Kelemahan Wireless Network
-- Use Case dan Implementasi di Dunia Nyata
 
 ### Modul 2: Standar dan Protokol Wi-Fi
 - Standar IEEE 802.11 (a/b/g/n/ac/ax/be)
