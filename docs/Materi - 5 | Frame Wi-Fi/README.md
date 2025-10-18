@@ -32,26 +32,31 @@ Control frames digunakan untuk mengontrol aliran data dan memastikan transmisi y
 
 | Frame Type | Subtype | Filter Wireshark |
 |:--:|:--:|:--:|
-| RTS (Request to Send) | 0x1B | `wlan.fc.type == 1 && wlan.fc.type_subtype == 0x1B` |
-| CTS (Clear to Send) | 0x1C | `wlan.fc.type == 1 && wlan.fc.type_subtype == 0x1C` |
-| ACK (Acknowledgement) | 0x1D | `wlan.fc.type == 1 && wlan.fc.type_subtype == 0x1D` |
-| PS-Poll (Power Save Poll) | 0x1A | `wlan.fc.type == 1 && wlan.fc.type_subtype == 0x1A` |
+| Control Wrapper | 0x07 | `wlan.fc.type == 1 && wlan.fc.subtype == 0x07` |
+| Block Ack Request (BAR) | 0x08 | `wlan.fc.type == 1 && wlan.fc.subtype == 0x08` |
+| Block Ack | 0x09 | `wlan.fc.type == 1 && wlan.fc.subtype == 0x09` |
+| PS-Poll (Power Save Poll) | 0x0A | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0A` |
+| RTS (Request to Send) | 0x0B | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0B` |
+| CTS (Clear to Send) | 0x0C | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0C` |
+| ACK (Acknowledgement) | 0x0D | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0D` |
+| CF-End (Contention Free-End) | 0x0E | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0E` |
+| CF-End + CF-Ack | 0x0F | `wlan.fc.type == 1 && wlan.fc.subtype == 0x0F` |
 
 ## 5.3 Data Frames
 
 Data frames digunakan untuk mengangkut data pengguna antar perangkat dalam jaringan Wi-Fi. Berikut adalah jenis data frames beserta filter Wireshark yang sesuai:
 
-|Frame Type | Subtype | Filter Wireshark |
+| Frame | Type Subtype | Filter Wireshark |
 |:--:|:--:|:--:|
 | Data | 0x00 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x00` |
+| Null Function | 0x04 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x04` |
+| Data + CF-Ack | 0x11 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x11` |
+| Data + CF-Poll | 0x12 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x12` |
+| Data + CF-Ack + CF-Poll | 0x13 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x13` | 
 | QoS Data | 0x28 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x28` |
-| Null Function | 0x24 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x24` |
-| Data + CF-Ack | 0x08 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x08` |
-| Data + CF-Poll | 0x18 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x18` |
-| Data + CF-Ack + CF-Poll | 0x28 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x28` |
-| QoS Data + CF-Ack | 0x38 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x38` |
-| QoS Data + CF-Poll | 0x48 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x48` |
-| QoS Data + CF-Ack + CF-Poll | 0x58 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x58`
+| QoS Data + CF-Ack | 0x29 | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x29` |
+| QoS Data + CF-Poll | 0x2A | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x2A` |
+| QoS Data + CF-Ack + CF-Poll | 0x2B | `wlan.fc.type == 2 && wlan.fc.type_subtype == 0x2B` |
 
 ## 5.4 Ringkasan Filter Wireshark
 
