@@ -78,7 +78,7 @@ WPA3 adalah protokol keamanan nirkabel generasi ketiga yang diperkenalkan oleh W
 **Karakteristik:**  
 - Menggunakan algoritma enkripsi AES dengan GCMP-256 (Galois/Counter Mode Protocol) untuk keamanan data yang lebih kuat dibandingkan CCMP pada WPA2.
 - WPA3 memperkenalkan SAE (Simultaneous Authentication of Equals) untuk menggantikan PSK tradisional dan menggunakan AES-GCMP (GCMP-128/256). SAE mengurangi risiko serangan offline terhadap kata sandi. Untuk sertifikasi WPA3, perangkat wajib mendukung Protected Management Frames (PMF), sehingga serangan deauthentication lebih sulit.)
-- Mendukung dua mode: WPA3-Personal (untuk jaringan rumah dengan autentikasi berbasis kata sandi) dan WPA3-Enterprise (untuk lingkungan korporat dengan autentikasi 802.1X dan enkripsi 192-bit).
+- **Mendukung dua mode:** WPA3-Personal (untuk jaringan rumah dengan autentikasi berbasis kata sandi) dan WPA3-Enterprise (untuk lingkungan korporat dengan autentikasi 802.1X dan enkripsi 192-bit).
 - Menyediakan Forward Secrecy, memastikan data masa lalu tetap aman meskipun kunci utama dikompromikan.
 
 **Kelemahan:**  
