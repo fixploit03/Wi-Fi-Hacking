@@ -53,7 +53,7 @@ Agar proses belajar lebih mulus, sangat disarankan kamu sudah memiliki:
 - Download image ISO-nya langsung dari website resmi [kali.org](https://www.kali.org/).
 - Ini adalah distro Linux yang berisi semua tool penetration testing yang kita butuhkan, pre-installed.
 
-**3. Wi-Fi Adapter Eksternal:** Seperti yang sudah disebutkan di [0.1]().
+**3. Wi-Fi Adapter Eksternal:** Seperti yang sudah disebutkan di [0.1](https://github.com/fixploit03/Pentest-WiFi/tree/main/catatan/bagian%200#01-sasaran-pembaca--prasyarat-teknis).
 
 **4. GitHub Account (Opsional tapi Direkomendasikan):**
 - Banyak tool tambahan dan wordlist tersedia di GitHub.
