@@ -1,264 +1,342 @@
-DAFTAR ISI — Roadmap Lengkap Pembelajaran Wi-Fi Penetration Testing (Versi Indonesia)
-
-Disusun oleh: Fixploit03
-Versi: Edukasi Nasional | Level: Pemula → Profesional
-Format: Modul Teori + Praktik Lab
-
-🧭 BAGIAN 0 — PERSIAPAN & PENGANTAR
-0.1. Tujuan & Sasaran Pembaca
-
-0.1.1. Untuk siapa materi ini dibuat
-
-0.1.2. Kemampuan awal yang diperlukan
-
-0.1.3. Hasil akhir setelah menyelesaikan roadmap
-
-0.2. Panduan Penggunaan Materi
-
-0.2.1. Alur pembelajaran (linear vs modular)
-
-0.2.2. Checklist progres belajar
-
-0.2.3. Format latihan & tugas per bab
-
-0.3. Etika, Legalitas, & Batasan Penggunaan
-
-0.3.1. Etika dalam dunia pentesting
-
-0.3.2. Penggunaan lab pribadi dan izin eksplisit
-
-0.3.3. Penjelasan singkat UU ITE dan tanggung jawab hukum
-
-0.4. Persiapan Teknis
-
-0.4.1. Kebutuhan hardware dan software
-
-0.4.2. Instalasi Kali Linux (VM dan fisik)
-
-0.4.3. Pemilihan dan pengujian adaptor Wi-Fi
-
-0.4.4. Struktur folder & penyimpanan hasil
-
-📡 BAGIAN I — DASAR JARINGAN & WI-FI
-1.1. Pengantar Jaringan Komputer
-
-1.1.1. Model OSI dan TCP/IP
-
-1.1.2. Komponen dasar jaringan
-
-1.1.3. Perbedaan jaringan kabel dan nirkabel
-
-1.2. Dasar-Dasar Teknologi Wi-Fi
-
-1.2.1. Standar IEEE 802.11 (a/b/g/n/ac/ax/be)
-
-1.2.2. Frekuensi 2.4 GHz, 5 GHz, dan 6 GHz
-
-1.2.3. Jenis mode Wi-Fi (AP, STA, Monitor, Master)
-
-1.2.4. Frame 802.11 (Management, Control, Data)
-
-1.3. Proses Koneksi Wi-Fi
-
-1.3.1. Proses scanning (aktif & pasif)
-
-1.3.2. Authentication & Association
-
-1.3.3. 4-Way Handshake (konsep dasar)
-
-🔐 BAGIAN II — PROTOKOL KEAMANAN WI-FI
-2.1. Open Network
-
-2.1.1. Definisi & risiko keamanan
-
-2.1.2. Kasus penyalahgunaan open hotspot
-
-2.2. Wired Equivalent Privacy (WEP)
-
-2.2.1. Arsitektur & cara kerja WEP
-
-2.2.2. IV, RC4, & kelemahan algoritma
-
-2.2.3. Jenis serangan terhadap WEP
-
-2.3. Wi-Fi Protected Access (WPA)
-
-2.3.1. Sejarah transisi dari WEP ke WPA
-
-2.3.2. TKIP & mekanisme enkripsi
-
-2.3.3. Kelemahan WPA
-
-2.4. WPA2
-
-2.4.1. Pengenalan WPA2-PSK & WPA2-Enterprise
-
-2.4.2. 4-Way Handshake detail
-
-2.4.3. Mekanisme CCMP & AES
-
-2.4.4. Kerentanan: KRACK Attack
-
-2.5. WPA3
-
-2.5.1. SAE (Simultaneous Authentication of Equals)
-
-2.5.2. Forward secrecy & proteksi brute force
-
-2.5.3. Serangan Dragonblood
-
-2.6. Wi-Fi Protected Setup (WPS)
-
-2.6.1. Konsep PIN dan PBC
-
-2.6.2. Serangan Reaver & PixieDust
-
-2.6.3. Mitigasi dan disable WPS
-
-⚔️ BAGIAN III — MODEL ANCAMAN & KLASIFIKASI SERANGAN
-3.1. Klasifikasi Serangan Wi-Fi
-
-3.1.1. Serangan Pasif vs Aktif
-
-3.1.2. Serangan terhadap Infrastruktur vs Klien
-
-3.2. Jenis Serangan Utama
-
-3.2.1. Sniffing & Packet Capture
-
-3.2.2. Deauthentication & Disassociation
-
-3.2.3. Man-in-the-Middle (MitM)
-
-3.2.4. Rogue Access Point & Evil Twin
-
-3.2.5. Serangan DoS
-
-3.2.6. Serangan terhadap WPS dan PMKID
-
-3.2.7. Serangan berbasis Frame Manipulation
-
-3.3. Threat Modeling
-
-3.3.1. Identifikasi aset & ancaman
-
-3.3.2. Penilaian risiko (likelihood vs impact)
-
-3.3.3. Strategi mitigasi dasar
-
-🧪 BAGIAN IV — PEMBANGUNAN LAB UJI COBA
-4.1. Desain Lab Aman
-
-4.1.1. Arsitektur lab (fisik & virtual)
-
-4.1.2. Isolasi jaringan & keamanan lingkungan
-
-4.2. Virtual Lab
-
-4.2.1. Penggunaan VirtualBox / VMware
-
-4.2.2. Setup Kali Linux dan sistem korban
-
-4.2.3. Snapshot & restore
-
-4.3. Lab Fisik
-
-4.3.1. Router, adaptor, antena
-
-4.3.2. Pengaturan hostapd & dnsmasq
-
-4.3.3. Pembuatan Access Point tiruan
-
-4.4. Dokumentasi & Template Lab
-
-4.4.1. Template runbook eksperimen
-
-4.4.2. Template laporan hasil uji
-
-🛠️ BAGIAN V — PENGUASAAN TOOLS
-5.1. Tools Utama Aircrack-ng Suite
-
-5.1.1. Airodump-ng (scanning)
-
-5.1.2. Aireplay-ng (injeksi & deauth)
-
-5.1.3. Aircrack-ng (cracking WEP/WPA)
-
-5.2. hcxdumptool & hcxpcapngtool
-
-5.2.1. Capture handshake & PMKID
-
-5.2.2. Konversi ke format Hashcat
-
-5.3. Hashcat
-
-5.3.1. Mode cracking WPA2 (22000)
-
-5.3.2. Penggunaan GPU & optimasi rule
-
-5.4. Wireshark & Tshark
-
-5.4.1. Analisis frame 802.11
-
-5.4.2. Filter paket penting
-
-5.5. Bettercap, Kismet, Reaver, Wifite
-
-5.5.1. MitM & traffic monitoring
-
-5.5.2. Recon otomatis
-
-5.5.3. WPS exploitation
-
-5.6. Utilities Pendukung
-
-5.6.1. macchanger, crunch, john, tcpdump
-
-5.6.2. Troubleshooting koneksi & adapter
-
-⚙️ BAGIAN VI — PRAKTIK SERANGAN (LAB INTENSIF)
-6.1. Lab 1: Recon & Scanning
-6.2. Lab 2: Deauthentication Attack
-6.3. Lab 3: Capture & Crack 4-Way Handshake
-6.4. Lab 4: PMKID Attack
-6.5. Lab 5: WEP IV Collection & Crack
-6.6. Lab 6: WPS PIN Brute-Force
-6.7. Lab 7: Evil Twin & Captive Portal
-6.8. Lab 8: Man-in-the-Middle (Bettercap)
-6.9. Lab 9: Client-Side Exploitation
-6.10. Dokumentasi & Bukti (PCAP, screenshot, laporan)
-🧰 BAGIAN VII — OTOMATISASI & OPTIMALISASI
-7.1. Wordlist & Rule Generation
-7.2. Automasi Capture–Convert–Crack
-7.3. Scripting dengan Bash & Python (Scapy)
-7.4. Pembuatan Tool Otomatis (mini project)
-🛡️ BAGIAN VIII — PERTAHANAN & HARDENING
-8.1. Pengamanan Access Point
-8.2. Segmentasi jaringan & VLAN
-8.3. Implementasi WPA3 & 802.1X
-8.4. Deteksi Rogue AP (WIDS/WIPS)
-8.5. Playbook Respons Insiden Wi-Fi
-8.6. Forensik & Analisis Insiden
-🏢 BAGIAN IX — WI-FI ENTERPRISE & PENELITIAN LANJUT
-9.1. Arsitektur Wi-Fi Enterprise
-9.2. Protokol Roaming (802.11r/k/v)
-9.3. Analisis Firmware & SDR
-9.4. Studi Kasus CVE (KRACK, Dragonblood)
-9.5. Eksperimen Replikasi Penelitian
-📝 BAGIAN X — PELAPORAN & PROFESIONALISME
-10.1. Struktur Laporan Penetration Test
-10.2. Format Executive Summary & Technical Report
-10.3. Responsible Disclosure
-10.4. Pembuatan Portofolio & Dokumentasi Hasil
-🧩 BAGIAN XI — PROYEK AKHIR (CAPSTONE)
-11.1. Skenario Pentest Wi-Fi Lengkap
-11.2. Pelaksanaan & Dokumentasi
-11.3. Evaluasi & Self-Assessment
-11.4. Rencana Mitigasi & Hardening
-11.5. Penyusunan Laporan Akhir
-📚 LAMPIRAN
-A. Istilah Penting dalam Keamanan Wi-Fi
-B. Cheat Sheet Command Pentest
-C. Template Runbook & Laporan
-D. Daftar Tools & Referensi Pembelajaran
-E. Daftar Buku, Sumber, & Referensi Lanjutan
+# Roadmap Lengkap: Wi-Fi Penetration Testing
+
+## 🎯 Level 1: Fundamental & Konsep Dasar
+
+### Modul 1: Pengenalan Jaringan Wireless
+- Perbedaan Jaringan Kabel dan Nirkabel
+- Cara Kerja Komunikasi Wireless
+- Kelebihan dan Kelemahan Wireless Network
+- Use Case dan Implementasi di Dunia Nyata
+
+### Modul 2: Standar dan Protokol Wi-Fi
+- Standar IEEE 802.11 (a/b/g/n/ac/ax/be)
+- Perbandingan Kecepatan, Range, dan Karakteristik
+- Frekuensi 2.4 GHz, 5 GHz, dan 6 GHz
+- Channel dan Channel Bonding
+- SSID, BSSID, dan ESSID
+
+### Modul 3: Mode Operasi Wi-Fi
+- Jenis Mode Wi-Fi (Infrastructure vs Ad-Hoc)
+- AP (Access Point) Mode
+- STA (Station/Client) Mode
+- Monitor Mode
+- Master Mode
+- Promiscuous Mode
+
+### Modul 4: Arsitektur Wireless Network
+- Komponen Jaringan Wireless (AP, Client, Controller)
+- Topologi Wireless (BSS, ESS, IBSS, MBSS)
+- Wireless Distribution System (WDS)
+- Mesh Network
+
+---
+
+## 🔐 Level 2: Keamanan Wi-Fi
+
+### Modul 5: Enkripsi dan Authentication
+- Open Network (No Security)
+- WEP (Wired Equivalent Privacy)
+- WPA (Wi-Fi Protected Access)
+- WPA2 (AES-CCMP)
+- WPA3 (SAE, Enhanced Open)
+- WPA2/WPA3 Transition Mode
+- Enterprise vs Personal Authentication
+
+### Modul 6: Authentication Methods
+- Pre-Shared Key (PSK)
+- 802.1X / EAP (Extensible Authentication Protocol)
+- EAP-TLS, EAP-TTLS, PEAP, EAP-FAST
+- RADIUS Server
+- Captive Portal
+
+### Modul 7: Frame dan Packet Structure
+- Management Frames (Beacon, Probe, Auth, Deauth, Disassoc)
+- Control Frames (RTS, CTS, ACK)
+- Data Frames
+- Frame Header Analysis
+- 4-Way Handshake Process
+
+---
+
+## 🛠️ Level 3: Tools & Environment Setup
+
+### Modul 8: Persiapan Lab Environment
+- Memilih OS untuk Penetration Testing (Kali Linux, Parrot OS)
+- Virtual Machine Setup
+- Dual Boot Considerations
+- Hardware Requirements
+
+### Modul 9: Wireless Adapter
+- Memilih Wireless Adapter yang Tepat
+- Chipset yang Support Monitor Mode dan Packet Injection
+- Rekomendasi Adapter (Alfa, TP-Link, dll)
+- Driver Installation (aircrack-ng, rtl8812au, dll)
+- Menguji Monitor Mode dan Packet Injection
+
+### Modul 10: Essential Tools
+- Aircrack-ng Suite (airmon-ng, airodump-ng, aireplay-ng, aircrack-ng)
+- Wireshark
+- Reaver & Bully (WPS Attack)
+- Hashcat & John the Ripper
+- Wifite & Fluxion
+- Kismet & Airgraph-ng
+- Wash (WPS Scanner)
+- MDK3/MDK4
+- Cowpatty
+- Pyrit
+
+---
+
+## 🎯 Level 4: Reconnaissance & Information Gathering
+
+### Modul 11: Passive Reconnaissance
+- Wardriving Concepts
+- Wigle.net dan Database Wi-Fi
+- Network Discovery tanpa Terdeteksi
+- SSID dan Hidden Network Discovery
+- Client Identification
+
+### Modul 12: Active Reconnaissance
+- Network Scanning dengan Airodump-ng
+- Kismet untuk Monitoring
+- Identifying Security Type
+- Client Probing
+- Channel Hopping
+- Capture Traffic Analysis
+
+### Modul 13: Wireless Survey
+- Site Survey Methodology
+- Signal Strength Analysis (RSSI, SNR)
+- Coverage Mapping
+- Interference Detection
+- Rogue AP Detection
+
+---
+
+## ⚔️ Level 5: Wireless Attack Techniques
+
+### Modul 14: WEP Attacks
+- WEP Weakness dan Vulnerability
+- ARP Request Replay Attack
+- Fragmentation Attack
+- Chopchop Attack
+- Fake Authentication
+- Cracking WEP dengan Aircrack-ng
+
+### Modul 15: WPA/WPA2 PSK Attacks
+- Capturing 4-Way Handshake
+- Deauthentication Attack
+- Dictionary Attack
+- Brute Force Attack
+- Rainbow Table Attack
+- Cracking dengan Aircrack-ng, Hashcat, John
+- PMKID Attack (Hashcat)
+
+### Modul 16: WPS Attacks
+- WPS Vulnerability dan PIN
+- Pixie Dust Attack
+- Online Brute Force dengan Reaver
+- Offline Attack dengan Bully
+- WPS Push Button Attack
+
+### Modul 17: Enterprise Wi-Fi Attacks
+- EAP Attacks
+- Fake AP / Evil Twin Attack
+- RADIUS Server Attacks
+- Certificate Spoofing
+- Downgrade Attacks
+- Username Harvesting
+
+### Modul 18: Evil Twin & Rogue AP
+- Hostapd Configuration
+- Creating Fake Access Point
+- DNS Spoofing
+- Credential Harvesting
+- SSL Stripping
+- Captive Portal Phishing
+- Fluxion dan Wifiphisher
+
+### Modul 19: Man-in-the-Middle (MITM)
+- ARP Spoofing di Wireless
+- Traffic Interception
+- Session Hijacking
+- SSL/TLS Stripping
+- Ettercap dan Bettercap
+- Wireshark untuk MITM Analysis
+
+### Modul 20: Denial of Service (DoS)
+- Deauthentication/Disassociation Flood
+- Beacon Flooding
+- Authentication Flood
+- TKIP MIC Exploitation
+- Channel Jamming
+- MDK3/MDK4 untuk DoS
+
+### Modul 21: Advanced Attacks
+- Krack Attack (Key Reinstallation)
+- Dragonblood (WPA3 Vulnerability)
+- FragAttacks
+- Client-Side Attacks
+- Karma Attack
+- MANA Attack
+
+---
+
+## 🔬 Level 6: Post-Exploitation
+
+### Modul 22: Network Enumeration
+- Network Scanning (Nmap)
+- Service Enumeration
+- OS Fingerprinting
+- Vulnerability Scanning
+- Pivoting ke Jaringan Internal
+
+### Modul 23: Traffic Analysis
+- Wireshark Deep Dive
+- Protocol Analysis
+- Extracting Files dari Capture
+- Password Sniffing (HTTP, FTP, Telnet)
+- VoIP/SIP Analysis
+
+### Modul 24: Maintaining Access
+- Backdoor di Wireless Network
+- Persistent Rogue AP
+- Client-Side Persistence
+
+---
+
+## 🛡️ Level 7: Defense & Countermeasures
+
+### Modul 25: Wireless Security Best Practices
+- Choosing Strong Security (WPA3)
+- Strong Password Policy
+- Hidden SSID: Pro & Cons
+- MAC Filtering: Effectiveness
+- Disabling WPS
+- Network Segmentation
+
+### Modul 26: Detection & Prevention
+- Wireless Intrusion Detection System (WIDS)
+- Wireless Intrusion Prevention System (WIPS)
+- Detecting Rogue APs
+- Detecting Deauth Attacks
+- Monitoring Tools (Kismet, Snort)
+
+### Modul 27: Secure Configuration
+- AP Hardening
+- Firmware Updates
+- Strong Encryption Implementation
+- 802.1X Implementation
+- Certificate Management
+- Guest Network Isolation
+
+### Modul 28: Incident Response
+- Detecting Compromise
+- Forensics pada Wireless Network
+- Log Analysis
+- Response Procedures
+
+---
+
+## 📋 Level 8: Methodology & Reporting
+
+### Modul 29: Penetration Testing Methodology
+- Wireless Pentest Framework
+- Scope Definition
+- Rules of Engagement
+- Legal dan Ethical Considerations
+- Authorization dan Permission
+
+### Modul 30: Documentation & Reporting
+- Note-Taking selama Pentest
+- Screenshot dan Evidence Collection
+- Report Structure
+- Risk Rating (CVSS, OWASP)
+- Remediation Recommendations
+- Executive Summary vs Technical Report
+
+---
+
+## 🚀 Level 9: Advanced Topics
+
+### Modul 31: Bluetooth & IoT Wireless
+- Bluetooth Security
+- BLE (Bluetooth Low Energy) Attacks
+- Zigbee & Z-Wave
+- IoT Device Exploitation
+
+### Modul 32: Enterprise Wi-Fi Deep Dive
+- RADIUS Server Pentesting
+- Certificate-Based Auth Attacks
+- NAC Bypass
+- Wireless Controller Exploitation
+
+### Modul 33: Automation & Scripting
+- Bash Scripting untuk Wireless Pentest
+- Python untuk Automation (Scapy)
+- Custom Tool Development
+- Integration dengan Framework (Metasploit)
+
+### Modul 34: Red Team Operations
+- Wireless dalam Red Team Engagement
+- Physical Security + Wireless
+- Long-Range Attacks
+- Drop Box dan Implants
+- Wireless C2 Channels
+
+---
+
+## 🎓 Level 10: Praktik & Sertifikasi
+
+### Modul 35: Lab Praktikum
+- Setup Lab Environment
+- 20+ Hands-On Labs
+- CTF Challenges
+- Real-World Scenarios
+
+### Modul 36: Certifications & Career Path
+- OSWP (Offensive Security Wireless Professional)
+- CEH (Certified Ethical Hacker)
+- CWSP (Certified Wireless Security Professional)
+- GAWN (GIAC Assessing Wireless Networks)
+- Career Roadmap sebagai Wireless Security Specialist
+
+### Modul 37: Resources & Community
+- Recommended Books
+- Online Resources
+- Communities & Forums
+- Bug Bounty Programs
+- Staying Updated dengan Latest Vulnerabilities
+
+---
+
+## 📝 Appendix
+
+### Cheat Sheets
+- Aircrack-ng Command Reference
+- Wireshark Filters
+- Common Wordlists
+- Quick Reference Cards
+
+### Legal & Ethical Guidelines
+- Computer Fraud & Abuse Act
+- UU ITE Indonesia
+- Responsible Disclosure
+- Testing Authorization Templates
+
+### Troubleshooting Guide
+- Common Errors dan Solutions
+- Adapter Issues
+- Driver Problems
+- FAQ
+
+---
+
+## 💡 Tips Belajar
+1. **Hands-on Practice**: Teori 30%, Praktik 70%
+2. **Setup Lab Sendiri**: Gunakan router lama untuk eksperimen
+3. **Ethical**: Jangan test ke network orang tanpa izin
+4. **Document Everything**: Biasakan dokumentasi dari awal
+5. **Join Community**: Bergabung dengan komunitas security
+6. **Stay Updated**: Follow CVE dan security research terbaru
+7. **Legal First**: Selalu pastikan punya izin sebelum test
