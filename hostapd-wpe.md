@@ -46,8 +46,27 @@ sudo apt install hostapd-wpe
    dh_file=/etc/hostapd-wpe/certs/dh
    ```
 
-3. Jalankan AP:
+3. Konfigurasi interface wireless:
+
+   ```bash
+   # matikan proses yang menggunakan interface wireless
+   sudo airmon-ng check kill
+
+   # ubah mode interface wireless ke mode managed
+   sudo ip link set <interface> down
+   sudo iwconfig <interface> mode managed
+   sudo ip link set <interface> up
+   ```
+
+4. Jalankan AP:
 
    ```
    sudo hostapd-wpe hostapd-wpe.conf
+   ```
+
+   Pastikan outputnya:
+
+   ```
+   wlan0: interface state UNINITIALIZED->ENABLED
+   wlan0: AP-ENABLED
    ```
