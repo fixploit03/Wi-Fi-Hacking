@@ -14,14 +14,7 @@ sudo apt install wifite hcxdumptool hcxtools
 Mode otomatis:
 
 ```bash
-# dasar
 sudo wifite -i <interface> --kill
-
-# filter berdasarkan kekuatan sinyal (RSSI)
-sudo wifite -i <interface> --kill --power <power>
-
-# filter berdasarkan client yang terhubung
-sudo wifite -i <interface> --kill --clients-only
 ```
 
 Wi-Fi WEP:
