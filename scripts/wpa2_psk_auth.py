@@ -54,5 +54,3 @@ print(f'ptk = {ptk.hex()}')
 kck = ptk[:16]
 my_mic2 = calc_mic(kck, frame2_with_zero_mic)
 print(f'my_mic2= {my_mic2.hex()}\nmic2 = {mic2_hex}')
-@fixploit03
-Comment
