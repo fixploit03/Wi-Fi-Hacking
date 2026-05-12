@@ -13,4 +13,5 @@
 
 ## Latih Skill
 - [TryHackMe - Wifi Hacking 101](https://tryhackme.com/room/wifihacking101)
+- [HTB - AirTouch](https://www.hackthebox.com/machines/airtouch)
 - [WiFiChallenge Lab](https://lab.wifichallenge.com/)
