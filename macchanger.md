@@ -2,13 +2,6 @@
 
 `macchanger` adalah tool CLI yang digunakan untuk mengubah MAC address.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install macchanger
-```
-
 ## Penggunaan
 
 Lihat MAC address yang sedang dipakai:
