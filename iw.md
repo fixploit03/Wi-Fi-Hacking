@@ -2,13 +2,6 @@
 
 `iw` adalah tool CLI berbasis [nl80211](https://wireless.docs.kernel.org/en/latest/en/developers/documentation/nl80211.html) yang modern untuk konfigurasi dan manajemen interface wireless di Linux.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install iw
-```
-
 ## Penggunaan
 
 Lihat semua interface wireless yang tersedia:
