@@ -2,13 +2,6 @@
 
 `wpa_supplicant` adalah tool yang digunakan untuk menghubungkan perangkat ke jaringan Wi-Fi di Linux.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install wpasupplicant
-```
-
 ## Penggunaan
 
 Mode foreground:
