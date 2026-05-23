@@ -2,13 +2,6 @@
 
 `reaver` adalah tool CLI yang digunakan untuk melakukan audit keamanan pada jaringan Wi-Fi yang mengaktifkan WPS.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install reaver
-```
-
 ## Penggunaan
 
 Pixie Dust Attack:
