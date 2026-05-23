@@ -2,13 +2,6 @@
 
 `wifite` adalah tool CLI yang digunakan untuk melakukan audit keamanan pada jaringan Wi-Fi WEP dan WPA/WPA2-PSK secara otomatis.
 
-## Instalasi
-
-```
-sudo apt update
-sudo apt install wifite hcxdumptool hcxtools
-```
-
 ## Penggunaan
 
 Mode otomatis:
@@ -42,12 +35,12 @@ sudo wifite -i <interface> --kill --wps --wps-only
 Perintah tambahan:
 
 ```bash
-# cek validitas 4-Way Handshake
+# cek validitas 4-way handshake
 sudo wifite --check <file_capture>
 
 # crack handshake yang berhasil di-capture
 sudo wifite --crack
 
-# lihat Wi-Fi yang berhasil di-crack
+# lihat wi-fi yang berhasil di-crack
 sudo wifite --cracked
 ```
