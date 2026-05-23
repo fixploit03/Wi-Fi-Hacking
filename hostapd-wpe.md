@@ -2,13 +2,6 @@
 
 `hostapd-wpe` adalah tool CLI modifikasi dari [hostapd](https://w1.fi/hostapd/) yang digunakan untuk melakukan Evil Twin Attack terhadap jaringan Wi-Fi WPA/WPA2-Enterprise, guna menangkap kredensial pengguna.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install hostapd-wpe
-```
-
 ## Penggunaan
 
 1. Buat file config AP:
