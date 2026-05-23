@@ -2,13 +2,6 @@
 
 `airgeddon` adalah framework CLI yang digunakan untuk melakukan audit keamanan pada jaringan Wi-Fi secara otomatis.
 
-## Instalasi
-
-```bash
-sudo apt update
-sudo apt install airgeddon
-```
-
 ## Penggunaan
 
 ```
