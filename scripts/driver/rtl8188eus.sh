@@ -1,6 +1,4 @@
 #!/bin/bash
-#
-# Instal driver TP-LINK TL-WN722N V2/V3
 
 if [[ $EUID -ne 0 ]]; then
 	echo "ERROR: Script ini harus dijalankan sebagai root!"
