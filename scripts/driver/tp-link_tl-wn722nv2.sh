@@ -27,7 +27,7 @@ cd /usr/local/src
 git clone https://github.com/aircrack-ng/rtl8188eus
 cd rtl8188eus
 
-make
+-j$(nproc)
 make install
 
 rmmod r8188eu rtl8xxxu 8188eu 2>/dev/null
