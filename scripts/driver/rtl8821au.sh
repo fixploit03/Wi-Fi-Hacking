@@ -1,6 +1,4 @@
 #!/bin/bash
-#
-# Instal driver TP-LINK Archer T2U Plus
 
 if [[ $EUID -ne 0 ]]; then
 	echo "ERROR: Script ini harus dijalankan sebagai root!"
