@@ -26,4 +26,5 @@ cd 8821au-20210708
 
 make -j$(nproc)
 make install
+
 modprobe 8821au
