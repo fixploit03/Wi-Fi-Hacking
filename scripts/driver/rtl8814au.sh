@@ -1,6 +1,4 @@
 #!/bin/bash
-#
-# Instal driver Alfa AWUS1900
 
 if [[ $EUID -ne 0 ]]; then
 	echo "ERROR: Script ini harus dijalankan sebagai root!"
