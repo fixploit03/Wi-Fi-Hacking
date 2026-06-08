@@ -2,6 +2,12 @@
 
 `bettercap` adalah framework CLI yang digunakan untuk melakukan network reconnaissance, serangan MiTM, dan berbagai jenis serangan jaringan lainnya.
 
+## Instalasi
+
+```bash
+sudo apt install -y bettercap
+```
+
 ## Penggunaan
 
 Jalankan bettercap mode interaktif:
