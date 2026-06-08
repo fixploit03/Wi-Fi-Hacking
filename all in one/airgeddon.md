@@ -66,10 +66,10 @@ Jika menggunakan Linux tanpa GUI:
 ```bash
 sudo nano /usr/share/airgeddon/.airgeddonrc
 
-# ubah
+# Ubah ini
 AIRGEDDON_WINDOWS_HANDLING=xterm
 
-# menjadi
+# Menjadi seperti ini
 AIRGEDDON_WINDOWS_HANDLING=tmux
 ```
 
@@ -78,11 +78,11 @@ Skip animasi dan pengecekan dependensi:
 ```bash
 sudo nano /usr/share/airgeddon/.airgeddonrc
 
-# ubah
+# Ubah ini
 AIRGEDDON_SKIP_INTRO=false
 AIRGEDDON_DEVELOPMENT_MODE=false
 
-# menjadi
+# Menjadi seperti ini
 AIRGEDDON_SKIP_INTRO=true
 AIRGEDDON_DEVELOPMENT_MODE=true
 ```
