@@ -25,9 +25,9 @@ cowpatty -r <file_capture> -s <ssid> -f <wordlist>
 Crack handshake menggunakan pre-computed PMK:
 
 ```bash
-# buat database PMK
+# Buat database PMK
 genpmk -s <ssid> -f <wordlist> -d <output> 
 
-# crack handshake
+# Crack handshake
 cowpatty -r <file_capture> -s <ssid> -d <database_pmk>  
 ```
