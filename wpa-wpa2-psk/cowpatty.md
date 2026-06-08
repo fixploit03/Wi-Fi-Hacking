@@ -2,6 +2,12 @@
 
 `cowpatty` adalah tool CLI yang digunakan untuk mengcrack handshake WPA/WPA2-PSK.
 
+## Instalasi
+
+```bash
+sudo apt install -y cowpatty
+```
+
 ## Penggunaan
 
 Cek validitas 4-Way Handshake:
