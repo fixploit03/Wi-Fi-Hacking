@@ -2,6 +2,12 @@
 
 `pixiewps` adalah tool CLI yang digunakan untuk melakukan Pixie Dust Attack secara offline terhadap jaringan Wi-Fi yang mengaktifkan WPS.
 
+## Instalasi
+
+```bash
+sudo apt install -y pixiewps
+```
+
 ## Penggunaan
 
 ```bash
