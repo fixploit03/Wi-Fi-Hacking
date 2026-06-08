@@ -31,23 +31,23 @@ wifi.show
 Capture handshake WPA/WPA2-PSK:
 
 ```bash
-# filter Wi-Fi tertentu
+# Filter Wi-Fi tertentu
 wifi.recon <bssid>
 
-# deauth semua client (broadcast)
+# Deauth semua client (broadcast)
 wifi.deauth *
 
-# deauth client tertentu
+# Deauth client tertentu
 wifi.deauth <bssid>
 ```
 
 Capture PMKID:
 
 ```bash
-# tidak mengirim frame association request
+# Tidak mengirim frame association request
 set wifi.deauth.skip *
 
-# kirim association request
+# Kirim association request
 wifi.assoc <bssid>
 ```
 
