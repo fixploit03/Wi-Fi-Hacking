@@ -2,6 +2,12 @@
 
 `iw` adalah tool CLI berbasis [nl80211](https://wireless.docs.kernel.org/en/latest/en/developers/documentation/nl80211.html) yang modern untuk konfigurasi dan manajemen interface wireless di Linux.
 
+## Instalasi
+
+```bash
+sudo apt install -y iw
+```
+
 ## Penggunaan
 
 Lihat semua interface wireless yang tersedia:
@@ -43,7 +49,7 @@ sudo iw dev <interface> set channel <channel>
 Ganti mode:
 
 ```bash
-# mode yang tersedia: managed, monitor, ap
+# Mode yang tersedia: managed, monitor, ap
 sudo ip link set <interface> down
 sudo iw dev <interface> set type <mode>
 sudo ip link set <interface> up
@@ -52,13 +58,13 @@ sudo ip link set <interface> up
 Regulasi domain:
 
 ```bash
-# lihat regulasi domain saat ini
+# Lihat regulasi domain saat ini
 iw reg get
 
-# ganti regulasi domain
+# Ganti regulasi domain
 sudo iw reg set <kode_negara> # contoh ID = Indonesia atau BO = Bolivia
 
-# reload konfigurasi regulasi domain
+# Reload konfigurasi regulasi domain
 sudo iw reg reload
 ```
 
