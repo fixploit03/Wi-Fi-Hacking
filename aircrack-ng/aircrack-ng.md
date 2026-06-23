@@ -21,7 +21,7 @@ Crack PMKID:
 ```bash
 aircrack-ng -I <pmkid> -w <wordlist>
 
-# format PMKID
+# Format PMKID
 <pmkid>*<mac_ap>*<mac_sta>*<ssid_hex>
 ```
 
