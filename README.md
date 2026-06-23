@@ -1,4 +1,4 @@
-# Wireless Notes
+# Wi-Fi Hacking
 
 ![](https://github.com/fixploit03/wireless-notes/blob/main/img/tools.png)
 
