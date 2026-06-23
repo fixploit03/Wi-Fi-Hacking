@@ -21,10 +21,10 @@ Aktifkan mode monitor:
 ```bash
 sudo airmon-ng start <interface>
 
-# di frekuensi tertentu
+# Di frekuensi tertentu
 sudo airmon-ng start <interface> <frekuensi>
 
-# di channel tertentu
+# Di channel tertentu
 sudo airmon-ng start <interface> <channel>
 ```
 
