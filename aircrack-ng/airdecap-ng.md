@@ -13,9 +13,9 @@ airdecap-ng <file_capture> -b <bssid> -e <essid> -w <kunci_wep> -o <output>
 Dekripsi paket WPA/WPA2-PSK:
 
 ```bash
-# menggunakan password (ASCII)
+# Menggunakan passphrase (ASCII)
 airdecap-ng <file_capture> -b <bssid> -e <essid> -p <password> -o <output>
 
-# menggunakan PMK (hex)
+# Menggunakan PMK (hex)
 airdecap-ng <file_capture> -b <bssid> -e <essid> -k <pmk> -o <output>
 ```
