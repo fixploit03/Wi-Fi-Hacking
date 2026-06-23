@@ -41,32 +41,32 @@ sudo airodump-ng -C <frekuensi> <interface>
 Scan Wi-Fi berdasarkan band:
 
 ```bash
-# scan Wi-Fi 5 GHz
+# Scan Wi-Fi 5 GHz
 sudo airodump-ng -b a <interface>
 
-# scan Wi-Fi 2.4 GHz
+# Scan Wi-Fi 2.4 GHz
 sudo airodump-ng -b bg <interface>
 
-# scan Wi-Fi 5 & 2.4 GHz
+# Scan Wi-Fi 5 & 2.4 GHz
 sudo airodump-ng -b abg <interface>
 ```
 
 Scan Wi-Fi berdasarkan jenis keamanan:
 
 ```bash
-# scan Wi-Fi WEP
+# Scan Wi-Fi WEP
 sudo airodump-ng -t WEP <interface>
 
-# scan Wi-Fi WPA1
+# Scan Wi-Fi WPA1
 sudo airodump-ng -t WPA1 <interface>
 
-# scan Wi-Fi WPA2
+# Scan Wi-Fi WPA2
 sudo airodump-ng -t WPA2 <interface>
 
-# scan Wi-Fi WPA3
+# Scan Wi-Fi WPA3
 sudo airodump-ng -t WPA3 <interface>
 
-# scan Wi-Fi OWE
+# Scan Wi-Fi OWE
 sudo airodump-ng -t OWE <interface>
 ```
 
